@@ -15,7 +15,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   boot.initrd.luks.devices."luks-ecdb2bd2-7a19-42dc-bfea-76560be3fa4a".device = "/dev/disk/by-uuid/ecdb2bd2-7a19-42dc-bfea-76560be3fa4a";
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "wired"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -129,5 +129,7 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 }
