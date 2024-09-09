@@ -16,8 +16,17 @@ update-system:
     sudo nixos-rebuild switch --flake .
 
 
+# Rebuild home-level config (TODO: explain this better).
+update-home:
+    home-manager switch --flake .
 
-udpate-all: update-flake update-system
+
+update-all: update-flake update-system update-home
 
 update-all-reboot: update-all
     reboot
+
+
+# Search home manager man page.
+search-home:
+	man home-configuration.nix
