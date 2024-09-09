@@ -43,9 +43,11 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  # You can disable this if you're only using the Wayland session.
-  services.xserver.enable = true;
+  # # Enable the X11 windowing system.
+  # # You can disable this if you're only using the Wayland session.
+  # services.xserver.enable = true;
+  ## ^ disabling this raises "SDDM requires either services.xserver.enable or services.displayManager.sddm.wayland.enable to be true", so i add:
+  services.displayManager.sddm.wayland.enable = true;   # TODO: consolidate all "services" stuff :3  
 
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
@@ -85,13 +87,13 @@
     description = "Lain Iwakura";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      kdePackages.kate
-    #  thunderbird
+      # kdePackages.kate
+      # thunderbird
     ];
   };
 
   # Install firefox.
-  programs.firefox.enable = true;
+  # programs.firefox.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -99,8 +101,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+    # vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    # wget
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -130,6 +132,30 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
 
+
+  ## Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  programs = {
+    chromium = {
+      enable = true;
+      # package = pkgs.ungoogled-chromium;
+      defaultSearchProviderEnabled = true;
+      defaultSearchProviderSearchURL = "https://duckduckgo.com/?t=h_&q={searchTerms}";
+    };
+  };
+  
+  
+  # ## Enable fingerprint scanner, for more info see: https://wiki.nixos.org/wiki/Fingerprint_scanner
+  # systemd.services.fprintd = {
+  #   wantedBy = [ "multi-user.target" ];
+  #   serviceConfig.Type = "simple";
+  # };
+  # services.fprintd.enable = true;
+  # services.fprintd.tod.enable = true;
+  # services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090; # driver for 2016 ThinkPads
+  # ## To add a fingerprint (KDE), go to "Settings" >  "Manage user accounts" (idk how to do via cli)
+  # ## ==> Edit/conclusion: after a day I think this raises a bug where I'm stuck at login screen (either "unlock" button, or just everything greyed out, which forced me to reboot a few times blehhh)
+
 
 }
