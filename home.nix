@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, pkgs-unstable, ... }:
 
 {
 
@@ -9,72 +9,81 @@
   };
 
 
-  home.packages = with pkgs; [
+  home.packages = 
+    
+    (with pkgs; [
 
-    # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to your
-    # # environment:
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-    # '')
+        # # You can also create simple shell scripts directly inside your
+        # # configuration. For example, this adds a command 'my-hello' to your
+        # # environment:
+        # (pkgs.writeShellScriptBin "my-hello" ''
+        #   echo "Hello, ${config.home.username}!"
+        # '')
 
-    ## text editors
-    micro
-    vscodium
-    
-    
-    ## meta-terminal tools
-    kitty
-    lf
-    # zoxide
-    # fzf
-    # dmenu    # p sure there's a better alternative now, maybe for wayland...?
-    
-    
-    ## cli tools [think pipx]
-    wget
-    trashy
-    tldr
-    rsync
-    rclone
-    ffmpeg
-    ytarchive
-    yt-dlp
-
-
-    ## programming tools
-    git
-    just
-    
-    
-    ## usb tools
-    ventoy
-    gparted
-    exfatprogs
+        ## text editors
+        micro
+        vscodium
+        
+        
+        ## meta-terminal tools
+        kitty
+        lf
+        # zoxide
+        # fzf
+        # dmenu    # p sure there's a better alternative now, maybe for wayland...?
+        
+        
+        ## cli tools [think pipx]
+        wget
+        trashy
+        tldr
+        rsync
+        rclone
+        ffmpeg
+        ytarchive
+        yt-dlp
 
 
-    ## gui: browser
-    librewolf
-    ungoogled-chromium # chrome://ungoogled-first-run
-    brave
+        ## programming tools
+        git
+        just
+        
+        
+        ## usb tools
+        ventoy
+        gparted
+        exfatprogs
 
-    
-    ## gui: comms
-    vesktop
 
-    
-    ## gui: office
-    libreoffice
-    onlyoffice-bin
-    
-    ## gui: media
-    mpv
-    # simplescreenrecorder # not on wayland :(
-    obs-studio # this is only for screen recording with audio, use KDE Spectacle (or maybe try flameshot at some point?) for screenshots and recordings without audio!
-    
+        ## gui: browser
+        librewolf
+        ungoogled-chromium # chrome://ungoogled-first-run
+        brave
+
+        
+        ## gui: comms
+        vesktop
+
+        
+        ## gui: office
+        libreoffice
+        onlyoffice-bin
+        
+        ## gui: media
+        mpv
+        # simplescreenrecorder # not on wayland :(
+        obs-studio # this is only for screen recording with audio, use KDE Spectacle (or maybe try flameshot at some point?) for screenshots and recordings without audio!
+        
+      ])
+      
+      ++
+      
+      (with pkgs-unstable; [
+        ## programming
+        uv
+      ]);
     
 
-  ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
