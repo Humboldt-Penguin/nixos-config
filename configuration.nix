@@ -25,6 +25,22 @@
   # Enable networking
   networking.networkmanager.enable = true;
   
+  # # TODO: Once I learn how to store secrets, try to declaratively connect to ruwireless secure (lol) -- this snippet is taken from RUSLUG discord
+  # networking.wireless.enable = true;
+  # networking.wireless.userControlled.enable = true;
+  # networking.wireless.networks."RUWireless Secure" = {
+  #   hidden = true;
+  #   authProtocols = [ "WPA-EAP" ];
+  #   auth = ''
+  #     ca_cert="/etc/cert/usertrustrsacertificationauthority.cer"
+  #     eap=TTLS
+  #     identity="${netid}"
+  #     password="${password}"
+  #     phase2="auth=PAP"
+  #   '';
+  # };  
+  
+  
   # Enable bluetooth
   hardware.bluetooth.enable = true;
 
