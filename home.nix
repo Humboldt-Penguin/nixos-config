@@ -80,7 +80,7 @@
       
       (with pkgs-unstable; [
         ## programming
-        uv
+        # uv
       ]);
     
 

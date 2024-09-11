@@ -1,0 +1,58 @@
+- Just adding `pkgs.uv` to 'home.nix' isn't sufficient.
+    - Trying to run `uv init` downloads python 3.12, but you get a "dynamically linked" error: https://www.reddit.com/r/NixOS/comments/1fdxpam/help_request_python_development_specifically_with/
+    - If you run `uv python list`, you see that although uv seemed to download the python binary, it doesn't show up in available python versions. This is likely because the method/location how uv stores python binaries is different from nixos.
+
+
+- Instead, create a **devshell** using code from here (or see footnote [1] for just the code snippet with slight modifications, although the surrounding discussion/thread is valuable as well): https://github.com/astral-sh/uv/issues/4450#issuecomment-2211675401
+    - You can now successfully run something like `uv init`.
+    - I don't fully understand the mechanism (maybe something to do with `flake-utils`?), but one of the standout differences is that you're explicitly declaring you want python312 (or other versions) available in this environment.
+        - If you run `uv python list`, you see that unlike before, uv can see python binaries in your nix store (likely because of explanation in parent bullet point). 
+            - If you run `uv python list --python-preference only-system`, you see the same as just `uv python list` (that is, python binaries in the nix store).
+            - HOWEVER, if you run `uv python list --python-preference only-managed`, you see that nothing exists 
+                ==> Seems that the working approach is to handle python versions (specifically downloading them and making them available) with NixOS devshells, and then let uv handle the rest... hopefully uv can handle downloading packages though lmao haven't tested that :3
+
+
+
+
+==========
+FOOTNOTES:
+
+[1] To use uv, copy this `flake.nix` into the root directory (add to git if it's a repo or else it fails without explanation), and then run `nix develop .`. Make sure to `exit` afterwards or else you'll stay in the devshell which has unintended behavior (there's no obvious indication whether you're in the devshell besides seeing if you have access to the package -- check explicitly by running `echo $SHLVL`, if it outputs greater than 1, you're in the devshell).
+
+```nix
+{
+  description = "Python development environment with uv.";
+  # source/credit: https://github.com/astral-sh/uv/issues/4450#issuecomment-2211675401
+
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    flake-utils.url = "github:numtide/flake-utils";
+  };
+
+  outputs = { self, nixpkgs, flake-utils }:
+    flake-utils.lib.eachDefaultSystem (system:
+      let
+        pkgs = import nixpkgs { inherit system; };
+      in
+      {
+        devShells.default = pkgs.mkShell {
+          buildInputs = with pkgs; [
+            uv
+            python312
+            # python311
+          ];
+
+          # # OPTIONAL: Additional things to do when running `nix develop .`
+          # shellHook = ''
+          #   # Create a virtual environment if it doesn't exist
+          #   if [ ! -d ".venv" ]; then
+          #     uv venv .venv
+          #   fi
+          #   source .venv/bin/activate
+          #   echo "uv pip env ready"
+          # '';
+        };
+      }
+    );
+}
+```
