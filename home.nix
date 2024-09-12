@@ -169,6 +169,10 @@
       # };
     };
 
+    oh-my-posh = {
+      enable = true;
+    };
+
     kitty = {
       enable = true;
       theme = "Gruvbox Dark Hard";
