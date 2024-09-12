@@ -146,11 +146,11 @@
 
     bash = {
       enable = true;
-    #     shellAliases = {
-    #       l = "ls -l";
-    #       ".." = "cd ..";
-    #       c = "clear";
-    #     };
+      # shellAliases = {
+      #   l = "ls -la";
+      #   ".." = "cd ..";
+      #   c = "clear";
+      # };
     };
 
     kitty = {
@@ -186,12 +186,6 @@
           editor = "codium --wait --new-window";
         };
       };
-    };
-    
-    direnv = {
-      enable = true;
-      enableBashIntegration = true;
-      nix-direnv.enable = true;
     };
     
     # chromium = {
