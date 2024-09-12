@@ -46,7 +46,7 @@
 
         ## programming tools
         git
-        just
+        # just
         
         
         ## usb tools
@@ -79,8 +79,8 @@
       ++
       
       (with pkgs-unstable; [
-        ## programming
         # uv
+        just
       ]);
     
 
