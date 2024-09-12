@@ -146,6 +146,9 @@
 
     bash = {
       enable = true;
+      bashrcExtra = ''
+        PS1='$(if [ $SHLVL -gt 1 ]; then echo "($SHLVL) "; fi)'$PS1
+      '';
       # shellAliases = {
       #   l = "ls -la";
       #   ".." = "cd ..";
