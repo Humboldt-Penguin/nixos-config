@@ -44,7 +44,7 @@
         yt-dlp
         
         ## nix-specific stuff
-        alejandra
+        # alejandra
 
 
         ## programming tools
