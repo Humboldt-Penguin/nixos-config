@@ -3,56 +3,55 @@
     - If you run `uv python list`, you see that although uv seemed to download the python binary, it doesn't show up in available python versions. This is likely because the method/location how uv stores python binaries is different from nixos.
 
 
-- Instead, create a **devshell** using code from here (or see footnote [1] for just the code snippet with slight modifications, although the surrounding discussion/thread is valuable as well): https://github.com/astral-sh/uv/issues/4450#issuecomment-2211675401
-    - You can now successfully run something like `uv init`.
-    - I don't fully understand the mechanism (maybe something to do with `flake-utils`?), but one of the standout differences is that you're explicitly declaring you want python312 (or other versions) available in this environment.
-        - If you run `uv python list`, you see that unlike before, uv can see python binaries in your nix store (likely because of explanation in parent bullet point). 
-            - If you run `uv python list --python-preference only-system`, you see the same as just `uv python list` (that is, python binaries in the nix store).
-            - HOWEVER, if you run `uv python list --python-preference only-managed`, you see that nothing exists 
-                ==> Seems that the working approach is to handle python versions (specifically downloading them and making them available) with NixOS devshells, and then let uv handle the rest... hopefully uv can handle downloading packages though lmao haven't tested that :3
-
-
+- SOLUTION:
+    - STEPS/EXPLANATION:
+        1. Properly installing uv:
+            1.1. Create a 'flake.nix' in the project root directory with contents from footnote [1].
+                - It's creating a development shell (which allows uv to work as opposed to installing it through home-manager for some reason), with FHS (which allows uv to install/manage its own python binaries).
+            1.2. If you're in a git repo, add 'flake.nix' or else the next step fails without explanation.
+            1.3. Run `nix develop` -- `uv` should work now! :)
+                - Additionally, if you run `uv python list`, you'll see that python binaries are installed in the right place (thanks to the FHS environment) as opposed to pointing to shit in the nix store. See `uv python help` for more commands/information about managing different python binaries/versions.
+                - Whenever you're done, make sure to `exit` or else you'll stay in the devshell which has unintended behavior (there's no obvious indication whether you're in the devshell besides seeing if you have access to the package -- check explicitly by running `echo $SHLVL`, if it outputs greater than 1, you're in the devshell -- eventually I'll fix this by setting up direnv).
+        2. Library/package development:
+            2.1. Init the library structure with `uv init --lib`.
+            2.2. If you want to change the python version, edit the 'pyproject.toml', and then pin the version with `uv python pin 311` (change '311' for whatever version you want, but you may have to install it first I'm not sure).
+            2.3. Add normal dependencies with `uv add pkg1 pkg2 ...`.
+            2.4. Add dev dependencies with `uv add pkg1 --dev`.
+                - Note conceptual: the uv docs say that they don't currently support installing mutually incompatible dependency groups (i think?), so I assume that the venv we activate later on includes your dev stuff.
+        3. Personal editor preferences:
+            - I like jupyter, but jupyter notebook/lab are trash, the vscode interface is much more customizeable/convenient/powerful. To make sure vscode can find the venv, activate it with `source .venv/bin/activate` (see sub-bullet for 2.4. to see why we don't need to do anything extra to get dev packages), then launch with `code .` / `codium .` (it should auto-select the kernel when opening a '.ipynb' file, make sure the file exists, if not just restart I guess -- also make sure you have the jupyter vscode extension).            
 
 
 ==========
 FOOTNOTES:
 
-[1] To use uv, copy this `flake.nix` into the root directory (add to git if it's a repo or else it fails without explanation), and then run `nix develop .`. Make sure to `exit` afterwards or else you'll stay in the devshell which has unintended behavior (there's no obvious indication whether you're in the devshell besides seeing if you have access to the package -- check explicitly by running `echo $SHLVL`, if it outputs greater than 1, you're in the devshell).
-
+[1] 
 ```nix
+# flake.nix
 {
-  description = "Python development environment with uv.";
-  # source/credit: https://github.com/astral-sh/uv/issues/4450#issuecomment-2211675401
+
+  description = "Python development environment with FHS and uv (github.com/astral-sh/uv).";
+  # To activate, `nix develop`.
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
-    flake-utils.lib.eachDefaultSystem (system:
-      let
-        pkgs = import nixpkgs { inherit system; };
-      in
-      {
-        devShells.default = pkgs.mkShell {
-          buildInputs = with pkgs; [
-            uv
-            python312
-            # python311
-          ];
 
-          # # OPTIONAL: Additional things to do when running `nix develop .`
-          # shellHook = ''
-          #   # Create a virtual environment if it doesn't exist
-          #   if [ ! -d ".venv" ]; then
-          #     uv venv .venv
-          #   fi
-          #   source .venv/bin/activate
-          #   echo "uv pip env ready"
-          # '';
-        };
-      }
-    );
+  outputs = { self, nixpkgs }:
+    let
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
+      fhs = pkgs.buildFHSEnv {
+        name = "fhs-shell";
+        targetPkgs = pkgs: with pkgs; [ 
+          uv
+          zlib    # required to make numpy work ("C-extensions" nonsense)
+        ];
+      };
+    in
+      {
+        devShells.${system}.default = fhs.env;
+      };
 }
 ```
