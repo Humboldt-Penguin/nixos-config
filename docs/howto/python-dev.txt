@@ -32,6 +32,7 @@ FOOTNOTES:
 
   description = "Python development environment with FHS and uv (github.com/astral-sh/uv).";
   # To activate, `nix develop`.
+  # Credit/inspiration/reference: https://www.alexghr.me/blog/til-nix-flake-fhs/
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
