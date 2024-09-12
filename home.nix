@@ -42,6 +42,9 @@
         ffmpeg
         ytarchive
         yt-dlp
+        
+        ## nix-specific stuff
+        alejandra
 
 
         ## programming tools
