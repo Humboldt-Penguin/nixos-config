@@ -159,6 +159,16 @@
       # };
     };
 
+    zsh = {
+      enable = true;
+      # shellAliases = {
+      #   l = "ls -la";
+      #   ll = "ls -l";
+      #   ".." = "cd ..";
+      #   c = "clear";
+      # };
+    };
+
     kitty = {
       enable = true;
       theme = "Gruvbox Dark Hard";
