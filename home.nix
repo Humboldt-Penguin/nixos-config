@@ -136,6 +136,7 @@
 
 
 
+  # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
 
@@ -143,14 +144,14 @@
 
   programs = {
 
-    # bash = {
-    #   enable = true;
+    bash = {
+      enable = true;
     #     shellAliases = {
     #       l = "ls -l";
     #       ".." = "cd ..";
     #       c = "clear";
     #     };
-    # };
+    };
 
     kitty = {
       enable = true;
@@ -185,6 +186,12 @@
           editor = "codium --wait --new-window";
         };
       };
+    };
+    
+    direnv = {
+      enable = true;
+      enableBashIntegration = true;
+      nix-direnv.enable = true;
     };
     
     # chromium = {
