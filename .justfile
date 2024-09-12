@@ -1,9 +1,9 @@
 _default: help
 
 # List all recipes (or just run `just`).
-[group('Misc Helper Recipes')]
+[group('0. Help')]
 help:
-    just --list
+    @just --list
 
 
 
