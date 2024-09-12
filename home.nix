@@ -114,6 +114,8 @@
           "Alt-Z": "command:set wordwrap off,command:set softwrap off"
       }
     '';
+
+    ".config/oh-my-posh/config.toml".source = dotfiles/.config/oh-my-posh/zen.toml;
     
   };
 
@@ -167,6 +169,10 @@
       #   ".." = "cd ..";
       #   c = "clear";
       # };
+      ## Add the custom oh-my-posh initialization with the --config argument
+      interactiveShellInit = ''
+        eval "$(${pkgs.oh-my-posh}/bin/oh-my-posh init zsh --config $HOME/.config/oh-my-posh/config.toml)"
+      '';
     };
 
     oh-my-posh = {
