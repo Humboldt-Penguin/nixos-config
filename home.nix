@@ -169,12 +169,21 @@
         eval "$(${pkgs.oh-my-posh}/bin/oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen.toml)"
       '';
 
-      # shellAliases = {
-      #   l = "ls -la";
-      #   ll = "ls -l";
-      #   ".." = "cd ..";
-      #   c = "clear";
-      # };
+      autosuggestion.enable = true;
+      syntaxHighlighting.enable = true;
+
+      shellAliases = {
+        l = "ls -l";
+        ll = "ls -la";
+        ".." = "cd ..";
+        c = "clear";
+      };
+
+      history = {
+        size = 10000;
+        path = "${config.xdg.dataHome}/zsh/history";
+      };
+
     };
 
     oh-my-posh = {
