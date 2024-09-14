@@ -87,6 +87,9 @@
         ## programming tools
         # uv
         just
+
+        ## text editors
+        zed-editor
       ]);
 
 
