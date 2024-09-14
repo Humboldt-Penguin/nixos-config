@@ -26,14 +26,15 @@ update-home:
 
 # `update-flake` -> `update-system` -> `update-home`
 [group('1. Update System')]
-update-all: update-flake update-system update-home
+update-all: _cache-sudo update-flake update-system update-home
 
 # `update-all` -> `reboot`
 [group('1. Update System')]
 update-all-reboot: update-all
     reboot
 
-
+_cache-sudo:
+    @sudo -v
 
 
 
