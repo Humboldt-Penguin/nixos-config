@@ -24,6 +24,8 @@
         micro
         vscodium
 
+        ## meta tools
+        keyd
 
         ## meta-terminal tools
         kitty
@@ -82,6 +84,7 @@
       ++
 
       (with pkgs-unstable; [
+        ## programming tools
         # uv
         just
       ]);
