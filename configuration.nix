@@ -24,7 +24,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-  
+
   # # TODO: Once I learn how to store secrets, try to declaratively connect to ruwireless secure (lol) -- this snippet is taken from RUSLUG discord
   # networking.wireless.enable = true;
   # networking.wireless.userControlled.enable = true;
@@ -38,9 +38,9 @@
   #     password="${password}"
   #     phase2="auth=PAP"
   #   '';
-  # };  
-  
-  
+  # };
+
+
   # Enable bluetooth
   hardware.bluetooth.enable = true;
 
@@ -66,7 +66,7 @@
   # # You can disable this if you're only using the Wayland session.
   # services.xserver.enable = true;
   ## ^ disabling this raises "SDDM requires either services.xserver.enable or services.displayManager.sddm.wayland.enable to be true", so i add:
-  services.displayManager.sddm.wayland.enable = true;   # TODO: consolidate all "services" stuff :3  
+  services.displayManager.sddm.wayland.enable = true;   # TODO: consolidate all "services" stuff :3
 
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
@@ -164,8 +164,8 @@
       defaultSearchProviderSearchURL = "https://duckduckgo.com/?t=h_&q={searchTerms}";
     };
   };
-  
-  
+
+
   # ## Enable fingerprint scanner, for more info see: https://wiki.nixos.org/wiki/Fingerprint_scanner
   # systemd.services.fprintd = {
   #   wantedBy = [ "multi-user.target" ];
@@ -218,6 +218,6 @@
     MatchName=keyd virtual keyboard
     AttrKeyboardIntegration=internal
   '';
-  
+
 
 }

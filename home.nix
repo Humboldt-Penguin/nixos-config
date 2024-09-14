@@ -9,8 +9,8 @@
   };
 
 
-  home.packages = 
-    
+  home.packages =
+
     (with pkgs; [
 
         # # You can also create simple shell scripts directly inside your
@@ -23,16 +23,16 @@
         ## text editors
         micro
         vscodium
-        
-        
+
+
         ## meta-terminal tools
         kitty
         lf
         # zoxide
         # fzf
         # dmenu    # p sure there's a better alternative now, maybe for wayland...?
-        
-        
+
+
         ## cli tools [think pipx]
         wget
         trashy
@@ -42,7 +42,7 @@
         ffmpeg
         ytarchive
         yt-dlp
-        
+
         ## nix-specific stuff
         # alejandra
 
@@ -50,8 +50,8 @@
         ## programming tools
         git
         # just
-        
-        
+
+
         ## usb tools
         ventoy
         gparted
@@ -63,29 +63,29 @@
         ungoogled-chromium # chrome://ungoogled-first-run
         brave
 
-        
+
         ## gui: comms
         vesktop
 
-        
+
         ## gui: office
         libreoffice
         onlyoffice-bin
-        
+
         ## gui: media
         mpv
         # simplescreenrecorder # not on wayland :(
         obs-studio # this is only for screen recording with audio, use KDE Spectacle (or maybe try flameshot at some point?) for screenshots and recordings without audio!
-        
+
       ])
-      
+
       ++
-      
+
       (with pkgs-unstable; [
         # uv
         just
       ]);
-    
+
 
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -136,7 +136,7 @@
       TODO 1: Make it so these settings are added declaratively via home-manager.
       TODO 2: Eventually modularize my entire config and group all the keyd stuff (so it's not scattered across both "configuration.nix" and "home.nix").
     */
-    
+
   };
 
   # Home Manager can also manage your environment variables through
@@ -208,7 +208,7 @@
 
     oh-my-posh = {
       enable = true;
-      
+
       ## This makes sure that zsh is installed/enabled, but prevents automatically adding `eval init zsh` to the '.zshrc', so that I can manually add it with `programs.zsh.initExtra` in a way that points to my own config file.
       enableZshIntegration = false;
     };
@@ -242,12 +242,12 @@
         init = {
           defaultBranch = "main";
         };
-        core = {  
+        core = {
           editor = "codium --wait --new-window";
         };
       };
     };
-    
+
     # chromium = {
     #   enable = true;
     #   package = pkgs.ungoogled-chromium;

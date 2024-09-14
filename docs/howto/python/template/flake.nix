@@ -15,7 +15,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
       fhs = pkgs.buildFHSEnv {
         name = "fhs-shell";
-        targetPkgs = pkgs: with pkgs; [ 
+        targetPkgs = pkgs: with pkgs; [
           uv
           zlib    # required to make numpy work ("C-extensions" nonsense)
           just    # task-runner, see associated '.justfile'
