@@ -58,3 +58,8 @@ clean-profiles:
 [group('Misc Helper Recipes')]
 search-home:
 	man home-configuration.nix
+
+# Print the path in `/nix/store/` for a given package.
+[group('Misc Helper Recipes')]
+get-path pkg:
+    nix eval nixpkgs#{{pkg}}.outPath
