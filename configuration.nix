@@ -184,5 +184,12 @@
   users.users.lain.shell = pkgs.zsh;   # Enable for my own user
 
 
+  ## Enable xremap (see 1:36 in Vimjoyer's "Setup Xremap with Nix" video: https://youtu.be/UPWkQ3LUDOU?t=96)
+  hardware.uinput.enable = true;
+  users.groups = {
+    uinput.members = [ "lain" ];
+     input.members = [ "lain" ];
+  }
+
 
 }

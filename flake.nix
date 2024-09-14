@@ -16,10 +16,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    xremap-flake = {
+      url = "github:xremap/nix-flake";    # We add xremap as a flake input as opposed to home package so that we can use it as a service as opposed to just the binary.
+    };
+
   };
 
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }:
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:
     let
       system = "x86_64-linux";
       lib = nixpkgs.lib;
@@ -43,6 +47,7 @@
           modules = [ ./home.nix ];
           extraSpecialArgs = {
             inherit pkgs-unstable;
+            inherit inputs;
           };
         };
       };

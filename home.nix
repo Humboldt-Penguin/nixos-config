@@ -1,4 +1,4 @@
-{ config, pkgs, pkgs-unstable, ... }:
+{ config, pkgs, pkgs-unstable, inputs, ... }:
 
 {
 
@@ -234,6 +234,31 @@
     #   defaultSearchProviderSearchURL = "https://duckduckgo.com/?t=h_&q={searchTerms}";
     # };
 
+  };
+
+
+
+  ## Enable/configure xremap
+  imports = [
+    inputs.xremap-flake.homeManagerModules.default
+  ];
+
+  services.xremap = {
+    enable = true;
+    withKDE = true;
+    config = {
+      keymap = [
+        {
+          name = "nav";
+          remap = {
+            "Alt-i" = "up";
+            "Alt-j" = "left";
+            "Alt-k" = "down";
+            "Alt-l" = "right";
+          };
+        }
+      ];
+    };
   };
 
 
