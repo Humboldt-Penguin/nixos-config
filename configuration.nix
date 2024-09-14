@@ -122,6 +122,7 @@
   environment.systemPackages = with pkgs; [
     # vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     # wget
+    keyd
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -184,5 +185,39 @@
   users.users.lain.shell = pkgs.zsh;   # Enable for my own user
 
 
+  ## Enable + configure keyd (reference: https://wiki.nixos.org/wiki/Keyd)
+  services.keyd = {
+    enable = true;
+    keyboards = {
+      keybinds = {    # this is just the name of the config file, doesn't really matter
+        ids = [ "*" ];    # apply to all keyboards
+        settings = {
+          alt = {
+            i = "up";
+            j = "left";
+            k = "down";
+            l = "right";
+
+            u = "home";
+            o = "end";
+
+            y = "pageup";
+            p = "pagedown";
+
+            "-" = "—";
+          };
+        };
+      };
+    };
+  };
+  # > "Optional, but makes sure that when you type the make palm rejection work with keyd"
+  # > "https://github.com/rvaiya/keyd/issues/723"
+  environment.etc."libinput/local-overrides.quirks".text = ''
+    [Serial Keyboards]
+    MatchUdevType=keyboard
+    MatchName=keyd virtual keyboard
+    AttrKeyboardIntegration=internal
+  '';
+  
 
 }

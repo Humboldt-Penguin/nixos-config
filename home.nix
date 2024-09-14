@@ -116,6 +116,26 @@
     '';
 
     ".config/oh-my-posh/zen.toml".source = dotfiles/.config/oh-my-posh/zen.toml;
+
+    ## Note: the rest of keyd config (enable, install, & remaps/keybinds) is in "configuration.nix", this line simply enables unicode support (e.g. em dash "—") -- to understand the rationale, open `man keyd` and search (press "/") for "unicode support", or look straight into the repo: https://github.com/rvaiya/keyd/blob/master/docs/keyd.scdoc
+    ".XCompose".text = builtins.readFile (pkgs.keyd + "/share/keyd/keyd.compose");
+    /*
+      My keymaps for navigation involve holding "alt", which has unintended side effects in editors like vscode/vscodium since default behavior is that holding alt highlights stuff in the menu bar. To fix this, I add the following to my "settings.json":
+
+        ```json
+        {
+            "window.customMenuBarAltFocus": false,
+            "window.enableMenuBarMnemonics": false,
+            "window.menuBarVisibility": "compact",
+            "window.titleBarStyle": "custom"
+        }
+        ```
+
+      Note that there's some room for flexibility here (e.g. you can enable mnemonics, I just don't use it personally).
+
+      TODO 1: Make it so these settings are added declaratively via home-manager.
+      TODO 2: Eventually modularize my entire config and group all the keyd stuff (so it's not scattered across both "configuration.nix" and "home.nix").
+    */
     
   };
 
