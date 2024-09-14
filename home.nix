@@ -199,8 +199,8 @@
       syntaxHighlighting.enable = true;
 
       shellAliases = {
-        l = "ls -l";
-        ll = "ls -la";
+        l = "ls -la";
+        ll = "ls -l";
         ".." = "cd ..";
         c = "clear";
       };
