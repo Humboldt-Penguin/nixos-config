@@ -95,7 +95,7 @@
 
   ## Unfree packages:
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    # insert packages here
+    # insert packages here in quotes
   ];
 
 
