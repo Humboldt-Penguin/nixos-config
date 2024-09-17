@@ -1,4 +1,4 @@
-{ config, pkgs, pkgs-unstable, ... }:
+{ config, lib, pkgs, pkgs-unstable, ... }:
 
 {
 
@@ -91,6 +91,12 @@
         ## text editors
         zed-editor
       ]);
+
+
+  ## Unfree packages:
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+    # insert packages here
+  ];
 
 
 
