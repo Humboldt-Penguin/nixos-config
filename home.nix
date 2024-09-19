@@ -252,6 +252,7 @@
         "workbench.sideBar.location" = "right";
         "window.commandCenter" = "false";
         "workbench.layoutControl.enabled" = "false";
+        "workbench.colorTheme" = "Ayu Dark Bordered";
 
         /* Functional behavior: */
         "files.trimTrailingWhitespace" = "true";
@@ -276,13 +277,18 @@
         ])
         ++
         (with pkgs-unstable.vscode-extensions; [
-            jnoortheen.nix-ide
-            ms-toolsai.jupyter
-            nefrob.vscode-just-syntax
+          /* Functional */
+          jnoortheen.nix-ide
+          ms-toolsai.jupyter
+          nefrob.vscode-just-syntax
+
+          /* Themes (https://vscodethemes.com/?type=dark) */
+          teabyii.ayu
+          jdinhlife.gruvbox
         ])
         ++
         (with pkgs-unstable-unfree.vscode-extensions; [
-            github.copilot
+          github.copilot
         ])
         ++
         /* [2/2]
