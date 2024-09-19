@@ -277,10 +277,14 @@
         ])
         ++
         (with pkgs-unstable.vscode-extensions; [
-          /* Functional */
+          /* Syntax */
           jnoortheen.nix-ide
-          ms-toolsai.jupyter
           nefrob.vscode-just-syntax
+
+          /* Jupyter */
+          ms-toolsai.jupyter
+          ms-toolsai.jupyter-renderers
+          ms-toolsai.jupyter-keymap
 
           /* Themes (https://vscodethemes.com/?type=dark) */
           teabyii.ayu
