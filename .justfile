@@ -64,3 +64,11 @@ search-home:
 [group('Misc Helper Recipes')]
 get-path pkg:
     nix eval nixpkgs#{{pkg}}.outPath
+
+
+
+# Clear vscodium cache
+[group('-1. temp')]
+codium-clear-cache:
+    -trash ~/.vscode-oss
+    -trash ~/.config/VSCodium

@@ -1,4 +1,12 @@
-{ config, lib, pkgs, pkgs-unstable, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  pkgs-unstable,
+  pkgs-stable-unfree,
+  pkgs-unstable-unfree,
+  ...
+}:
 
 {
 
@@ -22,7 +30,7 @@
 
         ## text editors
         micro
-        vscodium
+        # vscodium
 
         ## meta tools
         keyd
@@ -80,9 +88,7 @@
         obs-studio # this is only for screen recording with audio, use KDE Spectacle (or maybe try flameshot at some point?) for screenshots and recordings without audio!
 
       ])
-
       ++
-
       (with pkgs-unstable; [
         ## programming tools
         # uv
@@ -90,13 +96,13 @@
 
         ## text editors
         zed-editor
+      ])
+      ++
+      (with pkgs-unstable-unfree; [
+        vscode-extensions.github.copilot    ## see `programs.vscode` for more info
       ]);
 
 
-  ## Unfree packages:
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    # insert packages here in quotes
-  ];
 
 
 
@@ -131,23 +137,6 @@
 
     ## Note: the rest of keyd config (enable, install, & remaps/keybinds) is in "configuration.nix", this line simply enables unicode support (e.g. em dash "—") -- to understand the rationale, open `man keyd` and search (press "/") for "unicode support", or look straight into the repo: https://github.com/rvaiya/keyd/blob/master/docs/keyd.scdoc
     ".XCompose".text = builtins.readFile (pkgs.keyd + "/share/keyd/keyd.compose");
-    /*
-      My keymaps for navigation involve holding "alt", which has unintended side effects in editors like vscode/vscodium since default behavior is that holding alt highlights stuff in the menu bar. To fix this, I add the following to my "settings.json":
-
-        ```json
-        {
-            "window.customMenuBarAltFocus": false,
-            "window.enableMenuBarMnemonics": false,
-            "window.menuBarVisibility": "compact",
-            "window.titleBarStyle": "custom"
-        }
-        ```
-
-      Note that there's some room for flexibility here (e.g. you can enable mnemonics, I just don't use it personally).
-
-      TODO 1: Make it so these settings are added declaratively via home-manager.
-      TODO 2: Eventually modularize my entire config and group all the keyd stuff (so it's not scattered across both "configuration.nix" and "home.nix").
-    */
 
   };
 
@@ -242,6 +231,81 @@
         keepautoindent = true;
         tabstospaces = true;
       };
+    };
+
+    vscode = {
+    ## Full options list (todo stuff like keybindings eventually): https://home-manager-options.extranix.com/?query=vscode&release=release-24.05
+      enable = true;
+      package = pkgs-unstable.vscodium;
+
+      userSettings = {
+        /* `keyd` compatibility...
+                - This is a workaround for my `keyd` custom hotkeys -- specifically, my hotkeys for navigation involve holding "alt", which has unintended side effects in editors like vscode/vscodium since default behavior is that holding alt highlights stuff in the menu bar. To fix this, I add the four settings above to my 'settings.json'.
+                - Also note that there's some room for flexibility here (e.g. you can enable mnemonics, I just don't use it personally).
+        */
+        "window.customMenuBarAltFocus" = "false";
+        "window.enableMenuBarMnemonics" = "false";
+        "window.menuBarVisibility" = "compact";
+        "window.titleBarStyle" = "custom";
+
+        /* Aesthetic stuff: */
+        "workbench.sideBar.location" = "right";
+        "window.commandCenter" = "false";
+        "workbench.layoutControl.enabled" = "false";
+
+        /* Functional behavior: */
+        "files.trimTrailingWhitespace" = "true";
+        "window.closeWhenEmpty" = "true";
+
+        /* Jupyter stuff: */
+        "jupyter.askForKernelRestart" = "false";
+      };
+
+      /*
+        [RESOURCES]
+          - Nix wiki (basic explanation/boilerplate): https://nixos.wiki/wiki/VSCodium
+          - Search GitHub (example): https://github.com/search?q=language%3Anix+vscode-extension-github-copilot&type=code
+      */
+      extensions =
+        /* [1/2] `pkgs-[un]stable.vscode-extensions`
+          - These are Nix expressions maintained by nix-community: https://github.com/nix-community/nix-vscode-extensions
+            - Search stable:   https://search.nixos.org/packages?query=vscode-extensions
+            - Search unstable: https://search.nixos.org/packages?channel=unstable&query=vscode-extensions
+        */
+        (with pkgs.vscode-extensions; [
+        ])
+        ++
+        (with pkgs-unstable.vscode-extensions; [
+            jnoortheen.nix-ide
+            ms-toolsai.jupyter
+            nefrob.vscode-just-syntax
+        ])
+        ++
+        (with pkgs-unstable-unfree.vscode-extensions; [
+            github.copilot
+        ])
+        ++
+        /* [2/2]
+          - These are straight from the VSCode marketplace: https://marketplace.visualstudio.com/
+            - Search GitHub for examples: https://github.com/search?q=extensionsFromVscodeMarketplace&type=code
+        */
+        pkgs-unstable.vscode-utils.extensionsFromVscodeMarketplace [
+          {
+            ## Link: https://open-vsx.org/extension/phil294/git-log--graph
+            name = "git-log--graph";
+            publisher = "phil294";
+            version = "0.1.15";
+            sha256 = "sha256-lvjDkvXSX7rw7HyyK3WWQLnGezvL6FPEgtjIi8KWkU0=";
+          }
+          {
+            ## Link: https://marketplace.visualstudio.com/items?itemName=stackbreak.comment-divider
+            name = "comment-divider";
+            publisher = "stackbreak";
+            version = "0.4.0";
+            sha256 = "sha256-L8htDV8x50cbmRxr4pDlZHSW56QRnJjlYTps9iwVkuE=";
+          }
+        ];
+
     };
 
     git = {

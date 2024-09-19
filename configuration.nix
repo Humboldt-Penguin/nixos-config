@@ -105,24 +105,22 @@
     isNormalUser = true;
     description = "Lain Iwakura";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      # kdePackages.kate
-      # thunderbird
-    ];
+    # packages = with pkgs; [
+    #   # kdePackages.kate
+    #   # thunderbird
+    # ];
   };
 
-  # Install firefox.
-  # programs.firefox.enable = true;
+  # # List packages installed in system profile. To search, run:
+  # # $ nix search wget
+  # environment.systemPackages = with pkgs; [
+  #   # vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  #   # wget
+  # ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    # vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    # wget
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -158,7 +156,6 @@
   programs = {
     chromium = {
       enable = true;
-      # package = pkgs.ungoogled-chromium;
       defaultSearchProviderEnabled = true;
       defaultSearchProviderSearchURL = "https://duckduckgo.com/?t=h_&q={searchTerms}";
     };
@@ -192,7 +189,6 @@
         - Check status (if it's running/failed, uptime, errors with conf file, etc.) with: `sudo systemctl status keyd` (or `restart` instead of `status).
       - [SELF NOTES:]
         - There's some extra companion config in `home.nix` to write a home file to allow unicode symbols like em dash. When I modularize everything, I'll make that more spatially associated with this stuff.
-
   */
   services.keyd = {
     enable = true;
