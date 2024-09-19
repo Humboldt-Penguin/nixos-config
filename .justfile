@@ -3,7 +3,7 @@ _default: help
 # List all recipes (or just run `just`).
 [group('0. Help')]
 help:
-    @just --list
+    @just --list --unsorted
 
 
 
@@ -65,10 +65,8 @@ search-home:
 get-path pkg:
     nix eval nixpkgs#{{pkg}}.outPath
 
-
-
-# Clear vscodium cache
-[group('-1. temp')]
+# Clear vscodium cache (its pretty good with allowing GUI/declared settings to coexist, but sometimes it gets confused).
+[group('Misc Helper Recipes')]
 codium-clear-cache:
     -trash ~/.vscode-oss
     -trash ~/.config/VSCodium
