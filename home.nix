@@ -248,7 +248,8 @@
         "workbench.sideBar.location" = "right";
         "window.commandCenter" = "false";
         "workbench.layoutControl.enabled" = "false";
-        "workbench.colorTheme" = "Ayu Dark Bordered";
+        # "workbench.colorTheme" = "Ayu Dark Bordered";
+        "workbench.colorTheme" = "Gruvbox Dark Hard";
 
         /* Functional behavior: */
         "files.trimTrailingWhitespace" = "true";
@@ -256,6 +257,7 @@
 
         /* Jupyter stuff: */
         "jupyter.askForKernelRestart" = "false";
+        "notebook.lineNumbers" = "on";
       };
 
       /*
