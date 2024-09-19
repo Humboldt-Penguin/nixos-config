@@ -96,10 +96,6 @@
 
         ## text editors
         zed-editor
-      ])
-      ++
-      (with pkgs-unstable-unfree; [
-        vscode-extensions.github.copilot    ## see `programs.vscode` for more info
       ]);
 
 
