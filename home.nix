@@ -291,6 +291,7 @@
         ++
         (with pkgs-unstable-unfree.vscode-extensions; [
           github.copilot
+          github.copilot-chat
         ])
         ++
         /* [2/2]
