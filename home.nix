@@ -239,25 +239,25 @@
                 - This is a workaround for my `keyd` custom hotkeys -- specifically, my hotkeys for navigation involve holding "alt", which has unintended side effects in editors like vscode/vscodium since default behavior is that holding alt highlights stuff in the menu bar. To fix this, I add the four settings above to my 'settings.json'.
                 - Also note that there's some room for flexibility here (e.g. you can enable mnemonics, I just don't use it personally).
         */
-        "window.customMenuBarAltFocus" = "false";
-        "window.enableMenuBarMnemonics" = "false";
+        "window.customMenuBarAltFocus" = false;
+        "window.enableMenuBarMnemonics" = false;
         "window.menuBarVisibility" = "compact";
         "window.titleBarStyle" = "custom";
 
         /* Aesthetic stuff: */
         "workbench.sideBar.location" = "right";
-        "window.commandCenter" = "false";
-        "workbench.layoutControl.enabled" = "false";
+        "window.commandCenter" = false;
+        "workbench.layoutControl.enabled" = false;
         # "workbench.colorTheme" = "Ayu Dark Bordered";
         "workbench.colorTheme" = "Gruvbox Dark Hard";
         "workbench.tree.indent" = 24;    ## Increase indent width in sidebar file explorer (default value is 8).
 
         /* Functional behavior: */
-        "files.trimTrailingWhitespace" = "true";
-        "window.closeWhenEmpty" = "true";
+        "files.trimTrailingWhitespace" = true;
+        # "window.closeWhenEmpty" = true;    ## Nah, when programming I like periodically closing all my tabs -- use `C-S-w` instead
 
         /* Jupyter stuff: */
-        "jupyter.askForKernelRestart" = "false";
+        "jupyter.askForKernelRestart" = false;
         "notebook.lineNumbers" = "on";
       };
 
