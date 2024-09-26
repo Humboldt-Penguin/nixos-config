@@ -194,6 +194,8 @@
         ll = "ls -l";
         ".." = "cd ..";
         c = "clear";
+        "c." = "codium .";
+        "d." = "nohup dolphin . &";
       };
 
       history = {
@@ -260,6 +262,31 @@
         "jupyter.askForKernelRestart" = false;
         "notebook.lineNumbers" = "on";
       };
+
+
+      /*
+        [RESOURCES]
+          - Search GitHub: https://github.com/search?q=language%3Anix+vscode+keybindings&type=code
+      */
+      keybindings = [
+
+        /* C-r -- restart kernel */
+        {
+          command = "jupyter.restartkernel";
+          key = "ctrl+r";
+          when = "notebookEditorFocused";
+        }
+        { key = "ctrl+r"; command = "-workbench.action.openRecent"; }    ## Unbind default
+
+        /* C-A-r -- restart kernel and run up to selected cell */
+        {
+          command = "jupyter.restartkernelandrunuptoselectedcell";
+          key = "ctrl+alt+r";
+          when = "notebookEditorFocused";
+        }
+        { key = "ctrl+alt+r"; command = "-revealFileInOS"; when = "!editorFocus"; }    ## Unbind default
+      ];
+
 
       /*
         [RESOURCES]
