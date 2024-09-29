@@ -7,7 +7,7 @@ help:
 
 
 
-
+## TODO: rename 'update' commands to differentiate between 'update' and 'rebuild' commands (i initially differentiated so they'd be alphabetical, but now default command is unsorted!!!)
 
 [group('1. Update System')]
 [doc('Update flake (TODO: explain this better).')]
@@ -33,9 +33,24 @@ update-all: _cache-sudo update-flake update-system update-home
 update-all-reboot: update-all
     reboot
 
+
 _cache-sudo:
     @sudo -v
 
+# _get_nixos_generation:
+#     sudo nix-env --list-generations --profile /nix/var/nix/profiles/system | awk 'END {print $1}'
+# _get_hm_generation:
+#     home-manager generations | awk 'NR==1 {print $5}'
+
+update_generation_numbers:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    nixos_generation=$(sudo nix-env --list-generations --profile /nix/var/nix/profiles/system | awk 'END {print $1}')
+    hm_generation=$(home-manager generations | awk 'NR==1 {print $5}')
+    echo "NixOS Generation: $nixos_generation"
+    echo "Home Manager Generation: $hm_generation"
+    echo "$nixos_generation" > docs/versioning/.nixos_generation
+    echo "$hm_generation" > docs/versioning/.hm_generation
 
 
 [group('2. Garbage Collection')]
@@ -51,7 +66,7 @@ clean-profiles:
     sudo nix-collect-garbage --delete-old
     just clean-unreachable    # NOTE: I don't think you need this, but I add it just in case :3
 
-
+## TODO: add command for cleaning home-manager profiles, prepend it to a 'clean-all' command.
 
 
 
