@@ -7,26 +7,30 @@ help:
 
 
 
-## TODO: rename 'update' commands to differentiate between 'update' and 'rebuild' commands (i initially differentiated so they'd be alphabetical, but now default command is unsorted!!!)
+
 
 [group('1. Update System')]
 [doc('Update flake (TODO: explain this better).')]
 update-flake:
     nix flake update    # not sure if you need sudo...?
 
+
 [group('1. Update System')]
 [doc('Rebuild system-level config (TODO: explain this better).')]
-update-system:
+rebuild-system: && _update_nixos_generation_number
     sudo nixos-rebuild switch --flake .
+
 
 [group('1. Update System')]
 [doc('Rebuild home-level config (TODO: explain this better).')]
-update-home:
+rebuild-home: && _update_hm_generation_number
     home-manager switch --flake .
 
+
 [group('1. Update System')]
-[doc('`update-flake` -> `update-system` -> `update-home`')]
-update-all: _cache-sudo update-flake update-system update-home
+[doc('`update-flake` -> `rebuild-system` -> `rebuild-home`')]
+update-all: _cache-sudo update-flake rebuild-system rebuild-home
+
 
 [group('1. Update System')]
 [doc('`update-all` -> `reboot`')]
@@ -34,23 +38,26 @@ update-all-reboot: update-all
     reboot
 
 
+
 _cache-sudo:
     @sudo -v
 
-# _get_nixos_generation:
-#     sudo nix-env --list-generations --profile /nix/var/nix/profiles/system | awk 'END {print $1}'
-# _get_hm_generation:
-#     home-manager generations | awk 'NR==1 {print $5}'
-
-update_generation_numbers:
+_update_nixos_generation_number:
     #!/usr/bin/env bash
     set -euo pipefail
     nixos_generation=$(sudo nix-env --list-generations --profile /nix/var/nix/profiles/system | awk 'END {print $1}')
-    hm_generation=$(home-manager generations | awk 'NR==1 {print $5}')
-    echo "NixOS Generation: $nixos_generation"
-    echo "Home Manager Generation: $hm_generation"
+    echo "Generation # (NixOS) = $nixos_generation"
     echo "$nixos_generation" > docs/versioning/.nixos_generation
+
+_update_hm_generation_number:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    hm_generation=$(home-manager generations | awk 'NR==1 {print $5}')
+    echo "Generation # (home-manager) = $hm_generation"
     echo "$hm_generation" > docs/versioning/.hm_generation
+
+
+
 
 
 [group('2. Garbage Collection')]
@@ -67,6 +74,8 @@ clean-profiles:
     just clean-unreachable    # NOTE: I don't think you need this, but I add it just in case :3
 
 ## TODO: add command for cleaning home-manager profiles, prepend it to a 'clean-all' command.
+
+
 
 
 
