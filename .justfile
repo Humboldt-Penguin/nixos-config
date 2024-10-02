@@ -24,13 +24,13 @@ update-flake:
 
 [group('1. Update System')]
 [doc('Rebuild system-level config (TODO: explain this better).')]
-rebuild-system: && _update_nixos_generation_number
+rebuild-system: && _update_nixos_generation_number _update_system_package_list
     sudo nixos-rebuild switch --flake .
 
 
 [group('1. Update System')]
 [doc('Rebuild home-level config (TODO: explain this better).')]
-rebuild-home: && _update_hm_generation_number
+rebuild-home: && _update_hm_generation_number _update_hm_package_list
     home-manager switch --flake .
 
 
@@ -54,20 +54,34 @@ _cache-sudo:
 ## TODO: use something like `nv` to print the names/versions of upgraded packages to the `dirpath_versioning` directory with a timestamp (runs everytime we rebuild/update)
 
 dirpath_versioning := 'docs/versioning/'
+_mkpath_versioning:
+    @mkdir -p {{dirpath_versioning}}
 
-_update_nixos_generation_number:
+_update_nixos_generation_number: _mkpath_versioning
     #!/usr/bin/env bash
     set -euo pipefail
     nixos_generation=$(sudo nix-env --list-generations --profile /nix/var/nix/profiles/system | awk 'END {print $1}')
     echo "Generation # (NixOS) = $nixos_generation"
-    echo "$nixos_generation" > {{dirpath_versioning}}.nixos_generation
+    echo "$nixos_generation" > {{dirpath_versioning}}.generation_nixos
 
-_update_hm_generation_number:
+_update_hm_generation_number: _mkpath_versioning
     #!/usr/bin/env bash
     set -euo pipefail
     hm_generation=$(home-manager generations | awk 'NR==1 {print $5}')
     echo "Generation # (home-manager) = $hm_generation"
-    echo "$hm_generation" > {{dirpath_versioning}}.hm_generation
+    echo "$hm_generation" > {{dirpath_versioning}}.generation_home-manager
+
+_update_hm_package_list: _mkpath_versioning
+    home-manager packages > {{dirpath_versioning}}packages_home-manager.txt
+    @# To learn more about this command, just run `home-manager`
+
+_update_system_package_list: _mkpath_versioning
+    @# format: "name-version"
+    nix-store --query --requisites /run/current-system | cut -d- -f2- | sort > {{dirpath_versioning}}packages_system.txt
+    @# format: "hash-name-version"
+    nix-store --query --requisites /run/current-system | sed 's|/nix/store/||' | sort > {{dirpath_versioning}}packages_system_with-hash.txt
+
+    @# ^ Inspiration: https://functor.tokyo/blog/2018-02-20-show-packages-installed-on-nixos
 
 
 
