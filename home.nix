@@ -49,9 +49,9 @@
         tldr
         rsync
         rclone
-        ffmpeg
-        ytarchive
-        yt-dlp
+        # ffmpeg
+        # ytarchive
+        # yt-dlp
 
         ## nix-specific stuff
         # alejandra
@@ -63,15 +63,15 @@
 
 
         ## usb tools
-        ventoy
-        gparted
-        exfatprogs
+        # ventoy
+        # gparted
+        # exfatprogs
 
 
         ## gui: browser
         librewolf
         ungoogled-chromium # chrome://ungoogled-first-run
-        brave
+        # brave
 
 
         ## gui: comms
