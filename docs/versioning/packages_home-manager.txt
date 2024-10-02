@@ -1,11 +1,6 @@
 bash-interactive-5.2p32
 bash-interactive-5.2p32-man
-brave-1.70.119
-exfatprogs-1.2.2
-ffmpeg-6.1.2-bin
-ffmpeg-6.1.2-man
 git-2.44.1
-gparted-1.6.0
 hm-session-vars.sh
 home-configuration-reference-manpage
 home-manager
@@ -24,7 +19,6 @@ nix-zsh-completions-0.5.1
 obs-studio-30.1.2
 oh-my-posh-19.29.0
 onlyoffice-desktopeditors-7.2.0
-python3.11-yt-dlp-2024.8.6
 rclone-1.66.0
 rclone-1.66.0-man
 rsync-3.3.0
@@ -32,11 +26,9 @@ shared-mime-info-2.4
 tldr-1.6.1
 trashy-2.0.0
 ungoogled-chromium-129.0.6668.70
-ventoy-1.0.98
 vesktop-1.5.2
 vscodium-1.93.1.24256
 wget-1.21.4
-ytarchive-0.4.0
 zed-editor-0.154.3
 zsh-5.9
 zsh-5.9-man
