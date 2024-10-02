@@ -76,10 +76,10 @@ _update_hm_package_list: _mkpath_versioning
     @# To learn more about this command, just run `home-manager`
 
 _update_system_package_list: _mkpath_versioning
-    @# format: "name-version"
+    @# format: "name-version", sorted by name
     nix-store --query --requisites /run/current-system | cut -d- -f2- | sort > {{dirpath_versioning}}packages_system.txt
-    @# format: "hash-name-version"
-    nix-store --query --requisites /run/current-system | sed 's|/nix/store/||' | sort > {{dirpath_versioning}}packages_system_with-hash.txt
+    @# format: "hash-name-version", sorted by name
+    nix-store --query --requisites /run/current-system | sed 's|/nix/store/||' | sort -t '-' -k2 > {{dirpath_versioning}}packages_system_with-hash.txt
 
     @# ^ Inspiration: https://functor.tokyo/blog/2018-02-20-show-packages-installed-on-nixos
 
