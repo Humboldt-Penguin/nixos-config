@@ -1057,9 +1057,9 @@ nftables-1.0.9
 nghttp2-1.61.0-lib
 nghttp2-1.61.0-lib
 nilfs-utils-2.2.11
-nix-2.18.7
-nix-2.18.7-doc
-nix-2.18.7-man
+nix-2.18.8
+nix-2.18.8-doc
+nix-2.18.8-man
 nix-bash-completions-0.6.8
 nix.conf
 nix-info
@@ -1078,7 +1078,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.05.20240925.759537f
+nixos-system-wired-24.05.20240930.1719f27
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
