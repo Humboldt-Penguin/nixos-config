@@ -25,10 +25,10 @@ rsync-3.3.0
 shared-mime-info-2.4
 tldr-1.6.1
 trashy-2.0.0
-ungoogled-chromium-129.0.6668.70
+ungoogled-chromium-129.0.6668.89
 vesktop-1.5.2
 vscodium-1.93.1.24256
 wget-1.21.4
-zed-editor-0.154.3
+zed-editor-0.155.2
 zsh-5.9
 zsh-5.9-man
