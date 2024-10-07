@@ -14,11 +14,6 @@ help:
 
 
 
-[group('1. Update System')]
-[doc('Update flake (TODO: explain this better).')]
-update-flake:
-    nix flake update    # not sure if you need sudo...?
-
 # DEV NOTE: "A recipe can also have subsequent dependencies, which run immediately after the recipe and are introduced with an &&"
 # ^ [source] https://just.systems/man/en/dependencies.html
 
@@ -32,6 +27,12 @@ rebuild-system: && _update_nixos_generation_number _update_system_package_list
 [doc('Rebuild home-level config (TODO: explain this better).')]
 rebuild-home: && _update_hm_generation_number _update_hm_package_list
     home-manager switch --flake .
+
+
+[group('1. Update System')]
+[doc('Update flake (TODO: explain this better).')]
+update-flake:
+    nix flake update    # not sure if you need sudo...?
 
 
 [group('1. Update System')]
