@@ -4,8 +4,8 @@ git-2.44.1
 hm-session-vars.sh
 home-configuration-reference-manpage
 home-manager
-just-1.35.0
-just-1.35.0-man
+just-1.36.0
+just-1.36.0-man
 keyd-2.4.3
 kitty-0.34.1
 kitty-0.34.1-terminfo
