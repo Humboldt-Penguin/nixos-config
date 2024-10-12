@@ -342,6 +342,13 @@
             version = "0.4.0";
             sha256 = "sha256-L8htDV8x50cbmRxr4pDlZHSW56QRnJjlYTps9iwVkuE=";
           }
+          {
+            ## Link: https://marketplace.visualstudio.com/items?itemName=matthewthorning.align-vertically
+            name = "align-vertically";
+            publisher = "matthewthorning";
+            version = "0.2.0";
+            sha256 = "sha256-kf3FpOm2E6Cyi2UFExgrGf03mkEMeIURul4GaRXAglg=";
+          }
         ];
 
     };
