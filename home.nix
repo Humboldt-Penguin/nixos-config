@@ -263,10 +263,10 @@
         "jupyter.askForKernelRestart" = false;
         "notebook.lineNumbers" = "on";
 
-        /* Disable copilot: */
-        "github.copilot.enable" = {
-          "*" = false;
-        };
+        # /* Disable copilot: */
+        # "github.copilot.enable" = {
+        #   "*" = false;
+        # };
       };
 
 
