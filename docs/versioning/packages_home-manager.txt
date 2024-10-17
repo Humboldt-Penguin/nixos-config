@@ -11,7 +11,7 @@ kitty-0.34.1
 kitty-0.34.1-terminfo
 lf-32
 libreoffice-7.6.7.2-wrapped
-librewolf-130.0-3
+librewolf-131.0.2-1
 man-db-2.12.1
 micro-2.0.13
 mpv-with-scripts-0.37.0
@@ -25,10 +25,10 @@ rsync-3.3.0
 shared-mime-info-2.4
 tldr-1.6.1
 trashy-2.0.0
-ungoogled-chromium-129.0.6668.89
+ungoogled-chromium-129.0.6668.100
 vesktop-1.5.2
-vscodium-1.93.1.24256
+vscodium-1.94.2.24284
 wget-1.21.4
-zed-editor-0.155.2
+zed-editor-0.156.1
 zsh-5.9
 zsh-5.9-man

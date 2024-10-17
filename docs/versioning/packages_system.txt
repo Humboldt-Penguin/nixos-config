@@ -436,7 +436,7 @@ ijs-10.03.1
 ilmbase-2.5.10
 imath-3.1.11
 inih-58
-initrd-linux-6.6.54
+initrd-linux-6.6.56
 input.conf
 inputrc
 install-systemd-boot.sh
@@ -960,9 +960,9 @@ libyuv-1787
 libzip-1.10.1
 lilv-0.24.24
 lilv-0.24.24
-linux-6.6.54
-linux-6.6.54-modules
-linux-6.6.54-modules-shrunk
+linux-6.6.56
+linux-6.6.56-modules
+linux-6.6.56-modules-shrunk
 linux-firmware-20240909-zstd
 linux-headers-6.7
 linux-headers-static-6.7
@@ -1078,7 +1078,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.05.20241009.d51c286
+nixos-system-wired-24.05.20241014.c0b1da3
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
