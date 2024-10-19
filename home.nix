@@ -369,7 +369,8 @@
           defaultBranch = "main";
         };
         core = {
-          editor = "codium --wait --new-window";
+          # editor = "codium --wait --new-window";    # slow bleh
+          editor = "micro";
         };
       };
     };
