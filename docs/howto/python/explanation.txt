@@ -20,7 +20,7 @@
             2.4. Add dev dependencies with `uv add pkg1 --dev`.
                 - Note conceptual: the uv docs say that they don't currently support installing mutually incompatible dependency groups (i think?), so I assume that the venv we activate later on includes your dev stuff.
         3. Personal editor preferences:
-            - I like jupyter, but jupyter notebook/lab are trash, the vscode interface is much more customizeable/convenient/powerful. To make sure vscode can find the venv, activate it with `source .venv/bin/activate` (see sub-bullet for 2.4. to see why we don't need to do anything extra to get dev packages), then launch with `code .` / `codium .` (it should auto-select the kernel when opening a '.ipynb' file, make sure the file exists, if not just restart I guess -- also make sure you have the jupyter vscode extension).
+            - I like jupyter, but jupyter notebook/lab are trash, the vscode interface is much more customizeable/convenient/powerful. The only dependency for using jupyter in vscode is `ipykernel`, not the entire `jupyter` suite (see uv docs for more info). This varies, but sometimes to make sure vscode can find the venv, activate it with `source .venv/bin/activate` (see sub-bullet for 2.4. to see why we don't need to do anything extra to get dev packages), then launch with `code .` / `codium .` (it should auto-select the kernel when opening a '.ipynb' file, make sure the file exists, if not just restart I guess -- also make sure you have the jupyter vscode extension).
 
 - NOTES/REMINDERS:
     - You must launch editors like VSCode/Jupyter from inside of an activated devshell so they pick up your venv/kernel properly!!!
