@@ -258,6 +258,7 @@
         /* Functional behavior: */
         "files.trimTrailingWhitespace" = true;
         # "window.closeWhenEmpty" = true;    ## Nah, when programming I like periodically closing all my tabs -- use `C-S-w` instead
+        "files.insertFinalNewline" = true;
 
         /* Jupyter stuff: */
         "jupyter.askForKernelRestart" = false;
