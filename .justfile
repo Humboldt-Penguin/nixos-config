@@ -114,7 +114,7 @@ clean-hm:
 
 [group('2. Garbage Collection')]
 [doc('`clean-hm` -> `clean-nixos`.')]
-clean-all: clean-hm clean-nixos
+clean-all: _cache-sudo clean-hm clean-nixos
 
 
 
