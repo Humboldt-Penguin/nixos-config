@@ -436,8 +436,9 @@ ijs-10.03.1
 ilmbase-2.5.10
 imath-3.1.11
 inih-58
+initrd-fsinfo
 initrd-kmod-blacklist-ubuntu
-initrd-linux-6.6.57
+initrd-linux-6.6.58
 input.conf
 inputrc
 install-systemd-boot.sh
@@ -526,6 +527,7 @@ kexec-tools-2.0.28
 kexec-tools-2.0.28
 keyd-2.4.3
 keyd-application-mapper-2.4.3
+keymap
 keyutils-1.6.3-lib
 keyutils-1.6.3-lib
 kfilemetadata-6.2.0
@@ -961,10 +963,9 @@ libyuv-1787
 libzip-1.10.1
 lilv-0.24.24
 lilv-0.24.24
-link-units
-linux-6.6.57
-linux-6.6.57-modules
-linux-6.6.57-modules-shrunk
+linux-6.6.58
+linux-6.6.58-modules
+linux-6.6.58-modules-shrunk
 linux-firmware-20241017-zstd
 linux-headers-6.7
 linux-headers-static-6.7
@@ -1080,7 +1081,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.05.20241020.8917291
+nixos-system-wired-24.05.20241023.32e940c
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
