@@ -1081,7 +1081,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.05.20241023.32e940c
+nixos-system-wired-24.05.20241026.cd3e883
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
