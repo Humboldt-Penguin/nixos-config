@@ -19,6 +19,7 @@ nix-zsh-completions-0.5.1
 obs-studio-30.1.2
 oh-my-posh-19.29.0
 onlyoffice-desktopeditors-7.2.0
+qbittorrent-5.0.1
 rclone-1.66.0
 rclone-1.66.0-man
 rsync-3.3.0

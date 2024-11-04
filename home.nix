@@ -96,6 +96,9 @@
 
         ## text editors
         zed-editor
+        
+        ## gui: media
+        qbittorrent
       ]);
 
 
