@@ -26,8 +26,8 @@ rsync-3.3.0
 shared-mime-info-2.4
 tldr-1.6.1
 trashy-2.0.0
-ungoogled-chromium-130.0.6723.69
-vesktop-1.5.2
+ungoogled-chromium-130.0.6723.91
+vesktop-1.5.3
 vscodium-1.94.2.24284
 wget-1.21.4
 zed-editor-0.159.7
