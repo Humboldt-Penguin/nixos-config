@@ -81,6 +81,7 @@
         ## gui: office
         libreoffice
         onlyoffice-bin
+        kdePackages.kolourpaint
 
         ## gui: media
         mpv
@@ -96,7 +97,7 @@
 
         ## text editors
         zed-editor
-        
+
         ## gui: media
         qbittorrent
       ]);
