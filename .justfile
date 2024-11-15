@@ -38,6 +38,8 @@ update-flake:
 [group('1. Update System')]
 [doc('`update-flake` -> `rebuild-system` -> `rebuild-home`')]
 update-all: _cache-sudo update-flake rebuild-system rebuild-home
+    git add --all
+    git commit -m "Full update"
 
 
 [group('1. Update System')]
