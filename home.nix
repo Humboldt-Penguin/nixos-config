@@ -194,12 +194,12 @@
       syntaxHighlighting.enable = true;
 
       shellAliases = {
-        l = "ls -la";
-        ll = "ls -l";
-        ".." = "cd ..";
-        c = "clear";
-        "c." = "codium .";
-        "d." = "nohup dolphin . &";
+        "l"     = "ls -la";
+        "ll"    = "ls -l";
+        ".."    = "cd ..";
+        "c"     = "clear";
+        "c."    = "codium .";
+        "shlvl" = "echo $SHLVL";
       };
 
       history = {
