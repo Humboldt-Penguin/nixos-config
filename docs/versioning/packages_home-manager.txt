@@ -34,7 +34,7 @@ shared-mime-info-2.4
 systemd-255.9
 tldr-1.6.1
 trashy-2.0.0
-ungoogled-chromium-130.0.6723.91
+ungoogled-chromium-130.0.6723.116
 vesktop-1.5.3
 vscodium-1.94.2.24284
 wget-1.21.4
