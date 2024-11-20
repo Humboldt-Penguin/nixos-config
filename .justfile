@@ -41,10 +41,19 @@ update-all: _cache-sudo update-flake rebuild-system rebuild-home
 
 
 [group('1. Update System')]
-[doc('`update-all` -> `reboot`')]
+[doc('`update-all` -> commit any package/version/generation changes -> reboot')]
 update-all-reboot: update-all
-    git add --all
-    git commit -m "Full update"
+    #!/usr/bin/env bash
+    set -euo pipefail
+
+    if git diff --quiet HEAD -- docs/versioning/ flake.lock; then
+        echo "No changes detected in docs/versioning/ or flake.lock. Skipping git commit."
+    else
+        # echo "Changes detected in docs/versioning/ or flake.lock. Adding and committing."
+        git add docs/versioning/ flake.lock
+        git commit -m "Full update"
+    fi
+
     reboot
 
 
