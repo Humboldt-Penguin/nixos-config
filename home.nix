@@ -232,6 +232,7 @@ in
         "c"     = "clear";
         "c."    = "codium .";
         "shlvl" = "echo $SHLVL";
+        "j"     = "just";
       };
 
       history = {
