@@ -5,8 +5,8 @@ git-2.44.2
 hm-session-vars.sh
 home-configuration-reference-manpage
 home-manager
-just-1.36.0
-just-1.36.0-man
+just-1.37.0
+just-1.37.0-man
 kauth-6.2.0
 keyd-2.4.3
 kglobalaccel-6.2.0
@@ -34,7 +34,7 @@ shared-mime-info-2.4
 systemd-255.9
 tldr-1.6.1
 trashy-2.0.0
-ungoogled-chromium-130.0.6723.116
+ungoogled-chromium-131.0.6778.85
 vesktop-1.5.3
 vscodium-1.95.2.24313
 wget-1.21.4
