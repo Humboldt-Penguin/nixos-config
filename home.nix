@@ -17,19 +17,19 @@ let
   */
 
 
-  /*
-  zed-editor 0.160.7
-    - 241117 self-note: Trying to upgrade to 0.161.1 or 0.161.2 is forcing me to recompile a bunch of stuff, so I'm pinning zed to the latest-working commit (0.160.7) for the time-being.
-    - https://github.com/NixOS/nixpkgs/commit/d0cab6aa5ab46c85a5489eec3bcf82c0a8faf6cc
-  */
-  pkgs_zeditor = import (pkgs.fetchFromGitHub {
-    owner  = "NixOS";
-    repo   = "nixpkgs";
-    rev    = "d0cab6aa5ab46c85a5489eec3bcf82c0a8faf6cc";
-    sha256 = "uAaV3aARNf48XTsaPvFov2zhhv4I7vBQ7AZ8lcRO9IE=";
-  }) {
-    inherit (pkgs) system;
-  };
+  # /*
+  # zed-editor 0.160.7
+  #   - 241117 self-note: Trying to upgrade to 0.161.1 or 0.161.2 is forcing me to recompile a bunch of stuff, so I'm pinning zed to the latest-working commit (0.160.7) for the time-being.
+  #   - https://github.com/NixOS/nixpkgs/commit/d0cab6aa5ab46c85a5489eec3bcf82c0a8faf6cc
+  # */
+  # pkgs_zeditor = import (pkgs.fetchFromGitHub {
+  #   owner  = "NixOS";
+  #   repo   = "nixpkgs";
+  #   rev    = "d0cab6aa5ab46c85a5489eec3bcf82c0a8faf6cc";
+  #   sha256 = "uAaV3aARNf48XTsaPvFov2zhhv4I7vBQ7AZ8lcRO9IE=";
+  # }) {
+  #   inherit (pkgs) system;
+  # };
 in
 
 
@@ -121,17 +121,17 @@ in
         # uv
         just
 
-        # ## text editors
-        # zed-editor
+        ## text editors
+        zed-editor
 
         ## gui: media
         qbittorrent
       ])
-      ++
-      (with pkgs_zeditor; [
-        ## text editors
-        zed-editor
-      ])
+      # ++
+      # (with pkgs_zeditor; [
+      #   ## text editors
+      #   zed-editor
+      # ])
       ;
 
 
