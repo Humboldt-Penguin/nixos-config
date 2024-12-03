@@ -56,7 +56,7 @@ in
 
         ## text editors
         micro
-        # vscodium
+        # vscodium    ## see `programs.vscode` for enabling + special config! (if you uncomment it here, you get a collision error)
 
         ## meta tools
         keyd
@@ -96,7 +96,7 @@ in
 
         ## gui: browser
         librewolf
-        ungoogled-chromium # chrome://ungoogled-first-run
+        # ungoogled-chromium    ## see `programs.chromium` for enabling + special config! (if you uncomment it here, you get a collision error)
         # brave
 
 
@@ -413,11 +413,13 @@ in
       };
     };
 
-    # chromium = {
-    #   enable = true;
-    #   package = pkgs.ungoogled-chromium;
-    #   defaultSearchProviderSearchURL = "https://duckduckgo.com/?t=h_&q={searchTerms}";
-    # };
+    chromium = {
+      enable = true;
+      package = pkgs.ungoogled-chromium;
+      commandLineArgs = [
+        "--force-device-scale-factor=1"
+      ];
+    };
 
   };
 
