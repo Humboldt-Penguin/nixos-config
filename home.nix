@@ -251,7 +251,7 @@ in
 
     kitty = {
       enable = true;
-      theme = "Gruvbox Dark Hard";
+      themeFile = "gruvbox-dark-hard";
       settings = {
         cursor_shape = "beam";
         font_size = 9;
