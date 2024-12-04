@@ -139,7 +139,7 @@ clean-all: _cache-sudo clean-hm clean-nixos
 [group('Misc Helper Recipes')]
 [doc('Search home manager man page.')]
 search-home:
-	man home-configuration.nix
+    man home-configuration.nix
 
 [group('Misc Helper Recipes')]
 [doc('Print the path in `/nix/store/` for a given package.')]
