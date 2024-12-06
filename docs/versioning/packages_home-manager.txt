@@ -40,6 +40,6 @@ ungoogled-chromium-131.0.6778.85
 vesktop-1.5.3
 vscodium-1.95.3.24321
 wget-1.25.0
-zed-editor-0.163.3
+zed-editor-0.164.2
 zsh-5.9
 zsh-5.9-man
