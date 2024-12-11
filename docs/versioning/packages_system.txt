@@ -522,6 +522,8 @@ kbookmarks-5.116.0
 kbookmarks-6.8.0
 kcalendarcore-6.8.0
 kcalutils-24.08.3
+kcmutils-5.116.0
+kcmutils-5.116.0-bin
 kcmutils-6.8.0
 kcodecs-5.116.0
 kcodecs-6.8.0
@@ -542,6 +544,8 @@ kcrash-6.8.0
 kdav-6.8.0
 kdbusaddons-5.116.0
 kdbusaddons-6.8.0
+kdeclarative-5.116.0
+kdeclarative-5.116.0-bin
 kdeclarative-6.8.0
 kde-cli-tools-6.2.4
 kdecoration-6.2.4
@@ -620,9 +624,11 @@ knewstuff-6.8.0
 knotifications-5.116.0
 knotifications-5.116.0-bin
 knotifications-6.8.0
+knotifyconfig-5.116.0
 knotifyconfig-6.8.0
 konsole-24.08.3
 kpackage-5.116.0
+kpackage-5.116.0-bin
 kpackage-6.8.0
 kparts-6.8.0
 kpimtextedit-24.08.3
@@ -631,6 +637,7 @@ kpty-6.8.0
 kquickcharts-6.8.0
 krb5-1.21.3-lib
 krb5-1.21.3-lib
+krdc-23.08.5
 krdp-6.2.4
 krunner-6.8.0
 kscreen-6.2.4
@@ -966,6 +973,7 @@ libvlc-3.0.21
 libvmaf-3.0.0
 libvmaf-3.0.0
 libvmaf-3.0.0-dev
+libvncserver-0.9.14
 libvorbis-1.3.7
 libvorbis-1.3.7
 libvpx-1.15.0
@@ -1395,8 +1403,11 @@ qtbase-6.8.0-only-plugins-qml
 qtdeclarative-5.15.15
 qtdeclarative-5.15.15-bin
 qtdeclarative-6.8.0
+qtermwidget-1.4.0
 qtimageformats-6.8.0
 qtkeychain-0.14.3
+qtmultimedia-5.15.15
+qtmultimedia-5.15.15-bin
 qtmultimedia-6.8.0
 qtnetworkauth-6.8.0
 qtpositioning-6.8.0
@@ -1758,6 +1769,7 @@ vid.stab-unstable-2022-05-30
 vid.stab-unstable-2022-05-30
 virglrenderer-1.1.0
 virt-manager-5.0.0
+virt-manager-qt-0.72.99
 virt-viewer-11.0
 vlock.pam
 vo-aacenc-0.1.3
