@@ -29,6 +29,7 @@ obs-studio-30.2.3
 oh-my-posh-23.20.3
 onlyoffice-desktopeditors-8.2.0
 qbittorrent-5.0.1
+quickemu-4.9.6
 rclone-1.68.2
 rclone-1.68.2-man
 rsync-3.3.0

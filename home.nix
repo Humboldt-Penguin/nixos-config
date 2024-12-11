@@ -78,6 +78,7 @@ in
         # ffmpeg
         # ytarchive
         # yt-dlp
+        quickemu
 
         ## nix-specific stuff
         # alejandra
