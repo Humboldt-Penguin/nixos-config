@@ -18,6 +18,7 @@
     win-virtio
     win-spice
     gnome.adwaita-icon-theme
+    virtio-win
   ];
 
   # Manage the virtualisation services
