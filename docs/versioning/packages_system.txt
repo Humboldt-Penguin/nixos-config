@@ -1133,7 +1133,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.11.20241207.e2605d0
+nixos-system-wired-24.11.20241210.a0f3e10
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
@@ -1179,7 +1179,7 @@ opusfile-0.12
 opusfile-0.12
 orc-0.4.40
 orc-0.4.40
-orca-47.1
+orca-47.2
 ostree-2024.8
 other.pam
 oxygen-icons-6.1.0
