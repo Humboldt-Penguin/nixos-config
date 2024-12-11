@@ -12,13 +12,16 @@
   # Install necessary packages
   environment.systemPackages = with pkgs; [
     virt-manager
+    virt-manager-qt
     virt-viewer
-    spice spice-gtk
+    spice
+    spice-gtk
     spice-protocol
-    win-virtio
+    spice-vdagent    # for copy-pasting...?
+    # win-virtio -- this doesn't even exist???? i guess it's an alias for `virtio-win`, since `just get-path ...` gives same results for both versions
+    virtio-win
     win-spice
     gnome.adwaita-icon-theme
-    virtio-win
   ];
 
   # Manage the virtualisation services
