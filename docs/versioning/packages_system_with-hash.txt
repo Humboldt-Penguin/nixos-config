@@ -27,13 +27,18 @@ rcq05rjyd0kls77fzcda27x3k4qkkz03-alsa-plugins-1.2.12
 mwqiql88qfdlimbw6sf289s4mhsf9y7x-alsa-topology-conf-1.2.5.1
 d2fmyb893xmldfphsmmidp6bx7rjvwrw-alsa-ucm-conf-1.2.12
 yfqnqgx37206jw31g01g8ix2zv9bb6m1-alsa-ucm-conf-1.2.12
+hk16197al6932n9ans1kcp3g3p829iij-antlr-runtime-cpp-4.10.1
+36vh1dmqnm198wx1vdhl6sh856hmygxg-antlr-runtime-cpp-4.12.0
 si17gpm1nln157gll43a2g06rfzq5hvz-apache-tomcat-9.0.95
 pda26bdc93v1mdb3xfg5khcxywi1zhdc-apache-tomcat-9.0.95-webapps
 58xxasaplk2k14dgqz3i2588xvglvqym-append-initrd-secrets
 m7skd61h5dn0sj6jd148rxmpnva6fswf-appstream-1.0.3
 gbj1d9zz8zxwfifhgq2jrxn1ji0h12gn-appstream-qt-1.0.3
 i4rdhcc4rqz5avr5xf54fp514p8mcas7-ark-24.08.3
+pk3sk6myaamdjksahd6fs803wyfqf9mv-armadillo-14.0.3
+ixd45fx74zkp55hpqk61gd1yp2g3vgia-arrow-cpp-18.0.0
 lqb1j18fhl8xx13kpm9nbfqljcghqkmf-aspell-0.60.8.1
+dh4fvqwg4dcpqw2kzpvkzxsf1rn4p6n5-atkmm-2.28.4
 5bdgmba1jkyg99r80rz8vgyqzxn1p8xm-at-spi2-core-2.54.0
 w57fc9si36al6wxkjwc8kmf0yqzjprx2-attica-5.116.0
 sh0z2fwkmgpd62knvgfvirm3bazb9jq2-attica-6.8.0
@@ -63,6 +68,7 @@ k1yk29dy22fjsa1d48kabkyb23gzjshw-aws-crt-cpp-0.26.12
 20ky2306yw2ri5ki82bgllr4rwnril21-aws-c-s3-0.6.0
 5ryzwb3h7jp375g30afn8b2gf39f2l1s-aws-c-sdkutils-0.1.16
 2r6hkd3p8c0sflhcvd1cy6f3mgy05fmg-aws-sdk-cpp-1.11.336
+r89llx8dclb3gmhfb4nrv8nb8jp46sv9-aws-sdk-cpp-1.11.336
 5hc6wlq1z3gqik9ibrr6b33afc7k5lif-baloo-6.8.0
 jx1hbi8chkras36m14rp4q0xs8kp29g8-baloo-widgets-24.08.3
 k2qfmdrcgds3x86fhi323f8fbp09r96r-bash-5.2p37
@@ -83,6 +89,8 @@ bwkb907myixfzzykp21m9iczkhrq5pfy-binutils-2.43.1
 2qssg7pjgadwmqns6jm3qlr5bbdl4dcr-binutils-2.43.1-lib
 x9as7x6f7cdgcskvvn3yp02m662krr7y-binutils-wrapper-2.43.1
 p4zm691nhs5ldz5c8rfcnks7xfnjv9lb-bison-3.8.2
+qpblxz0ip2s1dbp6mh6lhpkw0dnsdbw4-blas-3
+3jfbk7y4s4hcbzskvsa4y5ak1i1w6yba-blas-3-dev
 byk87v93zz5irb6gn57gz79paplg5hsz-bluedevil-6.2.4
 840xr1020qsnhn8v6x6bljpymfwanqfq-bluez-5.78
 fyv4ycdypsdk0qqnrcrvkd7v3s7dn748-bluez-5.78
@@ -103,6 +111,7 @@ imidyjsr6xlavzvvz0x1sql5yg3i7d48-brltty-6.6
 m69rxkn1154drqhcbnqjr6i7xbar4yb4-brotli-1.1.0-dev
 2vgwd43vqxm66grkgsy7z1d87z31nzph-brotli-1.1.0-lib
 6czr2ywqnq02m0sgwv94bhcldqlqdg53-brotli-1.1.0-lib
+qb067zj0yw7d8fs4rcs4i4v59mm0lcif-brunsli-0.1
 3n9xg1mpcaqxdmbv057y1ll6s4mnkzpg-btrfs-progs-6.11
 0bzql6l5iw3didwv8lwib3yy5abdzzpc-bubblewrap-0.11.0
 ni88lc5fa39m6kj28pnm3p0cm1sm6j7s-build-vms.nix
@@ -116,6 +125,10 @@ zs9749xbiwi31n6ss7yygk3vwyzvi696-bzip2-1.0.8-dev
 9l20xx4bw18qgkicjcrsfx7vfykp9m8h-cairo-1.18.2
 dwykw1dfnbifxj89pr3m2ipjlp3bidfq-cairo-1.18.2
 4xy0x6f6jj3vsw8yw9fzqwr884yq11hv-cairo-1.18.2-dev
+plf08zq1lfz4f4x3pghws625bh8ik5f4-cairomm-1.14.5
+n4l3jprl0bamsma633ynybkfs6x5i305-c-ares-1.27.0
+gw2qrx6lnc264d05k9j0rw59h3qa5115-c-ares-1.27.0-dev
+lkkdiv4qz0x9sdry5c02q53kwfil345r-c-blosc-1.21.6
 h413hk4yn98l7iszahaxf30chbqs57rd-cdparanoia-III-10.2
 y70a793ks0g3kfzsbjrqssaid7cjmvi6-cdparanoia-III-10.2
 kyqsa10k8g0450hycphpng9gj151qsc6-celt-0.11.3
@@ -142,6 +155,8 @@ m7vbrpl1p2xnf0w5wgxwpcsd9hvf2cpm-coreutils-full-9.5
 9mwvc43y3lxyjfip59b2lc45nr3gsls5-cpio-2.15
 bdk32brbd3capsdl7c4cncq83vzcbjff-cracklib-2.10.0
 nl9qzrk0f0lsw8wigba5zq8ca16d6f8n-cracklib-2.10.0
+hl4vars1vsbvkszqzd0iz160r6a947mi-crc32c-1.1.2
+qganxmalrn5chk0jwa747ms1k49z3ki6-crypto++-8.9.0
 4jravblf4bxid61css9h9q0brjl7wvgi-cryptsetup-2.7.5
 7za1pyjxsrdl1sr4g3sfy7m8ii5v9rxl-cryptsetup-2.7.5
 bmgrqv7hhzmq8a598zgzvl06hmg6vy7b-cryptsetup-2.7.5-bin
@@ -168,7 +183,7 @@ n19lfs7ix2g9kdh6cf2pfaylbcwjay71-dav1d-1.5.0-dev
 dy0yrgxj4q4dqy5hp2z2ld3ryaaccfyp-db-4.8.30
 iykppklj30avi5krkikjicjbywa2zmfx-db-4.8.30
 cvk0aq46zfw7s64p33w1ph5jqz9g0b4i-db-5.3.28
-15gk5s1pq810k5s428i8f54yn4a4q1vq-dbus-1
+gy221vis5yq01kw1qci32z3mcrag10bk-dbus-1
 d5bki4k0jpnw5897kbnaclzmxrhdxc8c-dbus-1.14.10
 9y6zqihn7zbcvcbc405hq1jw7hwybd01-dbus-1.14.10-dev
 kbvih00cc9gw1frdf75vqfsl3v3q7l31-dbus-1.14.10-doc
@@ -219,7 +234,7 @@ qh1x91vcplvkgzzmpwpiihw0ak4gjvz1-elisa-24.08.3
 sfjcfh48acf9pbhb33605lmha8gdp6ia-ell-0.69
 qljw6fmrk66dd24rw9nn0ccjrw91m7i8-enchant-2.6.9
 8sdz8vf4ij8x0r555c4w4pavhwmjv17z-espeak-ng-1.51.1
-465m9xsp0pviw4l9nziicyq994zqw2x8-etc
+pq92n1qfbckypyjl0sbfwd8f0461r1pa-etc
 yfnr3lldaf2s5448nnws7qy23ac3sc3z-etc-alsa-conf.d-49-pipewire-modules.conf
 9c318ycr52784x90s08rwni7yc8mk81a-etc-bashrc
 kj13fkgpm76cc1402j7arv2rkfhbcnvk-etc-brave-policies-managed-default.json
@@ -314,6 +329,7 @@ g3bl632kg8v0c89b4255bmr3if2pi26p-flac-1.4.3
 w4nql5j8yv9s3a4vrxbjy7rdkqxxnsii-flex-2.6.4
 2mq4jjm582xbbiyy6qwks77vwnrb5j54-flite-2.2-lib
 5gx4l2iaxrlyp7rvb1b9ync2jhgam290-fluidsynth-2.3.6
+5wm36sm2mzbd43iha041rkhpmbsfdiq5-fmt-10.2.1
 a6v00y17493j256xsgbn2a4sfybsr7rs-fontconfig-2.15.0
 ziqnk17xikg73dfrwnyi2jd593xlxza9-fontconfig-2.15.0
 bzpg0iblkfh8swzhzf01b70yqrvmspbq-fontconfig-2.15.0-bin
@@ -333,6 +349,7 @@ h2zxz9nvp55wkblszd4q9jn4s76ns4cv-freeglut-mupdf-3.0.0-r13ae6aa2c2f9a7b4266fc2e61
 47q85ia25xbwpqbjsnh5r6mbnyi4klk0-freetype-2.13.3
 waj425c88y21wccgk9zpyi3q48xq0sgk-freetype-2.13.3
 dgdy79vrk1pwsi7ncpycdss1byqyxq7g-freetype-2.13.3-dev
+w4nzv2981fwn3gvgywnvlpm7s746p1pm-freexl-2.0.0
 37azjaxs8cwqbmb0fywl8fa6n2x8bgwq-fribidi-1.0.16
 ivavcf5c3zyscfjmrk58v2ms4g1adny1-fribidi-1.0.16
 65spsdccv344gm62nc34xmky1zq9dqsa-fuse-2.9.9
@@ -354,6 +371,7 @@ j8rzqx7farv0w3isp9z943zy437zk02f-gcc-13.3.0-libgcc
 gh7g0f9686mai74z0y6ah32bspsg274x-gcr-3.41.2
 ax1p9vb0kc17dr20mw2imyln0ywbgnyk-gcr-4.3.0
 ascb2b0zncwlavz03zcj358p1i79hp64-gd-2.3.3
+5qjy3xk03ccvsxv9jlqscpv682drsz40-gdal-3.9.3
 6785byka1pic4070f7lvqbibjbz23wva-gdb-host-cpu-only-15.2
 3fdjp6z9f41zwlffbz5lnm5hpgv971mp-gdbm-1.24-lib
 hq7m89gp4kafmj8rr0f5sy2qyl7jq479-gdbm-1.24-lib
@@ -362,11 +380,13 @@ ji6inyc1hiid4kj2cid3dnrd2qhfmvda-gdk-pixbuf-2.42.12-dev
 bdbkj300cpnllmsbg2y4j5d5jqfbq7pn-gdk-pixbuf-loaders.cache
 f99dck2r48p4x854qf15jdapr6g9yl72-geoclue-2.7.2
 5w5bb4cq3i6n4yi9ybybrn9yzzfc5si9-geocode-glib-3.26.4
+fa6fpxvlk5w552nmrn9zcwn7xifxvw2y-geos-3.13.0
 62nkg1qb7z4spnr563fgsxmk5z2w1pp7-getent-glibc-2.40-36
 8d87dwg75blx9lkbh4cb8b9ang2scamz-getent-glibc-2.40-36
 v34vi1nqnkdbk8lydckhcn9zar100pmf-gettext-0.21.1
 11b8r0jl1fzi96cgq51000a80sw935mh-getty
 v50sqlb5gh9q2p5h683vvhlga4psslkh-getty
+s30khfqzwq9ng0ky79mcyppjwphfq1w0-gflags-2.2.2
 yrfd3mqz1lq7vs8rkk145k2cnp4902sc-gfortran-13.3.0-lib
 dn79z5is7yhr8yqxprg07vfxwz4h9cr7-gfortran-13.3.0-libgcc
 b97p3gqw4dpj27bbkry1mw07w708vi7p-ghostscript-with-X-10.04.0
@@ -388,6 +408,7 @@ gzali8g9fnxfzd2i15g0xmvzywx24hib-glibc-locales-2.40-36
 2xvndl8rzj7s8fdasg8if3pgmmg4xfmg-glibmm-2.66.7
 g60ixkpjd7flz489xmy6db3d98wsafpx-glibmm-2.66.7
 lfi2rznnyah42926dq0pka4539wgz3x1-glib-networking-2.80.0
+n54v8mq1l6z98ar4lnmf53pfal7glqbj-glog-0.6.0
 4a3g9kj3av3h8awk54j99cipwn1flbw2-glu-9.0.3
 y11zr71f9i1zy1vrdy3kjx8j6slsb3l3-gmp-6.3.0
 bp5jzxp8qf3qgk04asjhwwr797mih2gj-gmp-with-cxx-6.3.0
@@ -415,6 +436,7 @@ swnz4mfsxai8v683j37zhqbjsy94rvcb-gnutar-1.35-info
 kfsapnbhqqsm8irp52nc111hdmid5rp5-gnutls-3.8.6
 lr5ar1yamgwv8jpgjrcd17qshb4091sr-gobject-introspection-1.82.0
 lhm8f5zhhh4am3y8n9x2kd0if50m8p85-gobject-introspection-wrapped-1.82.0
+p09bw4mfrh33qssfc1ignfdaj9nsxvdw-google-cloud-cpp-2.29.0
 0bl5crvjdh4kvimx160mvpy1baid9008-gperftools-2.15
 2grrffyk2vpl217l2aa9fsxg2qhwg329-gpgme-1.23.2
 hiycy93bjnjxrjwz6pkgas9rm89sh20n-gpgme-1.23.2
@@ -433,6 +455,7 @@ yclg4z4bg76dvi007nlrv2jj3fawz8b5-groupadd.pam
 4hkgck4h9cy17wdmf39sl3ljnjwpnxhx-groupdel.pam
 rlkpasp0gxxj81in3g2w0z2gpagrdngw-groupmems.pam
 9glqkzln4zx2ks9jpldjv8z05nijcpaw-groupmod.pam
+irh7viss0rqsak4ycca552iy2h0298rv-grpc-1.67.0
 jmmq8mgh6y3milc6k3pvhyb7yw8sz89d-gsettings-desktop-schemas-47.1
 yb2y5n13b48nhprdh3nsw95phbql5y32-gsettings-wrapper
 x9p23vv3ca1zcswkkaja5m6p6i5miab2-gsm-1.0.22
@@ -446,6 +469,7 @@ ysrr2dxqm5by404m6smwsgkj6vlc4s0x-gstreamer-1.24.7
 58wnbqqgya3v9mr2pg5barjyfi6h0f9i-gtest-1.15.2
 8cw08cgb87bpyzbqrk9pwb1fj7lfyxql-gtk+3-3.24.43
 dp2c6lh3mj8kx1l1520ackwjw8y9r400-gtk4-4.16.3
+fi8q32kj3m5hn1fznfif13092v7czx01-gtkmm-3.24.9
 v346ala0l31b71z1nczixvj67aki2s2b-gumbo-0.12.1
 7asdyikc7dxlmnf511kfr9k756ijdglb-gupnp-1.4.4
 qv8apzm57s9dikznnhzypvbkzb2srw3n-gupnp-igd-1.2.0
@@ -460,6 +484,8 @@ k72gvqvhqxxf0mmafvm9lhrfn964mviq-hack-font-3.003
 1pycm22nshapkgsf854vn23a7fdkvwl2-harfbuzz-10.0.1
 yxgc37sx1a0fswq3hvvld54491ryx6sf-harfbuzz-10.0.1
 ghwaa67p6slwagl2f7wc8ah71kdf3b68-harfbuzz-icu-10.0.1
+y7j8fcsrx8kiakdd3b0bvl4fcqs54dm8-hdf-4.2.15
+jbz7032i4p72b9i31r695kshgmpvjs31-hdf5-cpp-1.14.5
 pk4nx6584lqn1afd417dmj9wa52qhxi4-hicolor-icon-theme-0.18
 ji7n9p1n9c4jvrk4zizf04hda9pa7sjq-hosts
 2kprq9c3nqiczxsmd2mhp563vxk6sgwf-hspell-1.4
@@ -476,6 +502,7 @@ sljygz44l6crrpnrmbh12wb4697f992v-icu4c-69.1
 4cmb4w8y2m50pnas1hih12xmx64rvqvd-icu4c-69.1-dev
 12mwjnja5rwxmxay4svjz81lmy3cv3ss-icu4c-74.2
 l3qylnz0rsffwpg6vhvans15k545hnax-icu4c-74.2
+3w2kqnx2sksjgvl94d7yd84jmfs84aq6-icu4c-74.2-dev
 q2iadlji7jj2qdcgb63ha9q8xrpapw4a-ijs-10.04.0
 l8ajycdsn1xsiaid635pxbd39z8qjxiv-ilmbase-2.5.10
 dy59p38m70gg1lvx88l7fv9jx1prwy9i-imath-3.1.12
@@ -670,6 +697,7 @@ ghv6la6sfw8cj2nvc4jgyblfll7glrg6-kxmlgui-5.116.0-bin
 il6gs4sirvgwa4c6mvl269xaqqmn8rlg-kxmlgui-6.8.0
 qa6xya7klldgfhmjvlspg35xb3srgdqm-lame-3.100-lib
 xd87dd3z1d1gflhlacax8sqjbizq47pi-lame-3.100-lib
+iik9z8fv0bmy5fyppdi1z4qm3k2mbaqx-lapack-3
 ncvbnvhsfqlv8wqhix6syxbzjc3hr96x-layer-shell-qt-6.2.4
 klg1gvjapjgim2jiw5xfinpndwgfgs3f-lcms2-2.16
 s9xjisn58vzarla3df1spgx0lyi21kn0-lcms2-2.16
@@ -779,6 +807,7 @@ xgxcw71qvxg75l3s0bw2p1gks27m72qh-libfontenc-1.1.8
 p4jl7jsx66ccc4pl43lpp7ficdf9v1xb-libfreeaptx-0.1.1
 af92mnsqk8v57c9ym6rlblibjfnl6nmx-libgcrypt-1.10.3-lib
 qry6f9fx1jh99mk82vx4c69nv573c4x9-libgcrypt-1.10.3-lib
+97vckfibic2718jpnlj9svpik4l8mxgg-libgeotiff-1.7.3
 gi2n9v8n5n37rmzjvcp0r3b3a5w17qfs-libgit2-1.8.4-lib
 k99shxjcfbxmclhgw7s18fgk8v3c4rsk-libglvnd-1.7.0
 ri85b3kn22dmr4yiimfsgd6r5x7zgk4z-libglvnd-1.7.0
@@ -802,6 +831,7 @@ bx1awgk090vfvkcn7kfy8qgcvj0c6ski-libieee1284-0.2.11
 8kchssbkjsbc297bnc17wijpimdbmjcx-libimobiledevice-1.3.0-unstable-2024-05-20
 ihphzilwl1qw5h7m6c6jl0q1hshi3v2g-libimobiledevice-glue-1.3.1
 ajipkp1jgxdqa2rja90z1iq6ddwc1xjz-libinput-1.26.2
+gxs51b18lj64ssbyrcndr15r0m54kpqn-libiodbc-3.52.16
 zk1czn873mvivcnm8gvkigxfdcwm3f8f-libipt-2.1.1
 65r0cqzp68i7gnnqhzpa4m2vr72p78d8-libjack2-1.9.22
 9zwdgpzlsf0hrv47q9197xn3abw1ha27-libjack2-1.9.22
@@ -843,6 +873,7 @@ yv263ja8gcwsi2hfzqf32rsy5qjhz8r7-libmpg123-1.32.8
 vvr5z0q8mi9c2dv7v7f85i9fqdf5k3l7-libmtp-1.1.21
 8184ny27aj1699ja97qj2xq9xm5vb27l-libmysofa-1.3.2
 ywkh0ng8vn7mgbdgr0h5pq4zl05qijds-libmysofa-1.3.2
+6ggzqjprr81lnrv4b145lpbm6h374ywh-libmysqlconnectorcpp-9.0.0
 y2jq2gyp47ly2nscvzyjvg7rzinn0bmk-libndctl-79
 19i19gxf34kmshwamhd740dsxqrlhqly-libndctl-79-man
 ynlj0y8ggh2srrnkz4xpi74lngg8mkpm-libndp-1.9
@@ -899,6 +930,7 @@ bls1p13rcwip1pm8prv4q988dl757z8n-librist-0.2.10
 zc2xc3r8s46ji31nkphlfbyhgsa52vv2-librist-0.2.10
 1yg87y53lwkg1a0lz9201a3x3dm1d593-librsvg-2.58.3
 421z2rfgwvkbn347ws5v5lcm07kmfny0-librsvg-2.58.3-dev
+sv19p6ypqbb90b8v9i5agwm9fkk7hjif-librttopo-1.1.0
 2c8nf61vgvxl9z8pzq0032ql9fvzvl29-libsamplerate-0.2.2
 gamr55a2aczzhgb1qnws8yf3zvrrj8zm-libsamplerate-0.2.2
 q1i1096al9cvllyis2hr61mx1f93jwh3-libseccomp-2.5.5-lib
@@ -916,6 +948,7 @@ v3mh7x9nhnicg7mkb1r1xmcjjkpyflr3-libsndfile-1.2.2
 ki28jqabr02w1k3p4h2ky230vzh9k4n8-libsodium-1.0.20
 1yx0yw7m12wqp47sf7650qk9qxmwmfqg-libsoup-2.74.3
 8hziqkd6q07rxlyc72rwghgfm6hg2kib-libsoup-3.6.0
+wy50kdny0l9dvp12v41v1hyi2954ij4b-libspatialite-5.1.0
 xxsyji1d1m09kr6niv2x93k6413ks77k-libspectre-0.2.12
 prrlw06ngjswd1pkddmzyh10d14n92jw-libsrtp-2.6.0
 6wsgy59dsar34vlmnc041zhivkkfjm1z-libssh-0.11.1
@@ -1001,6 +1034,7 @@ zz9384x4kbwanpviwwm5lkh3cvnh4nix-libXinerama-1.1.5
 v5wvqz9hwb8n70xxqs097kz5k3bvflq8-libxkbcommon-1.7.0
 bqvpbwfay934cgsws6zp2waqa8nk883j-libxkbfile-1.1.3
 lm0z298vfvf4hb0c8gnj0a0snij7vrj0-libxklavier-5.4
+0xlfras5sj8y6svcd07v0iszmmx39vrs-libxml2-2.13.4
 shg1vgcjxghqxhl0sifwgr0g2zg6bbv7-libxml2-2.13.4
 zm6x89pga9pkqijjgmvm13wrihd3vzjy-libxml2-2.13.4
 3f6djcwiqxh6p5v72l45ky6ksym5avs6-libxml++-3.0.1
@@ -1105,6 +1139,9 @@ li5bnns4ji2fb0hfrq1wc1f6sxj9a7c7-mupdf-1.24.9
 z265fk9xxskqry7z46cpnqk5s2hgs80p-mupdf-1.24.9-bin
 pwb5pgqhfxh3iwwzqq1mibhz4dblcq6q-my.cnf
 vf29kczhfgsx71gcvsmcwli6c0faa4hh-mysql-8.0.40
+xlbybfr6ix0n0l34z0w05kh397algs3a-mysql-connector-java-9.0.0
+358gnq9q5kiriicjl2p3ay2ryba99vwz-mysql-shell-8.4.3
+2iw597n4l89n6ir8wm5m0qqs57ga0wfc-mysql-workbench-8.0.38
 i7bp5l76wg3vh6b5w6k1bih54vwfrf4z-nameservers
 028y5rvlnq6vzpvbvvbx85nzd70nvl69-nano-8.2
 2ffbwky2qz63kxq2yhchx76wlkvb9j6i-nano-8.2-info
@@ -1114,6 +1151,7 @@ zi4768cbcny3vx6f8k2yqy3zp90jalhz-ncompress-5.0
 iiyi3qckyv3afbyn8wmrbj3y8faf6dl3-ncurses-6.4.20221231-dev
 cc37ynn5x21v4gn8m292iv6n197k6lcz-ncurses-6.4.20221231-man
 i6f07jqv7ns2kggqb0wjwjh3yq5a1zsv-neon-0.32.5
+pkpanzjszz5x2bagl4sriydirpw0bpgx-netcdf-4.9.2
 09ny9d8zs2ilm48mxb7ss8j721c7qlcc-net-snmp-5.9.4
 myn5lypkhv6c10cdbm22zhaz2vdg59jq-net-snmp-5.9.4-lib
 18dsm6gagvhbjgvzlgfxhvlgpgj9nm0m-nettle-3.10
@@ -1158,7 +1196,7 @@ ys9wscypc14igir9n9b20xvskp1d02v6-nixos-manual.desktop
 xhwfh0naq1wxrdqrj485v7kfgzaf1v2d-nixos-manual-html
 1x788z78v2ibb2jxxlpgnbz68gkh3vgz-nixos-option
 w4cpms0dk79d2cbkfai77vlrmy313x55-nixos-rebuild
-gf8pbcqmwahcz151n5kpy7ii65yipjzf-nixos-system-wired-24.11.20241210.a0f3e10
+066pls3rk7rjka0v041p7pwsf0i9yhky-nixos-system-wired-24.11.20241210.a0f3e10
 5ma9wmqq9v1d34811snbq415zd652dix-nixos-tmpfiles.d
 9fhfvc3wgrl904176wjhl0g7sa38iwvi-nixos-version
 5siakfx1r1d4xkksm4i3yfkgfc51p9v5-nix-zsh-completions-0.5.1
@@ -1181,6 +1219,7 @@ ycs6hq1fvbaxadx4y50cn7jrmp5nbr6m-obexftp-0.24.2
 7mff41vfyvyw387gxry3hsjfjfyi0xzb-okular-24.08.3
 57vvy50l9d0ls0qsdiahrqm7ihsdfnhb-oniguruma-6.9.9-lib
 dz3816p8cyqpsnxbr455378avafrqzrj-openal-soft-1.23.1
+4a9k1dv1wkfp6nqp8v6nns479cyqlx47-openblas-0.3.28
 al1iq8hfpdcf14x0a815wqmmbzkq3g0m-openblas-0.3.28
 yq6f2pih81zbszb04y67w8q97lhsnr9r-openconnect-9.12
 gzrgalgd560gwalg77ibxq1z389f2ni7-opencore-amr-0.1.6
@@ -1218,6 +1257,7 @@ cvhr0lssip7liw6jfanzphjvfykrl8al-p11-kit-0.25.5-bin
 rcy93qy45lnc76dhxcpf79bbxpbwf0i2-packagekit-qt-1.1.2
 lfilj3zrgiqgsmywxpzj84sfz6v4amq1-pango-1.54.0
 vy93rplabj9l70a098rvp52ni9bg476v-pango-1.54.0
+s64qr9jj6acrqxrgas1y6v17gavrgi3k-pangomm-2.46.4
 x4b8lkj6dg199xk642aafvn8l940irx3-parted-3.6
 gpmnjnvg4ixpnlrm2bf0nwm4y8axb5gr-passwd.pam
 mdmansf6zkzsnrcf4h3yav5kz93rh03y-patch-2.7.6
@@ -1328,27 +1368,38 @@ qf4nrq11pkhzckiw5z0q2yjbd31wbf0f-pre-switch-checks
 qqs6pd32s1ar2hh59f5anc4ias7axqvd-prison-6.8.0
 v3czy9jvr7h01da7q4apvc84q5zrn9rh-procmail-3.24
 j4042aswh3kcc8cz44kr8w011jyl8lk2-procps-4.0.4
+1s2vizjs16c9z88baxzswpaafcwvr739-proj-9.5.0
 xnwj0fa2ixhnwc7pp1wqzjwhv0yacplb-protobuf-21.12
+7g0xwc6aqlh20gb38lppif8b687sx836-protobuf-24.4
 q9masc42g6rwzkpi8ma4qwbnmkzj7vz2-protobuf-28.3
 fyp091fli84c2wjf0xxcgp3cjzzsm9fg-publicsuffix-list-0-unstable-2024-10-25
 vy8sksf96sfvdnkga0761x2yxyxvbs5f-publicsuffix-list-0-unstable-2024-10-25
 0ypc805p7fzwhvsmgncg7ydidqgd63ik-pulseaudio-17.0
 kml1hsy9nj403smiiixxh81lm2wp1pk6-pulseaudio-qt-1.6.1
 7lsvfmyas9d9ck83vk4lbdghscx1hiw5-purpose-6.8.0
+nf0qmm5vvvmx2d6wa5zfkqg32dskynv2-python3.12-bcrypt-4.2.0
 bhz4l4f51s4ihlv2r7sv25cwnlnc10mb-python3.12-certifi-2024.08.30
+bw9h2axgbrd7fs9zbz00dx5a9404xqqn-python3.12-cffi-1.17.1
+ynjqm41c51f941261475n5kvh3w4dz67-python3.12-cryptography-43.0.1
 fa0kskpx8byhy7yr459w21zza6iwa9db-python3.12-dbus-python-1.3.2
 7w4yq25ys42ikabkc85v5x6860wbdjpp-python3.12-dnspython-2.7.0
 pm5cp3bfc8ijavgzsvjgqibhpa8ffdxn-python3.12-gst-python-1.24.7
 1849vvswnnfwh2vwlj8mam5sb7kjwmfg-python3.12-markdown-3.7
+f6n37s0wrqbiykxklxnm7bs82kap1f5p-python3.12-numpy-1.26.4
 qnfndbdg0k5s7zb47l5q9h7cszi56gpf-python3.12-packaging-24.1
+ndjzbg13zq5pfb8bfgk3g3wm85c6gy0w-python3.12-paramiko-3.5.0
 2drl01lf2drk4p8cifk80mslwjkaqfh8-python3.12-psutil-6.0.0
 14s27f2vdbg0jqq8ph0mlcn8m1lkw783-python3.12-pycairo-1.27.0
+4drm9zi486w2jcpsml70zkmsd8136ipm-python3.12-pycparser-2.22
 rbfrd6hyg11m1skny38985812yhg6fwd-python3.12-pycups-2.0.4
 zlzx3fd2md7zknw4bid4n9zcz1wgpkg2-python3.12-pycurl-7.45.3-unstable-2024-10-17
 bpj5a38f4bh96xzqba70146bsxsqfdn4-python3.12-pygdbmi-0.11.0.0
 7900bpaxa8bsqpmklfls8ng11wr7a20m-python3.12-pygobject-3.50.0
+gybrvaqqdsr208408bh43ns613nmaw8n-python3.12-pynacl-1.5.0
+m8j0bkby9jx6abr35m9i735rv69xf2ds-python3.12-pyodbc-5.1.0
 1iqbrlh01p4lnrjn4a9lcniahmhxyr9i-python3.12-pysmbc-1.0.25.1
 77rk34rpyr8kmhbw81690207ic005yjv-python3.12-pyxdg-0.28
+j7q50pmxnawpif7kfimy51mjhjdjldns-python3.12-pyyaml-6.0.2
 mx9n68cf09c6m812i6csr1xapzfgj35r-python3.12-sentry-sdk-1.45.0
 gff5yf54ph4zi03whx4d0svfkyydhn5s-python3.12-setproctitle-1.3.3
 4743pgjalihwh1vb7jsy17ynw3s0xj04-python3.12-six-1.16.0
@@ -1361,6 +1412,7 @@ zv1kaq7f1q20x62kbjv6pfjygw5jmwl6-python3-3.12.7
 khd4fgq7c5xd57lvyhgwpwfpsfa2wqq3-python3-3.12.7-env
 0yhxi9zvlnjval2ly7ndnk0x80m5cdpr-qca-2.3.9
 8cgn9i7n2b0pvbcy34m8yz7iyrishsn3-qca-2.3.9
+v5vygmgkqq8c1pwllws39213zybd0skw-qhull-2020.2
 bzp7g7dd6pilq72xcnkg7ldad6hgmhfl-qpdf-11.9.1-lib
 rhbyd52byc2s1dx4g02f4my4liwkkqsp-qqc2-breeze-style-6.2.4
 v98hh4kwajx4avd6xfh124d2ar5nb9hs-qqc2-desktop-style-6.8.0
@@ -1404,6 +1456,8 @@ zwpykgmydjhnwb2acj24qdjgig5xxdkl-qtwebengine-6.8.0
 gg9jir9rvpv3gmiz2qhpssr0makblgif-qtwebsockets-6.8.0
 cil09ibn0f817asvz9cdj9hiqm6g3p89-qtx11extras-5.15.15
 srhry563xl6jqkqfg1ivnw8a2qlk0w50-raptor2-2.0.16
+rf913n1a5qwj5pa16b0fr0368430pzb0-re2-2024-07-02
+n2has4bfv3d2xnqnw7krrydprfbx5mgq-re2-2024-07-02-dev
 2h78z8nc756cy824lavisip268igp96d-readline-8.2p13
 n0q4xhb9z19f0rfd1i8frw7a3ip3rgar-readline-8.2p13
 30qhz45nwgfyns13ijq0nwrsjp8m7ypa-relaxedsandbox.nix
@@ -1490,6 +1544,7 @@ rsbkmkbck6xi9xskp0yhmb8rm3zr8l2z-soxr-0.1.3
 79r8dm8bg6bzd106jl3n3dzg9lmmfsxx-sox-unstable-2021-05-09-lib
 cb160pfkw0615gxcs11vli6bcxfqjxi6-sox-unstable-2021-05-09-lib
 36mksgwavibny5rmnb2fixq7r1w3inqf-spandsp-0.0.6
+lwzkzl5cd2adaidlzk6bv99p3dpkwx5f-spdlog-1.14.1
 qkgx1rwvywxs72vsmv5k4b2r0346l2mj-spectacle-24.08.3
 wxs9xv5ylhn3db3yzlns4kran1mrqzvp-speech-dispatcher-0.11.5
 z7qd3dgvp4p7phismsgjaxnk79mbxxm0-speech-dispatcher-0.11.5
@@ -1515,6 +1570,7 @@ jp0bkl56ix3w8w0xy270chdh739r0cag-sudo-1.9.16p2
 40f2ww99zzp7lviwkamj91id1zbx65sc-sudoers
 bb9himiswb6hzpgg03w56j6s4ldq03gj-sudo.pam
 4jlzdj675kb0vif430872qsx5krk5krm-su.pam
+wiagrgbwzc8a1vlfk0ij7vfsmddnw7gz-superlu-5.2.1
 0ximrmd5zraz2xmkr67rr1kwh87ga6z3-svox-2018-02-14
 9ipzdib704g9mgfgc84p27vvi3khmknb-svt-av1-2.2.1
 qal4m6dx3dsk5xl2jlm6lvhcffybl2lr-svt-av1-2.2.1
@@ -1536,11 +1592,11 @@ pcdclhaknnwgqjcm8l57y14mj8y0cb77-systemd-minimal-libs-256.8
 pdrjpq3acyhk70hqcjxl35x8nmilfp73-systemd-minimal-libs-256.8
 9l7i81925klyrc6ghd2m75w6q5x8jibl-systemd-user.pam
 sm7gi1mnqwvxc2iz76hl7l28bi18p76x-system-generators
-mxqmvsdp76c9ksbc7s2dbnmfrdigwfg4-system-path
+y66x356gbpl59b4c8zn4pdqg81f593cw-system-path
 43xx76qf3x997sghd1f8c5iiik4a9fvv-system-sendmail-1.0
 s4pf95ybf136cx3r68abdnpr85qwd181-systemsettings-6.2.4
 vcj0n246kq7ljhhg421mwm3rlk64ir74-system-shutdown
-a7mg1p4dsbk52990lfd2cz2jjngrb1wy-system-units
+drbyi2q24cnqz1lvsnmfnihg3pq394fa-system-units
 y17fjnfgqb04lpky9j7baqgw0zr9hz6w-taglib-1.13.1
 x04a5wc5xa4gfdznyb1mvaq3py2862lv-talloc-2.4.2
 9xhrk86aylscd69342ylwkfby0m1ywax-tcb-1.2
@@ -1550,6 +1606,7 @@ ibjsvl14b4v0r2d3g14lgcklkfwj0mi6-tevent-0.16.1
 xxrrw60q46b0zf0g5fdr54klnlkk359m-texinfo-interactive-7.1.1
 aqa85nz4qqka83pxv4kvwswcfqanjbb8-thin-provisioning-tools-1.0.12
 222yc2ai8bnfkk4xz6wsrwlanvww52rl-threadweaver-6.8.0
+h255y9w9d4mqlbbbiayk5hnis2yx7dn9-tiledb-2.18.2
 6j2c3l4s87abyckggxxd627kav107kgl-time-1.9
 vy0f3qff59zimb9y6yjl41xygqppjbfh-tinysparql-3.8.0
 mq32jhksabxr5psk4a4sgylbzha4pkqq-tmpfiles.d
@@ -1569,7 +1626,7 @@ a658r4hq7scghskrlkph2jlhh2kq3l2j-udev-path
 ss3rhpxz0fjbyq02wmd3jg9fk7874bhj-unbound-1.21.1-lib
 xqnqx731qkqmxrqsjmp21izcjmzsn5fj-unbound-1.21.1-lib
 392y7yi0clkphqq7nyp6sfdy65zaryy5-unifont-16.0.01
-bmc25wf97304y7hscd0pmidy2dg7mrhm-unit-accounts-daemon.service
+qy0xc5vdyvi005ncc042pcvf2i34djw3-unit-accounts-daemon.service
 x9as9nz6q8hlz6mlhyi79rf2b3m40xhr-unit-audit.service
 g4mil04qdiwyi631fv2kv2j3a4ijr1g9-unit-autovt-.service
 jwwrvcbb7vzk5fg2s3f2nppsi0zwbxv7-unit-bluetooth.service
@@ -1577,8 +1634,8 @@ gjs2ajxdnygzlr8cm8vj01khkffahaii-unit-container-getty-.service
 zffi81hf1j76p4p5f36d87jp4l8pdvwa-unit-container-.service
 0bwkyfzwhd872ch0z344d6m3x96nhq06-unit-cups.service
 4ph6xg1w41xv5a34s4vglcn7r1qrx5iw-unit-cups.socket
-5xnql9va76vad1z67i1cwhhx11sxpdkw-unit-dbus.service
-xxc9mfvc1p9zpk052k670py1c6lkpg7y-unit-dbus.service
+4lvi222cbcv3zp895msjq9pk88zxgwx3-unit-dbus.service
+d7qgr3vj9pj9rxvryw56idkbx57hsy5f-unit-dbus.service
 lp3h5sgx32qpi7hc0q6vawz2l1aim5p5-unit-dbus.socket
 ncdw9m3halzs3njkax855sgal7iyqsiz-unit-display-manager.service
 v28sjiral4416fa5ls2lxdr8wnvhh12j-unit-drkonqi-coredump-processor-.service
@@ -1617,7 +1674,7 @@ n0z6015n7wcys939jnjsz90kg2xc6ksw-unit-obex.service
 bank7ym0b3djssw7g014xklg1kxm3qb4-unit-pipewire-pulse.socket
 7lq9gykdc1lvxrd8kvl36z0wpk38wddq-unit-pipewire.service
 c864y5n4dchknx5ywwii8sgglfdqrgih-unit-pipewire.socket
-w8mf4lbzj46ych4pk5080k4q0fkjs3b4-unit-polkit.service
+5kmiwnhpzf4106m59n63n6az83vaaggk-unit-polkit.service
 7d9q1ayb26s8ylsy19a8dmsa1fm0jz2q-unit-post-resume.service
 aisl89sqva6l381kz5x0jghpyhkidmn4-unit-post-resume.target
 sazh69nd2xkha1l8xv8jg3qs3j5bhfzk-unit-prepare-kexec.service
@@ -1691,7 +1748,8 @@ lyzz9kdp1h47cprvx7zn0yxby16a3911-userdel.pam
 mzhjrv1820bs0v91iyw67arxkaf52sb7-user-generators
 z5dhz5jj6l1m8il1g535ya1mv0xv21hl-usermod.pam
 vz6qyl4la1bvcyrdg5hh65jmccq87xwd-users-groups.json
-88q17md6f242d8cmf8kr9wswzc39dbrn-user-units
+rl3k9sp2b2icsp6rqc8nyz5gfb8ci7g3-user-units
+wfzwhwb3p17k4i8aqhyzswj4isixbhdj-utf8proc-2.9.0
 ndqpb82si5a7znlb4wa84sjncl4mvgqm-util-linux-2.39.4-bin
 3cdcd7dip33wzqcxdslpdn12fd27bp56-util-linux-2.39.4-lib
 8mymphx20fs6q603ihxm9hfgkbs5z5i7-util-linux-2.39.4-login
@@ -1717,6 +1775,7 @@ wms23n3fdvnlcix0lw8k1jvyjsdbxc1g-vlock.pam
 8ibwswqiz9zf7wpmgn12wq29i8zyayld-volume_key-0.3.11
 lr3qc5xqbjph3nrcrik5b8gxrfq44mhn-vpnc-scripts-unstable-2023-01-03
 bj4p7mjb2qy1x1w0nggkln0ypz0i0z1q-vpnc-unstable-2021-11-04
+vxmvas5lr5612j03ns47vds4g3bbrw8l-vsqlite-0.3.13
 2zv0v7n5a3zqnaklqk0ihnn3apk8nssj-vulkan-loader-1.3.296.0
 jwi3dpgv4xn6830q08vcdhph6h8n3zrr-vulkan-loader-1.3.296.0
 m5s6893jldpm7g63zya717i17ap7skz0-vulkan-tools-1.3.296.0
@@ -1762,6 +1821,7 @@ n9afsgxa6n953zjdmf0scq8acwzwv3lj-xdg-desktop-portal-gtk-1.15.1
 qvfrbnnxlnjyw1zn9zw9arxxl6a53vqy-xdg-user-dirs-0.18
 9v7x5vabddvggsmy4gyim551gww2hsan-xdg-utils-1.2.1
 3dxsw2dippdzha3ny0p570k2pvdjqfq9-xdpyinfo-1.3.4
+5ipmd5wdhvf6vliczzz2qxwv1yfi7krg-xerces-c-3.2.5
 svxih82k7qg9qmpr5riz7c81rjd2l89f-xf86-input-libinput-1.5.0
 fad7hrqm08k7apqibdmwirn0s08ri24k-xfsprogs-6.11.0
 h5zcck3iip9nnslh1avha5afpawadfj2-xfsprogs-6.11.0-bin
@@ -1774,13 +1834,13 @@ l20438l2vc4c2bbk53kzwln2lahr18qg-xlock.pam
 nssr1qx7ymml55a8kcgvhmfs6bnz59l1-xmessage-1.0.7
 c551bwv9dafz0rcqj7jcrv7kji1y9abj-xorgproto-2024.1
 zflr66c94i89f83g7wr5i1zvh0w9rx4d-xrdb-1.2.2
-2l8a8fshmvigw4bvbgzh6cwip3ji4jnl-X-Restart-Triggers-dbus
+r0p0fb0fldkbpmjzp6pq2qpq6jjprk3k-X-Restart-Triggers-dbus
 nzwzlqqdx9wh8bnxhcnj5j24dywyrcl2-X-Restart-Triggers-keyd
 yalm2l5v341lzrrrc05l0mzxsl51hwp7-X-Restart-Triggers-mysql
 wkbh3b0ka47qi37dwxp5dm50dbyga7kz-X-Restart-Triggers-NetworkManager
 9klkg0ci240p8bww20mmi6panj4mhbx8-X-Restart-Triggers-NetworkManager-dispatcher
 z3lh78ayxiplfsrybdwzyv1q804gdwp3-X-Restart-Triggers-nix-daemon
-m1sy9snrk7dlj1f572f92d4mscmr8qw1-X-Restart-Triggers-polkit
+7zvfvq9i35qj1q21ya4y772grlcrgihn-X-Restart-Triggers-polkit
 v4bdsd7g8fz6bbvvg6ccdhsmd08ilcna-X-Restart-Triggers-reload-systemd-vconsole-setup
 lhw5pj8kbsy71x8n014j0s3bbqjb354r-X-Restart-Triggers-resolvconf
 kk9sm431rirz61avrr0vfy32cgq98xkm-X-Restart-Triggers-systemd-journald
