@@ -1,0 +1,7 @@
+to avoid network error:
+
+`sudo virsh net-start default`
+
+to list vms:
+
+`virsh -c qemu:///system list --all`
