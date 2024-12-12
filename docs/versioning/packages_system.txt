@@ -2,6 +2,7 @@
 50-coredump.conf
 a52dec-0.8.0
 aalib-1.4rc5
+abseil-cpp-20210324.2
 abseil-cpp-20240722.0
 accounts-qt-1.17
 accountsservice-23.13.9
@@ -26,6 +27,8 @@ alsa-topology-conf-1.2.5.1
 alsa-topology-conf-1.2.5.1
 alsa-ucm-conf-1.2.12
 alsa-ucm-conf-1.2.12
+apache-tomcat-9.0.95
+apache-tomcat-9.0.95-webapps
 append-initrd-secrets
 appstream-1.0.3
 appstream-qt-1.0.3
@@ -78,6 +81,7 @@ bind-9.18.28-man
 binfmt_nixos.conf
 binutils-2.43.1
 binutils-2.43.1-lib
+binutils-wrapper-2.43.1
 bison-3.8.2
 bluedevil-6.2.4
 bluez-5.78
@@ -85,6 +89,8 @@ bluez-5.78
 bluez-qt-6.8.0
 boehm-gc-8.2.8
 boehm-gc-8.2.8
+boost-1.77.0
+boost-1.77.0-dev
 boost-1.81.0
 bootspec-1.0.0
 breeze-6.2.4
@@ -202,6 +208,7 @@ e2fsprogs-1.47.1-bin
 e2fsprogs-1.47.1-info
 e2fsprogs-1.47.1-man
 ebook-tools-0.2.2
+eclipse-jee-4.33
 ed-1.20.2
 editline-1.17.1
 editorconfig-core-c-0.12.9
@@ -264,6 +271,7 @@ ethtool-6.11
 exfat-1.4.0
 exiv2-0.28.3
 exiv2-0.28.3-lib
+expand-response-params
 expat-2.6.4
 expat-2.6.4
 expat-2.6.4-dev
@@ -337,10 +345,12 @@ game-music-emu-0.6.3
 gawk-5.3.1
 gawk-5.3.1-info
 gawk-5.3.1-man
+gcc-13.3.0
 gcc-13.3.0-lib
 gcc-13.3.0-lib
 gcc-13.3.0-libgcc
 gcc-13.3.0-libgcc
+gcc-wrapper-13.3.0
 gcr-3.41.2
 gcr-4.3.0
 gd-2.3.3
@@ -379,6 +389,7 @@ glibmm-2.66.7
 glibmm-2.66.7
 glib-networking-2.80.0
 glu-9.0.3
+gmp-6.3.0
 gmp-with-cxx-6.3.0
 gmp-with-cxx-6.3.0
 gmp-with-cxx-6.3.0
@@ -461,6 +472,8 @@ i3lock-color.pam
 i3lock.pam
 iana-etc-20240318
 ibus-1.5.30
+icu4c-69.1
+icu4c-69.1-dev
 icu4c-74.2
 icu4c-74.2
 ijs-10.04.0
@@ -479,6 +492,7 @@ iptables-1.8.10
 iptables-1.8.10
 iptables-1.8.10-man
 iputils-20240905
+isl-0.20
 iso-codes-4.17.0
 iso-codes-4.17.0
 issue
@@ -743,6 +757,7 @@ libdvdnav-6.1.1
 libdvdread-6.1.3
 libebml-1.4.5
 libedit-20240808-3.1
+libedit-20240808-3.1-dev
 libei-1.3.0
 libepoxy-1.5.10
 liberation-fonts-2.1.5
@@ -750,12 +765,15 @@ libetebase-0.5.6
 libevdev-1.13.3
 libevent-2.1.12
 libevent-2.1.12
+libevent-2.1.12-dev
+libevent-2.1.12-openssl
 libexif-0.6.24
 libffi-3.4.6
 libffi-3.4.6
 libffi-3.4.6-dev
 libfido2-1.15.0
 libfido2-1.15.0
+libfido2-1.15.0-dev
 libfontenc-1.1.8
 libfreeaptx-0.1.1
 libfreeaptx-0.1.1
@@ -818,6 +836,7 @@ libmng-2.0.3
 libmnl-1.0.5
 libmnl-1.0.5
 libmodplug-0.8.9.0
+libmpc-1.3.1
 libmpeg2-0.5.1
 libmpg123-1.32.8
 libmpg123-1.32.8
@@ -1040,6 +1059,8 @@ lvm2-2.03.27-bin
 lvm2-2.03.27-lib
 lvm2-2.03.27-lib
 lvm2-2.03.27-man
+lz4-1.10.0
+lz4-1.10.0-dev
 lz4-1.10.0-lib
 lz4-1.10.0-lib
 lzo-2.10
@@ -1075,18 +1096,22 @@ mounts.sh
 mpdecimal-4.0.0
 mpdecimal-4.0.0
 mpfr-4.2.1
+mpfr-4.2.1
 mpg123-1.32.8
 mtdev-1.1.7
 mtools-4.0.45
 multiuser.nix
 mupdf-1.24.9
 mupdf-1.24.9-bin
+my.cnf
+mysql-8.0.40
 nameservers
 nano-8.2
 nano-8.2-info
 ncompress-5.0
 ncurses-6.4.20221231
 ncurses-6.4.20221231
+ncurses-6.4.20221231-dev
 ncurses-6.4.20221231-man
 neon-0.32.5
 net-snmp-5.9.4
@@ -1166,6 +1191,7 @@ openfec-1.4.2.11
 openfec-1.4.2.11
 openfortivpn-1.22.1
 openh264-2.4.1
+openjdk-21.0.5+11
 openjpeg-2.5.2
 openjpeg-2.5.2
 openldap-2.6.8
@@ -1174,6 +1200,8 @@ openresolv-3.13.2
 openssh-9.9p1
 openssl-3.3.2
 openssl-3.3.2
+openssl-3.3.2-bin
+openssl-3.3.2-dev
 openvpn-2.6.12
 opusfile-0.12
 opusfile-0.12
@@ -1193,6 +1221,7 @@ pango-1.54.0
 parted-3.6
 passwd.pam
 patch-2.7.6
+patchelf-0.15.0
 pcaudiolib-1.2
 pciutils-3.13.0
 pcre2-10.44
@@ -1299,6 +1328,7 @@ print-manager-6.2.4
 prison-6.8.0
 procmail-3.24
 procps-4.0.4
+protobuf-21.12
 protobuf-28.3
 publicsuffix-list-0-unstable-2024-10-25
 publicsuffix-list-0-unstable-2024-10-25
@@ -1426,6 +1456,7 @@ serd-0.32.2
 serd-0.32.2
 set-environment
 set-gdfontpath-from-fontconfig.sh
+set-java-classpath-hook
 setup-debug-info-dirs-hook
 setup-etc.pl
 shaderc-2024.0-lib
@@ -1566,6 +1597,7 @@ unit-logrotate.timer
 unit-ModemManager.service
 unit-mount-pstore.service
 unit-multi-user.target
+unit-mysql.service
 unit-network-local-commands.service
 unit-NetworkManager-dispatcher.service
 unit-NetworkManager.service
@@ -1601,6 +1633,9 @@ unit-script-container_-pre-start
 unit-script-container_-start
 unit-script-cups-pre-start
 unit-script-display-manager-start
+unit-script-mysql-post-start
+unit-script-mysql-pre-start
+unit-script-mysql-start
 unit-script-network-local-commands-start
 unit-script-network-setup-start
 unit-script-nix-gc-start
@@ -1612,6 +1647,7 @@ unit-script-pre-sleep-start
 unit-script-resolvconf-start
 unit-script-suid-sgid-wrappers-start
 unit-script-systemd-timesyncd-pre-start
+unit-script-tomcat-pre-start
 unit-serial-getty-.service
 unit--.slice
 unit-suid-sgid-wrappers.service
@@ -1641,6 +1677,7 @@ unit-systemd-udev-settle.service
 unit-systemd-update-utmp.service
 unit-systemd-user-sessions.service
 unit-system.slice
+unit-tomcat.service
 unit-user-runtime-dir-.service
 unit-user-.service
 unit-user-.slice
@@ -1689,6 +1726,7 @@ wavpack-5.7.0
 wayland-1.23.1
 wayland-1.23.1
 wayland-utils-1.2.0
+webkitgtk-2.46.4+abi=4.0
 webkitgtk-2.46.4+abi=4.1
 webrtc-audio-processing-1.3
 webrtc-audio-processing-1.3
@@ -1738,6 +1776,7 @@ xorgproto-2024.1
 xrdb-1.2.2
 X-Restart-Triggers-dbus
 X-Restart-Triggers-keyd
+X-Restart-Triggers-mysql
 X-Restart-Triggers-NetworkManager
 X-Restart-Triggers-NetworkManager-dispatcher
 X-Restart-Triggers-nix-daemon
