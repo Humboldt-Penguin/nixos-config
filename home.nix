@@ -36,6 +36,10 @@ in
 
 {
 
+  imports = [
+    ./temp_cs336_home.nix
+  ];
+
   home = {
     username = "lain";
     homeDirectory = "/home/lain";
