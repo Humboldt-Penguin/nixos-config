@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./temp_cs336_configuration.nix
+      ./temp_cs352_configuration.nix
     ];
 
   # Bootloader.
