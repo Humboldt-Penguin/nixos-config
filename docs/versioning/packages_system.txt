@@ -1242,8 +1242,6 @@ openssl-3.3.2
 openssl-3.3.2-bin
 openssl-3.3.2-dev
 openvpn-2.6.12
-openvswitch-3.4.0
-openvswitch-3.4.0-man
 opusfile-0.12
 opusfile-0.12
 orc-0.4.40
@@ -1603,7 +1601,6 @@ taglib-1.13.1
 talloc-2.4.2
 tcb-1.2
 tcl-8.6.15
-tcpdump-4.99.5
 tdb-1.4.11
 tevent-0.16.1
 texinfo-interactive-7.1.1
@@ -1673,8 +1670,6 @@ unit-nixos-fake-graphical-session.target
 unit-nixos-rebuild-sycoca.service
 unit-nscd.service
 unit-obex.service
-unit-ovsdb.service
-unit-ovs-vswitchd.service
 unit-pipewire-pulse.service
 unit-pipewire-pulse.socket
 unit-pipewire.service
@@ -1703,8 +1698,6 @@ unit-script-network-setup-start
 unit-script-nix-gc-start
 unit-script-nixos-activation-start
 unit-script-nixos-rebuild-sycoca-start
-unit-script-ovsdb-post-start
-unit-script-ovsdb-pre-start
 unit-script-post-resume-start
 unit-script-prepare-kexec-start
 unit-script-pre-sleep-start
@@ -1783,7 +1776,6 @@ volume_key-0.3.11
 vpnc-scripts-unstable-2023-01-03
 vpnc-unstable-2021-11-04
 vsqlite-0.3.13
-vswitch.db
 vulkan-loader-1.3.296.0
 vulkan-loader-1.3.296.0
 vulkan-tools-1.3.296.0
@@ -1848,7 +1840,6 @@ X-Restart-Triggers-mysql
 X-Restart-Triggers-NetworkManager
 X-Restart-Triggers-NetworkManager-dispatcher
 X-Restart-Triggers-nix-daemon
-X-Restart-Triggers-ovsdb
 X-Restart-Triggers-polkit
 X-Restart-Triggers-reload-systemd-vconsole-setup
 X-Restart-Triggers-resolvconf
