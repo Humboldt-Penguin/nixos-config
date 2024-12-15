@@ -57,81 +57,75 @@ in
 
     (with pkgs; [
 
-        # # You can also create simple shell scripts directly inside your
-        # # configuration. For example, this adds a command 'my-hello' to your
-        # # environment:
-        # (pkgs.writeShellScriptBin "my-hello" ''
-        #   echo "Hello, ${config.home.username}!"
-        # '')
-
-        /* text editors */
-        zed-editor
+      # # You can also create simple shell scripts directly inside your
+      # # configuration. For example, this adds a command 'my-hello' to your
+      # # environment:
+      # (pkgs.writeShellScriptBin "my-hello" ''
+      #   echo "Hello, ${config.home.username}!"
+      # '')
 
 
-        /* meta-terminal tools */
-        lf
-        # zoxide
-        # fzf
-        # dmenu    # p sure there's a better alternative now, maybe for wayland...?
+      /* text editors */
+      zed-editor
 
+      /* meta-terminal tools */
+      lf
+      # zoxide
+      # fzf
+      # dmenu    # p sure there's a better alternative now, maybe for wayland...?
 
-        /* cli tools [think pipx] */
-        wget
-        trashy
-        tldr
-        rsync
-        rclone
-        # ffmpeg
-        # ytarchive
-        # yt-dlp
+      /* cli tools [think pipx] */
+      wget
+      trashy
+      tldr
+      rsync
+      rclone
+      # ffmpeg
+      # ytarchive
+      # yt-dlp
 
-        /* nix-specific stuff */
-        # alejandra
+      /* nix-specific stuff (ew lol) */
+      # alejandra
 
-        /* usb tools */
-        # ventoy
-        # gparted
-        # exfatprogs
+      /* usb tools (edit: use nix-shell or temporarily install when you need it, no need keeping it around forever) */
+      # ventoy
+      # gparted
+      # exfatprogs
 
+      /* gui: browser */
+      librewolf
+      # brave
 
-        /* gui: browser */
-        librewolf
-        # brave
+      /* gui: comms */
+      vesktop
 
+      /* gui: office */
+      libreoffice
+      onlyoffice-bin
+      kdePackages.kolourpaint
 
-        /* gui: comms */
-        vesktop
+      /* gui: media */
+      mpv
+      # simplescreenrecorder # not on wayland :(
+      obs-studio # this is only for screen recording with audio, use KDE Spectacle (or maybe try flameshot at some point?) for screenshots and recordings without audio!
 
+    ])
+    ++
+    (with pkgs-unstable; [
+      /* programming tools */
+      # uv
+      just
 
-        /* gui: office */
-        libreoffice
-        onlyoffice-bin
-        kdePackages.kolourpaint
+      ## gui: media
+      qbittorrent
 
-        /* gui: media */
-        mpv
-        # simplescreenrecorder # not on wayland :(
-        obs-studio # this is only for screen recording with audio, use KDE Spectacle (or maybe try flameshot at some point?) for screenshots and recordings without audio!
-
-      ])
-      ++
-      (with pkgs-unstable; [
-        /* programming tools */
-        # uv
-        just
-
-        /* text editors */
-        # zed-editor  ## moved to stable in 24.11 so no need to constantly update on unstable :3
-
-        ## gui: media
-        qbittorrent
-      ])
-      # ++
-      # (with pkgs_zeditor; [
-      #   /* text editors */
-      #   zed-editor
-      # ])
-      ;
+    ])
+    # ++
+    # (with pkgs_zeditor; [
+    #   /* text editors */
+    #   zed-editor
+    # ])
+    ;
 
 
 
