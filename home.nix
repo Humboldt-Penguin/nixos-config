@@ -57,6 +57,7 @@ in
         ## text editors
         micro
         # vscodium    ## see `programs.vscode` for enabling + special config! (if you uncomment it here, you get a collision error)
+        zed-editor
 
         ## meta tools
         keyd
@@ -121,8 +122,8 @@ in
         # uv
         just
 
-        ## text editors
-        zed-editor
+        # ## text editors
+        # zed-editor  ## moved to stable in 24.11 so no need to constantly update on unstable :3
 
         ## gui: media
         qbittorrent
