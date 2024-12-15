@@ -1,10 +1,16 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ./nix-modules/.hardware-configuration/ThinkPad_X1_Yoga_4th.nix
+
+    ./nix-modules/chromium/system.nix
+    # ./nix-modules/fprintd/system.nix  /* see explanation at top of module file for why this is bad/buggy */
+    ./nix-modules/keyd/system.nix
+    ./nix-modules/zsh/system.nix
+  ];
+
+
 
   /* Bootloader. */
   boot.loader.systemd-boot.enable = true;
@@ -149,84 +155,5 @@
 
   /* Enable flakes */
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  programs = {
-    chromium = {
-      enable = true;
-      defaultSearchProviderEnabled = true;
-      defaultSearchProviderSearchURL = "https://duckduckgo.com/?t=h_&q={searchTerms}";
-    };
-  };
-
-
-  /*
-    Enable fingerprint scanner, for more info see: https://wiki.nixos.org/wiki/Fingerprint_scanner
-      - To add a fingerprint (KDE), go to "Settings" >  "Manage user accounts" (idk how to do via cli)
-      - ==> Edit/conclusion: after a day I think this raises a bug where I'm stuck at login screen (either "unlock" button, or just everything greyed out, which forced me to reboot a few times blehhh)
-  */
-  # systemd.services.fprintd = {
-  #   wantedBy = [ "multi-user.target" ];
-  #   serviceConfig.Type = "simple";
-  # };
-  # services.fprintd.enable = true;
-  # services.fprintd.tod.enable = true;
-  # services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090; # driver for 2016 ThinkPads
-
-
-
-  /* Enable zsh (following these instructions: https://nixos.wiki/wiki/Command_Shell) */
-  programs.zsh.enable = true;          # > "When adding a new shell, always enable the shell system-wide, even if it's already enabled in your Home Manager configuration, otherwise it won't source the necessary files."
-  # users.defaultUserShell = pkgs.zsh;   # Enable globally
-  users.users.lain.shell = pkgs.zsh;   # Enable for my own user
-
-
-  /*
-    Enable + configure keyd.
-      - [RESOURCES:]
-        - NixOS wiki (helpful but not comprehensive): https://wiki.nixos.org/wiki/Keyd
-      - [REFERENCE:]
-        - Check status (if it's running/failed, uptime, errors with conf file, etc.) with: `sudo systemctl status keyd` (or `restart` instead of `status).
-      - [SELF NOTES:]
-        - There's some extra companion config in `home.nix` to write a home file to allow unicode symbols like em dash. When I modularize everything, I'll make that more spatially associated with this stuff.
-  */
-  services.keyd = {
-    enable = true;
-    /* The following writes to a conf file in "/etc/keyd/". */
-    keyboards = {
-      keybinds = {        /* this is just the name of the config file, doesn't really matter */
-        ids = [ "*" ];    /* apply to all keyboards */
-        settings = {
-          alt = {
-            i = "up";
-            j = "left";
-            k = "down";
-            l = "right";
-
-            u = "home";
-            o = "end";
-
-            y = "pageup";
-            p = "pagedown";
-
-            "-" = "—";
-            # "=" = "⟹";    # todo (mid priority): this gives error "ERROR: line 8: invalid key or action"
-
-            n = "macro(A-left)";
-            m = "macro(A-down)";
-            "," = "macro(A-up)";
-            "." = "macro(A-right)";
-          };
-        };
-      };
-    };
-  };
-  /* "Optional, but makes sure that when you type the make palm rejection work with keyd" (see nixos wiki for more info and github:keyd issue) */
-  environment.etc."libinput/local-overrides.quirks".text = ''
-    [Serial Keyboards]
-    MatchUdevType=keyboard
-    MatchName=keyd virtual keyboard
-    AttrKeyboardIntegration=internal
-  '';
-
 
 }
