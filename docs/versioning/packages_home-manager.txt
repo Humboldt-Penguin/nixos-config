@@ -36,10 +36,10 @@ shared-mime-info-2.4
 systemd-256.8
 tldr-1.6.1
 trashy-2.0.0
-ungoogled-chromium-131.0.6778.108
+ungoogled-chromium-131.0.6778.139
 vesktop-1.5.3
 vscodium-1.95.3.24321
 wget-1.25.0
-zed-editor-0.164.2
+zed-editor-0.161.2
 zsh-5.9
 zsh-5.9-man
