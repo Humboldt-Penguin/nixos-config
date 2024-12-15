@@ -37,6 +37,7 @@ in
 {
   imports = [
     ./nix-modules/chromium/home.nix
+    ./nix-modules/git/home.nix
     ./nix-modules/keyd/home.nix
     ./nix-modules/vscode/home.nix
     ./nix-modules/zsh/home.nix
@@ -86,12 +87,6 @@ in
 
         /* nix-specific stuff */
         # alejandra
-
-
-        /* programming tools */
-        git
-        # just
-
 
         /* usb tools */
         # ventoy
@@ -213,24 +208,8 @@ in
       };
     };
 
-    git = {
-      enable = true;
-
-      userName = "Zain Eris Kamal";
-      userEmail = "zain.eris.kamal@rutgers.edu";
-
-      extraConfig = {
-        init = {
-          defaultBranch = "main";
-        };
-        core = {
-          # editor = "codium --wait --new-window";    # slow bleh
-          editor = "micro";
-        };
-      };
-    };
-
   };
+
 
 
 }
