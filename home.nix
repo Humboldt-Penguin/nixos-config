@@ -39,6 +39,7 @@ in
     ./nix-modules/chromium/home.nix
     ./nix-modules/git/home.nix
     ./nix-modules/keyd/home.nix
+    ./nix-modules/micro/home.nix
     ./nix-modules/vscode/home.nix
     ./nix-modules/zsh/home.nix
   ];
@@ -63,7 +64,6 @@ in
         # '')
 
         /* text editors */
-        micro
         zed-editor
 
 
@@ -147,15 +147,6 @@ in
     # ".config/vesktop/settings/settings.json".source = dotfiles_raw/vencord-settings-backup-2024-08-28.json;
     /* NOTE: this does NOT work for apps (like vencord) which need writing access to the config file (unfortunately home manager creates read-only symlinks) -- i'll fix this some time in the future, but for now just manually load the config file lol */
 
-    ".config/micro/bindings.json".text = ''
-      {
-          "Alt-/": "lua:comment.comment",
-          "CtrlUnderscore": "lua:comment.comment",
-          "Alt-z": "command:set wordwrap on,command:set softwrap on",
-          "Alt-Z": "command:set wordwrap off,command:set softwrap off"
-      }
-    '';
-
     ".config/oh-my-posh/zen.toml".source = dotfiles/.config/oh-my-posh/zen.toml;
 
   };
@@ -195,16 +186,6 @@ in
       settings = {
         cursor_shape = "beam";
         font_size = 9;
-      };
-    };
-
-    micro = {
-      enable = true;
-      settings = {
-        colorscheme = "gruvbox";
-        hltaberrors = true;
-        keepautoindent = true;
-        tabstospaces = true;
       };
     };
 
