@@ -7,6 +7,7 @@
     ./nix-modules/chromium/system.nix
     # ./nix-modules/fprintd/system.nix  /* see explanation at top of module file for why this is bad/buggy */
     ./nix-modules/keyd/system.nix
+    ./nix-modules/zsh/system.nix
   ];
 
 
@@ -154,14 +155,5 @@
 
   /* Enable flakes */
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-
-
-
-
-  /* Enable zsh (following these instructions: https://nixos.wiki/wiki/Command_Shell) */
-  programs.zsh.enable = true;          # > "When adding a new shell, always enable the shell system-wide, even if it's already enabled in your Home Manager configuration, otherwise it won't source the necessary files."
-  # users.defaultUserShell = pkgs.zsh;   # Enable globally
-  users.users.lain.shell = pkgs.zsh;   # Enable for my own user
 
 }
