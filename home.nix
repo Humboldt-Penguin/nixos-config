@@ -39,7 +39,7 @@ in
   home = {
     username = "lain";
     homeDirectory = "/home/lain";
-    stateVersion = "24.05"; # Please read the comment (see git history) before changing.
+    stateVersion = "24.05";   /* DO NOT CHANGE (see comment in git history for more info) */
   };
 
 
@@ -54,7 +54,7 @@ in
         #   echo "Hello, ${config.home.username}!"
         # '')
 
-        ## text editors
+        /* text editors */
         micro
         # vscodium    ## see `programs.vscode` for enabling + special config! (if you uncomment it here, you get a collision error)
         zed-editor
@@ -62,7 +62,7 @@ in
         ## meta tools
         keyd
 
-        ## meta-terminal tools
+        /* meta-terminal tools */
         kitty
         lf
         # zoxide
@@ -70,7 +70,7 @@ in
         # dmenu    # p sure there's a better alternative now, maybe for wayland...?
 
 
-        ## cli tools [think pipx]
+        /* cli tools [think pipx] */
         wget
         trashy
         tldr
@@ -80,37 +80,37 @@ in
         # ytarchive
         # yt-dlp
 
-        ## nix-specific stuff
+        /* nix-specific stuff */
         # alejandra
 
 
-        ## programming tools
+        /* programming tools */
         git
         # just
 
 
-        ## usb tools
+        /* usb tools */
         # ventoy
         # gparted
         # exfatprogs
 
 
-        ## gui: browser
+        /* gui: browser */
         librewolf
         # ungoogled-chromium    ## see `programs.chromium` for enabling + special config! (if you uncomment it here, you get a collision error)
         # brave
 
 
-        ## gui: comms
+        /* gui: comms */
         vesktop
 
 
-        ## gui: office
+        /* gui: office */
         libreoffice
         onlyoffice-bin
         kdePackages.kolourpaint
 
-        ## gui: media
+        /* gui: media */
         mpv
         # simplescreenrecorder # not on wayland :(
         obs-studio # this is only for screen recording with audio, use KDE Spectacle (or maybe try flameshot at some point?) for screenshots and recordings without audio!
@@ -118,11 +118,11 @@ in
       ])
       ++
       (with pkgs-unstable; [
-        ## programming tools
+        /* programming tools */
         # uv
         just
 
-        # ## text editors
+        /* text editors */
         # zed-editor  ## moved to stable in 24.11 so no need to constantly update on unstable :3
 
         ## gui: media
@@ -130,7 +130,7 @@ in
       ])
       # ++
       # (with pkgs_zeditor; [
-      #   ## text editors
+      #   /* text editors */
       #   zed-editor
       # ])
       ;
@@ -139,23 +139,15 @@ in
 
 
 
-  # Home Manager is pretty good at managing dotfiles. The primary way to manage
-  # plain files is through 'home.file'.
   home.file = {
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".screenrc".source = dotfiles/screenrc;
-
-    # # You can also set the file content immediately.
-    # ".gradle/gradle.properties".text = ''
-    #   org.gradle.console=verbose
-    #   org.gradle.daemon.idletimeout=3600000
-    # '';
-
+    /*
+      General templates are:
+        - ".dotfile".source = path/from/here;
+        - ".dotfile".text = '' file content '';
+    */
 
     # ".config/vesktop/settings/settings.json".source = dotfiles_raw/vencord-settings-backup-2024-08-28.json;
-    ## NOTE: this does NOT work for apps (like vencord) which need writing access to the config file (unfortunately home manager creates read-only symlinks) -- i'll fix this some time in the future, but for now just manually load the config file lol
+    /* NOTE: this does NOT work for apps (like vencord) which need writing access to the config file (unfortunately home manager creates read-only symlinks) -- i'll fix this some time in the future, but for now just manually load the config file lol */
 
     ".config/micro/bindings.json".text = ''
       {
@@ -168,34 +160,21 @@ in
 
     ".config/oh-my-posh/zen.toml".source = dotfiles/.config/oh-my-posh/zen.toml;
 
-    ## Note: the rest of keyd config (enable, install, & remaps/keybinds) is in "configuration.nix", this line simply enables unicode support (e.g. em dash "—") -- to understand the rationale, open `man keyd` and search (press "/") for "unicode support", or look straight into the repo: https://github.com/rvaiya/keyd/blob/master/docs/keyd.scdoc
+    /* Note: the rest of keyd config (enable, install, & remaps/keybinds) is in "configuration.nix", this line simply enables unicode support (e.g. em dash "—") -- to understand the rationale, open `man keyd` and search (press "/") for "unicode support", or look straight into the repo: https://github.com/rvaiya/keyd/blob/master/docs/keyd.scdoc */
     ".XCompose".text = builtins.readFile (pkgs.keyd + "/share/keyd/keyd.compose");
 
   };
 
-  # Home Manager can also manage your environment variables through
-  # 'home.sessionVariables'. These will be explicitly sourced when using a
-  # shell provided by Home Manager. If you don't want to manage your shell
-  # through Home Manager then you have to manually source 'hm-session-vars.sh'
-  # located at either
-  #
-  #  ~/.nix-profile/etc/profile.d/hm-session-vars.sh
-  #
-  # or
-  #
-  #  ~/.local/state/nix/profiles/profile/etc/profile.d/hm-session-vars.sh
-  #
-  # or
-  #
-  #  /etc/profiles/per-user/lain/etc/profile.d/hm-session-vars.sh
-  #
+
+
+  /* Environment variables (see original comment that was here in git history for more info) */
   home.sessionVariables = {
     # EDITOR = "emacs";
   };
 
 
 
-  # Let Home Manager install and manage itself.
+  /* (this was here by default, I did not add this, do not remove) Let Home Manager install and manage itself. */
   programs.home-manager.enable = true;
 
 
@@ -218,7 +197,7 @@ in
     zsh = {
       enable = true;
 
-      ## Make zsh init with a custom-written oh-my-posh config file written by home-manager (see `home.file = ...`).
+      /* Make zsh init with a custom-written oh-my-posh config file written by home-manager (see `home.file = ...`). */
       initExtra = ''
         eval "$(${pkgs.oh-my-posh}/bin/oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen.toml)"
       '';
@@ -246,7 +225,7 @@ in
     oh-my-posh = {
       enable = true;
 
-      ## This makes sure that zsh is installed/enabled, but prevents automatically adding `eval init zsh` to the '.zshrc', so that I can manually add it with `programs.zsh.initExtra` in a way that points to my own config file.
+      /* This makes sure that zsh is installed/enabled, but prevents automatically adding `eval init zsh` to the '.zshrc', so that I can manually add it with `programs.zsh.initExtra` in a way that points to my own config file. */
       enableZshIntegration = false;
     };
 
@@ -270,7 +249,7 @@ in
     };
 
     vscode = {
-    ## Full options list (todo stuff like keybindings eventually): https://home-manager-options.extranix.com/?query=vscode&release=release-24.05
+    /* Full options list (todo stuff like keybindings eventually): https://home-manager-options.extranix.com/?query=vscode&release=release-24.05 */
       enable = true;
       package = pkgs-unstable.vscodium;
 

@@ -1,16 +1,12 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, ... }:
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
       ./hardware-configuration.nix
     ];
 
-  # Bootloader.
+  /* Bootloader. */
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -18,14 +14,14 @@
   networking.hostName = "wired"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  # Configure network proxy if necessary
+  /* Configure network proxy if necessary */
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
-  # Enable networking
+  /* Enable networking */
   networking.networkmanager.enable = true;
 
-  # # TODO: Once I learn how to store secrets, try to declaratively connect to ruwireless secure (lol) -- this snippet is taken from RUSLUG discord
+  /* TODO: Once I learn how to store secrets, try to declaratively connect to ruwireless secure (lol) -- this snippet is taken from RUSLUG discord */
   # networking.wireless.enable = true;
   # networking.wireless.userControlled.enable = true;
   # networking.wireless.networks."RUWireless Secure" = {
@@ -41,13 +37,13 @@
   # };
 
 
-  # Enable bluetooth
+  /* Enable bluetooth */
   hardware.bluetooth.enable = true;
 
-  # Set your time zone.
+  /* Set your time zone. */
   time.timeZone = "America/New_York";
 
-  # Select internationalisation properties.
+  /* Select internationalisation properties. */
   i18n.defaultLocale = "en_US.UTF-8";
 
   i18n.extraLocaleSettings = {
@@ -62,26 +58,25 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # # Enable the X11 windowing system.
-  # # You can disable this if you're only using the Wayland session.
+  /* Enable the X11 windowing system. You can disable this if you're only using the Wayland session. */
   # services.xserver.enable = true;
-  ## ^ disabling this raises "SDDM requires either services.xserver.enable or services.displayManager.sddm.wayland.enable to be true", so i add:
+  ## NOTE: ^ disabling this raises "SDDM requires either services.xserver.enable or services.displayManager.sddm.wayland.enable to be true", so i add:
   services.displayManager.sddm.wayland.enable = true;   # TODO: consolidate all "services" stuff :3
 
-  # Enable the KDE Plasma Desktop Environment.
+  /* Enable the KDE Plasma Desktop Environment. */
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
-  # Configure keymap in X11
+  /* Configure keymap in X11 */
   services.xserver.xkb = {
     layout = "us";
     variant = "";
   };
 
-  # Enable CUPS to print documents.
+  /* Enable CUPS to print documents. */
   services.printing.enable = true;
 
-  # Enable sound with pipewire.
+  /* Enable sound with pipewire. */
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -97,10 +92,10 @@
     #media-session.enable = true;
   };
 
-  # Enable touchpad support (enabled default in most desktopManager).
+  /* Enable touchpad support (enabled default in most desktopManager). */
   # services.xserver.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  /* Define a user account. Don't forget to set a password with ‘passwd’. */
   users.users.lain = {
     isNormalUser = true;
     description = "Lain Iwakura";
@@ -118,11 +113,11 @@
   #   # wget
   # ];
 
-  # Allow unfree packages
+  /* Allow unfree packages */
   nixpkgs.config.allowUnfree = true;
 
 
-  # Some programs need SUID wrappers, can be configured further or are
+  /* Some programs need SUID wrappers, can be configured further or are */
   # started in user sessions.
   # programs.mtr.enable = true;
   # programs.gnupg.agent = {
@@ -130,16 +125,18 @@
   #   enableSSHSupport = true;
   # };
 
-  # List services that you want to enable:
+  /* List services that you want to enable: */
 
-  # Enable the OpenSSH daemon.
+  /* Enable the OpenSSH daemon. */
   # services.openssh.enable = true;
 
-  # Open ports in the firewall.
+  /* Open ports in the firewall. */
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
+
+
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
@@ -150,7 +147,7 @@
   system.stateVersion = "24.05"; # Did you read the comment?
 
 
-  ## Enable flakes
+  /* Enable flakes */
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   programs = {
@@ -162,7 +159,11 @@
   };
 
 
-  # ## Enable fingerprint scanner, for more info see: https://wiki.nixos.org/wiki/Fingerprint_scanner
+  /*
+    Enable fingerprint scanner, for more info see: https://wiki.nixos.org/wiki/Fingerprint_scanner
+      - To add a fingerprint (KDE), go to "Settings" >  "Manage user accounts" (idk how to do via cli)
+      - ==> Edit/conclusion: after a day I think this raises a bug where I'm stuck at login screen (either "unlock" button, or just everything greyed out, which forced me to reboot a few times blehhh)
+  */
   # systemd.services.fprintd = {
   #   wantedBy = [ "multi-user.target" ];
   #   serviceConfig.Type = "simple";
@@ -170,12 +171,10 @@
   # services.fprintd.enable = true;
   # services.fprintd.tod.enable = true;
   # services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090; # driver for 2016 ThinkPads
-  # ## To add a fingerprint (KDE), go to "Settings" >  "Manage user accounts" (idk how to do via cli)
-  # ## ==> Edit/conclusion: after a day I think this raises a bug where I'm stuck at login screen (either "unlock" button, or just everything greyed out, which forced me to reboot a few times blehhh)
 
 
 
-  ## Enable zsh (following these instructions: https://nixos.wiki/wiki/Command_Shell)
+  /* Enable zsh (following these instructions: https://nixos.wiki/wiki/Command_Shell) */
   programs.zsh.enable = true;          # > "When adding a new shell, always enable the shell system-wide, even if it's already enabled in your Home Manager configuration, otherwise it won't source the necessary files."
   # users.defaultUserShell = pkgs.zsh;   # Enable globally
   users.users.lain.shell = pkgs.zsh;   # Enable for my own user
@@ -192,10 +191,10 @@
   */
   services.keyd = {
     enable = true;
-    ## The following writes to a conf file in "/etc/keyd/".
+    /* The following writes to a conf file in "/etc/keyd/". */
     keyboards = {
-      keybinds = {    # this is just the name of the config file, doesn't really matter
-        ids = [ "*" ];    # apply to all keyboards
+      keybinds = {        /* this is just the name of the config file, doesn't really matter */
+        ids = [ "*" ];    /* apply to all keyboards */
         settings = {
           alt = {
             i = "up";
@@ -221,7 +220,7 @@
       };
     };
   };
-  ## "Optional, but makes sure that when you type the make palm rejection work with keyd" (see nixos wiki for more info and github:keyd issue)
+  /* "Optional, but makes sure that when you type the make palm rejection work with keyd" (see nixos wiki for more info and github:keyd issue) */
   environment.etc."libinput/local-overrides.quirks".text = ''
     [Serial Keyboards]
     MatchUdevType=keyboard
