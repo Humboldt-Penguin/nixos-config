@@ -39,6 +39,7 @@ in
     ./nix-modules/chromium/home.nix
     ./nix-modules/git/home.nix
     ./nix-modules/keyd/home.nix
+    ./nix-modules/kitty/home.nix
     ./nix-modules/micro/home.nix
     ./nix-modules/vscode/home.nix
     ./nix-modules/zsh/home.nix
@@ -68,7 +69,6 @@ in
 
 
         /* meta-terminal tools */
-        kitty
         lf
         # zoxide
         # fzf
@@ -176,15 +176,6 @@ in
       #   ".." = "cd ..";
       #   c = "clear";
       # };
-    };
-
-    kitty = {
-      enable = true;
-      themeFile = "gruvbox-dark-hard";
-      settings = {
-        cursor_shape = "beam";
-        font_size = 9;
-      };
     };
 
   };
