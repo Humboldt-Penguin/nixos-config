@@ -37,6 +37,7 @@ in
 {
   imports = [
     ./nix-modules/chromium/home.nix
+    ./nix-modules/keyd/home.nix
   ];
 
 
@@ -63,8 +64,6 @@ in
         # vscodium    ## see `programs.vscode` for enabling + special config! (if you uncomment it here, you get a collision error)
         zed-editor
 
-        ## meta tools
-        keyd
 
         /* meta-terminal tools */
         kitty
@@ -162,9 +161,6 @@ in
     '';
 
     ".config/oh-my-posh/zen.toml".source = dotfiles/.config/oh-my-posh/zen.toml;
-
-    /* Note: the rest of keyd config (enable, install, & remaps/keybinds) is in "configuration.nix", this line simply enables unicode support (e.g. em dash "—") -- to understand the rationale, open `man keyd` and search (press "/") for "unicode support", or look straight into the repo: https://github.com/rvaiya/keyd/blob/master/docs/keyd.scdoc */
-    ".XCompose".text = builtins.readFile (pkgs.keyd + "/share/keyd/keyd.compose");
 
   };
 
