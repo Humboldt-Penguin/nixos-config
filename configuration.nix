@@ -1,10 +1,11 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+
+    ./nix-modules/chromium/system.nix
+  ];
 
   /* Bootloader. */
   boot.loader.systemd-boot.enable = true;
@@ -150,13 +151,6 @@
   /* Enable flakes */
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  programs = {
-    chromium = {
-      enable = true;
-      defaultSearchProviderEnabled = true;
-      defaultSearchProviderSearchURL = "https://duckduckgo.com/?t=h_&q={searchTerms}";
-    };
-  };
 
 
   /*

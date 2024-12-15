@@ -35,6 +35,10 @@ in
 
 
 {
+  imports = [
+    ./nix-modules/chromium/home.nix
+  ];
+
 
   home = {
     username = "lain";
@@ -97,7 +101,6 @@ in
 
         /* gui: browser */
         librewolf
-        # ungoogled-chromium    ## see `programs.chromium` for enabling + special config! (if you uncomment it here, you get a collision error)
         # brave
 
 
@@ -391,14 +394,6 @@ in
           editor = "micro";
         };
       };
-    };
-
-    chromium = {
-      enable = true;
-      package = pkgs.ungoogled-chromium;
-      commandLineArgs = [
-        "--force-device-scale-factor=1"
-      ];
     };
 
   };
