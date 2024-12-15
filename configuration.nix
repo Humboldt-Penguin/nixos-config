@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./hardware-configuration.nix
+    ./nix-modules/.hardware-configuration/ThinkPad_X1_Yoga_4th.nix
 
     ./nix-modules/chromium/system.nix
     # ./nix-modules/fprintd/system.nix  /* see explanation at top of module file for why this is bad/buggy */
