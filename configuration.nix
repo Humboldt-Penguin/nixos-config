@@ -5,6 +5,7 @@
     ./hardware-configuration.nix
 
     ./nix-modules/chromium/system.nix
+    # ./nix-modules/fprintd/system.nix  /* see explanation at top of module file for why this is bad/buggy */
   ];
 
   /* Bootloader. */
@@ -152,19 +153,6 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 
-
-  /*
-    Enable fingerprint scanner, for more info see: https://wiki.nixos.org/wiki/Fingerprint_scanner
-      - To add a fingerprint (KDE), go to "Settings" >  "Manage user accounts" (idk how to do via cli)
-      - ==> Edit/conclusion: after a day I think this raises a bug where I'm stuck at login screen (either "unlock" button, or just everything greyed out, which forced me to reboot a few times blehhh)
-  */
-  # systemd.services.fprintd = {
-  #   wantedBy = [ "multi-user.target" ];
-  #   serviceConfig.Type = "simple";
-  # };
-  # services.fprintd.enable = true;
-  # services.fprintd.tod.enable = true;
-  # services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090; # driver for 2016 ThinkPads
 
 
 
