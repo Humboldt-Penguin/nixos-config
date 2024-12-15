@@ -137,19 +137,17 @@ in
 
 
 
-  home.file = {
-    /*
-      General templates are:
-        - ".dotfile".source = path/from/here;
-        - ".dotfile".text = '' file content '';
-    */
+  # home.file = {
+  #   /*
+  #     General templates are:
+  #       - ".dotfile".source = path/from/here;
+  #       - ".dotfile".text = '' file content '';
+  #   */
 
-    # ".config/vesktop/settings/settings.json".source = dotfiles_raw/vencord-settings-backup-2024-08-28.json;
-    /* NOTE: this does NOT work for apps (like vencord) which need writing access to the config file (unfortunately home manager creates read-only symlinks) -- i'll fix this some time in the future, but for now just manually load the config file lol */
+  #   # ".config/vesktop/settings/settings.json".source = dotfiles_raw/vencord-settings-backup-2024-08-28.json;
+  #   /* NOTE: this does NOT work for apps (like vencord) which need writing access to the config file (unfortunately home manager creates read-only symlinks) -- i'll fix this some time in the future, but for now just manually load the config file lol */
 
-    ".config/oh-my-posh/zen.toml".source = dotfiles/.config/oh-my-posh/zen.toml;
-
-  };
+  # };
 
 
 

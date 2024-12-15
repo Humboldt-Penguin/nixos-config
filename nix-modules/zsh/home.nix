@@ -10,6 +10,12 @@
 
 {
 
+  home.file = {
+    ".config/oh-my-posh/zen.toml".source = ./zen.toml;
+  };
+
+
+
   programs = {
 
 
