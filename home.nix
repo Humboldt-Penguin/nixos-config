@@ -37,6 +37,7 @@ in
 {
   imports = [
     ./nix-modules/chromium/home.nix
+    ./nix-modules/custom_scripts/home.nix
     ./nix-modules/git/home.nix
     ./nix-modules/keyd/home.nix
     ./nix-modules/kitty/home.nix
