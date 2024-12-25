@@ -82,6 +82,13 @@
           when = "notebookEditorFocused";
         }
         { key = "ctrl+alt+r"; command = "-revealFileInOS"; when = "!editorFocus"; }    ## Unbind default
+
+        /* C-S-/ -- block comment */
+        {
+          command = "editor.action.blockComment";
+          key = "ctrl+shift+/";
+          when = "editorTextFocus && !editorReadonly";
+        }
       ];
 
 
