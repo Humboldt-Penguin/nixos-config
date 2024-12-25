@@ -92,7 +92,7 @@ breeze-6.2.4-qt5
 breeze-gtk-6.2.4
 breeze-icons-5.116.0
 breeze-icons-6.8.0
-brltty-6.6
+brltty-6.7
 brotli-1.1.0
 brotli-1.1.0-dev
 brotli-1.1.0-lib
@@ -1134,7 +1134,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.11.20241222.1807c2b
+nixos-system-wired-24.11.20241223.6c90912
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
