@@ -7,6 +7,7 @@
     ./nix-modules/chromium/system.nix
     # ./nix-modules/fprintd/system.nix  /* see explanation at top of module file for why this is bad/buggy */
     ./nix-modules/keyd/system.nix
+    ./nix-modules/podman/system.nix
     ./nix-modules/zsh/system.nix
   ];
 
