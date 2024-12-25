@@ -110,6 +110,7 @@ bzip2-1.0.8-man
 cairo-1.18.2
 cairo-1.18.2
 cairo-1.18.2-dev
+catatonit-0.2.0
 cdparanoia-III-10.2
 cdparanoia-III-10.2
 celt-0.11.3
@@ -124,10 +125,12 @@ cjson-1.7.18
 cjson-1.7.18
 client.conf
 clinfo-3.0.23.01.25
+cni-plugins-1.6.0
 colord-1.4.6
 command-not-found
 console-env
 container-init
+containers.conf
 copy-extra-files
 coreutils-9.5
 coreutils-9.5
@@ -1280,6 +1283,7 @@ plasma-pa-6.2.4
 plasma-systemmonitor-6.2.4
 plasma-workspace-6.2.4
 plasma-workspace-wallpapers-6.2.4
+policy
 polkit-124
 polkit-124-bin
 polkit-1.pam
@@ -1377,6 +1381,7 @@ qtx11extras-5.15.15
 raptor2-2.0.16
 readline-8.2p13
 readline-8.2p13
+registries.conf
 relaxedsandbox.nix
 reload-container
 roc-toolkit-0.4.0
@@ -1476,6 +1481,7 @@ srt-1.5.3
 srt-1.5.3
 sstp-client-unstable-2023-03-25
 stoken-0.93
+storage.conf
 strace-6.12
 strip.sh
 strongswan-5.9.14

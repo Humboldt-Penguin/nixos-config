@@ -110,6 +110,7 @@ zs9749xbiwi31n6ss7yygk3vwyzvi696-bzip2-1.0.8-dev
 9l20xx4bw18qgkicjcrsfx7vfykp9m8h-cairo-1.18.2
 dwykw1dfnbifxj89pr3m2ipjlp3bidfq-cairo-1.18.2
 4xy0x6f6jj3vsw8yw9fzqwr884yq11hv-cairo-1.18.2-dev
+9plidjaps9b6lrl9w09xpxb5pl1n4ppd-catatonit-0.2.0
 h413hk4yn98l7iszahaxf30chbqs57rd-cdparanoia-III-10.2
 y70a793ks0g3kfzsbjrqssaid7cjmvi6-cdparanoia-III-10.2
 kyqsa10k8g0450hycphpng9gj151qsc6-celt-0.11.3
@@ -124,10 +125,12 @@ aknwnj561wchpmx8bsx5f9vrfba34l9p-chsh.pam
 v3x3rizbxhmbpd7mapcn9dk37fm7fb5y-cjson-1.7.18
 zki4h39qjdvzgh1p74vaxfxx7z7y8p74-client.conf
 0jj3f87d9dnpid6r9k1q79dnrrrfq2ds-clinfo-3.0.23.01.25
+n648i7b1r9xh4gmbh94gv9igkhl5a00z-cni-plugins-1.6.0
 hxrfnmb9lb18nd5rvb9ncs2r0k4irmpn-colord-1.4.6
 wkpb86299p5p1nmqdk6c1mbffcphzs6w-command-not-found
 pz7a5samqy8dfqnwv42nbg3564k3j8rs-console-env
 8cbpqpgq8qgc54mv0cc833xglxrlliyz-container-init
+kg9xnwnxmh0zx451rxirby6sfc0y190b-containers.conf
 08ps96is5szq2f9p51g73pj9bn635h7q-copy-extra-files
 b1wvkjx96i3s7wblz38ya0zr8i93zbc5-coreutils-9.5
 vsci56sb5wa193x5mm50piwwq8nl24f2-coreutils-9.5
@@ -212,7 +215,7 @@ qh1x91vcplvkgzzmpwpiihw0ak4gjvz1-elisa-24.08.3
 sfjcfh48acf9pbhb33605lmha8gdp6ia-ell-0.69
 qljw6fmrk66dd24rw9nn0ccjrw91m7i8-enchant-2.6.9
 8sdz8vf4ij8x0r555c4w4pavhwmjv17z-espeak-ng-1.51.1
-w4axxah2zrh35l8dn9d5sd1mf28cd71s-etc
+62zak2ixg7m4pa7dvk8zq60hm71v4as6-etc
 yfnr3lldaf2s5448nnws7qy23ac3sc3z-etc-alsa-conf.d-49-pipewire-modules.conf
 9c318ycr52784x90s08rwni7yc8mk81a-etc-bashrc
 kj13fkgpm76cc1402j7arv2rkfhbcnvk-etc-brave-policies-managed-default.json
@@ -1134,7 +1137,7 @@ ys9wscypc14igir9n9b20xvskp1d02v6-nixos-manual.desktop
 ddabdn5prrvkfcw204wdb4pc635lb5v8-nixos-manual-html
 1x788z78v2ibb2jxxlpgnbz68gkh3vgz-nixos-option
 w4cpms0dk79d2cbkfai77vlrmy313x55-nixos-rebuild
-lx7kw4yvqzqb0gs8y0d5mi689gifld4k-nixos-system-wired-24.11.20241223.6c90912
+l2wjpvdb4545kcw5z8q4yllkhsxs0hkl-nixos-system-wired-24.11.20241223.6c90912
 gcwkwfkl0zj6rkjxnnkkxskid6l0xs6p-nixos-tmpfiles.d
 w4w6a7cpx1gfd680359gwi509vq73g9k-nixos-version
 5siakfx1r1d4xkksm4i3yfkgfc51p9v5-nix-zsh-completions-0.5.1
@@ -1280,6 +1283,7 @@ nnnqpan1d50fpp86ln1mb5jdxs1byps2-plasma-integration-6.2.4
 4lajgn6ajy62cbrcyibdx8lckyby736x-plasma-systemmonitor-6.2.4
 pkvjv06ykviyb99xm0b8s8m897vh0b17-plasma-workspace-6.2.4
 qqw9866gj0ic7qlxs54xrilh57bi0wfj-plasma-workspace-wallpapers-6.2.4
+vx47chfy2npacyxl1x52dlrgsl25jnnv-policy
 xjmx9l58q5xqy2k3z97r4dr6xr2z48cy-polkit-124
 vb2rx9apbmsj9s0rk6896bqcr42qfnhi-polkit-124-bin
 wfxf0bl6afv9xjihq1w8x239bfsyix8m-polkit-1.pam
@@ -1377,6 +1381,7 @@ cil09ibn0f817asvz9cdj9hiqm6g3p89-qtx11extras-5.15.15
 srhry563xl6jqkqfg1ivnw8a2qlk0w50-raptor2-2.0.16
 2h78z8nc756cy824lavisip268igp96d-readline-8.2p13
 n0q4xhb9z19f0rfd1i8frw7a3ip3rgar-readline-8.2p13
+bpxs1sb5dvx9kg674ignfhn0yq1i3jqh-registries.conf
 30qhz45nwgfyns13ijq0nwrsjp8m7ypa-relaxedsandbox.nix
 1k83yx2pwpikvdz4hyvjyvp14mw2prcy-reload-container
 fjjlggnbj8ivfmz9vz0v9lh6jrfkp04a-roc-toolkit-0.4.0
@@ -1476,6 +1481,7 @@ vw1paxva0v0hgqx2yndzrh818d2zp9a9-sratom-0.6.16
 y57vzsr2z43frh4x8dpcqk6vigx8l4vz-srt-1.5.3
 5v5i8yir6bmwaqi6wx1wjxsclmyjvmlg-sstp-client-unstable-2023-03-25
 7nfnlwbs2pyja1whmkqqhays4xmhpj6q-stoken-0.93
+6b4b90zd744px7761xb13zs6l4fw6aw2-storage.conf
 a2c4lra8xbv7bihl19gam1d53hlg6s4g-strace-6.12
 gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh
 xpnl3m7fb9ka8c8lw9cfy831zfymd87n-strongswan-5.9.14
