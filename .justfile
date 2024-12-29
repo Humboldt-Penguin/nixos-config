@@ -161,6 +161,13 @@ codium-clear-cache:
 
 
 
-# Just do everything (`update-flake` -> `rebuild-system` -> `rebuild-home` -> `clean-all` -> `reboot`)
-everything: update-flake rebuild-system rebuild-home clean-all
-    reboot
+[doc('since when?')]
+nixos-btw: _cache-sudo
+    #!/usr/bin/env bash
+    set -euo pipefail
+    DEVICE=$(df / | awk 'NR==2 {print $1}')
+    echo
+    sudo tune2fs -l "$DEVICE" | grep 'Filesystem created:'
+    echo
+    echo "(Despite everything, it's still you.)"
+    echo
