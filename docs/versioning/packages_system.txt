@@ -472,7 +472,7 @@ imath-3.1.12
 inih-58
 iniparser-4.2.4
 initrd-fsinfo
-initrd-linux-6.6.67
+initrd-linux-6.6.68
 input.conf
 inputrc
 install-systemd-boot.sh
@@ -1013,9 +1013,9 @@ libzip-1.11.1
 lilv-0.24.24
 lilv-0.24.24
 limits.conf
-linux-6.6.67
-linux-6.6.67-modules
-linux-6.6.67-modules-shrunk
+linux-6.6.68
+linux-6.6.68-modules
+linux-6.6.68-modules-shrunk
 linux-firmware-20241210-zstd
 linux-headers-6.10
 linux-headers-static-6.10
@@ -1137,7 +1137,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.11.20241227.d49da4c
+nixos-system-wired-24.11.20241230.3ffbbdb
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
@@ -1696,7 +1696,7 @@ wavpack-5.7.0
 wayland-1.23.1
 wayland-1.23.1
 wayland-utils-1.2.0
-webkitgtk-2.46.4+abi=4.1
+webkitgtk-2.46.5+abi=4.1
 webrtc-audio-processing-1.3
 webrtc-audio-processing-1.3
 which-2.21
