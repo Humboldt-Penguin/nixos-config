@@ -30,14 +30,19 @@ rebuild-home: && _update_hm_generation_number _update_hm_package_list
 
 
 [group('1. Update System')]
+[doc('`rebuild-system` -> `rebuild-home`')]
+rebuild-all: rebuild-system rebuild-home
+
+
+[group('1. Update System')]
 [doc('Update flake (TODO: explain this better).')]
 update-flake:
     nix flake update    # not sure if you need sudo...?
 
 
 [group('1. Update System')]
-[doc('`update-flake` -> `rebuild-system` -> `rebuild-home`')]
-update-all: _cache-sudo update-flake rebuild-system rebuild-home
+[doc('`update-flake` -> `rebuild-all`')]
+update-all: _cache-sudo update-flake rebuild-all
 
 
 [group('1. Update System')]
