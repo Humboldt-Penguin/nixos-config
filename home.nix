@@ -36,14 +36,16 @@ in
 
 {
   imports = [
-    ./nix-modules/chromium/home.nix
-    ./nix-modules/custom_scripts/home.nix
-    ./nix-modules/git/home.nix
-    ./nix-modules/keyd/home.nix
-    ./nix-modules/kitty/home.nix
-    ./nix-modules/micro/home.nix
-    ./nix-modules/vscode/home.nix
-    ./nix-modules/zsh/home.nix
+    ./nix-modules/apps/chromium/home.nix
+    ./nix-modules/apps/vscode/home.nix
+
+    ./nix-modules/system/keyd/home.nix
+
+    ./nix-modules/terminal/custom_scripts/home.nix
+    ./nix-modules/terminal/git/home.nix
+    ./nix-modules/terminal/kitty/home.nix
+    ./nix-modules/terminal/micro/home.nix
+    ./nix-modules/terminal/zsh/home.nix
   ];
 
 
