@@ -45,6 +45,7 @@ in
     ./nix-modules/terminal/git/home.nix
     ./nix-modules/terminal/kitty/home.nix
     ./nix-modules/terminal/micro/home.nix
+    ./nix-modules/terminal/zoxide/home.nix
     ./nix-modules/terminal/zsh/home.nix
   ];
 
