@@ -124,11 +124,10 @@ in
       qbittorrent
 
     ])
-    # ++
-    # (with pkgs_zeditor; [
-    #   /* text editors */
-    #   zed-editor
-    # ])
+    ++
+    (with pkgs-stable-unfree; [
+      zoom-us
+    ])
     ;
 
 
