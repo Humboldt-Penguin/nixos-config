@@ -124,10 +124,6 @@ in
       qbittorrent
 
     ])
-    ++
-    (with pkgs-stable-unfree; [
-      zoom-us
-    ])
     ;
 
 
