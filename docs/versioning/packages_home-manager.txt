@@ -2,7 +2,7 @@ bash-interactive-5.2p37
 bash-interactive-5.2p37-man
 cups-2.4.11
 dbus-1.14.10
-git-2.47.0
+git-2.47.1
 hm-session-vars.sh
 home-configuration-reference-manpage
 home-manager
@@ -19,7 +19,7 @@ kolourpaint-24.08.3
 kwallet-6.8.0
 lf-33
 libreoffice-24.2.7.2-wrapped
-librewolf-133.0-1
+librewolf-134.0-1
 man-db-2.13.0
 micro-2.0.14
 micro-2.0.14-man
@@ -33,10 +33,10 @@ rclone-1.68.2
 rclone-1.68.2-man
 rsync-3.3.0
 shared-mime-info-2.4
-systemd-256.8
+systemd-256.10
 tldr-1.6.1
 trashy-2.0.0
-ungoogled-chromium-131.0.6778.204
+ungoogled-chromium-131.0.6778.264
 vesktop-1.5.4
 vscodium-1.96.2.24355
 wget-1.25.0
