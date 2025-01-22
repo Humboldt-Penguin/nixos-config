@@ -124,6 +124,9 @@
           /* Themes (https://vscodethemes.com/?type=dark) */
           teabyii.ayu
           jdinhlife.gruvbox
+
+          /* LaTeX -- note that TeX Live (recommended by the extension devs) must be installed separately; I randomly chose `texliveMedium`. */
+          james-yu.latex-workshop
         ])
         ++
         (with pkgs-unstable-unfree.vscode-extensions; [
