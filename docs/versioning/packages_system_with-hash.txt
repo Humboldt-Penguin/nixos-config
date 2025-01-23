@@ -225,7 +225,7 @@ b1i3fly5nmfjykxhmm1vd3qmgl4bkyck-ell-0.69
 pfgpnmnivg12bv0vw7rs33n8h56x9zp5-ell-0.69
 il3s5xv7w5z7v609vrlysy1y2pcg0sab-enchant-2.6.9
 3q4sf5p3n4f3p4rsqh27fxcjj21gayck-espeak-ng-1.51.1
-1mb56wx6f3zlsdwj2r2dxwp1r1c0zp3l-etc
+lfjbgzjk49rdw9scxgj4j2c1i9j2l2rz-etc
 g1dh5cd7wxwbg4r1lww1bdz9dyxpiiqp-etc-alsa-conf.d-49-pipewire-modules.conf
 ndl33dxim7jb9p8i4lkhw22g6gv76na2-etc-bashrc
 w74xmw16avmlx030wz16fbpg1bsyz9da-etc-brave-policies-managed-default.json
@@ -268,7 +268,7 @@ zw0fg93azhml839lxz83prn250yg0k2f-etc-systemd-timesyncd.conf
 dka7h1g99xgr10b6z92q9m6w6bqjdid5-etc-systemd-user.conf
 3c15a2m8prl4jqm7wjx2f7085b9659qa-etc-systemd-user-preset-00-nixos.preset
 gi98ibrfq0zdd7n4xh8f06hbcc975xp3-etc-UPower-UPower.conf
-w7rk1pp324h2lywm83xppa8wp0i6v41n-etc-X11-xorg.conf.d-00-keyboard.conf
+fzbjha8nlnppq7742ywz47j087g8ix8b-etc-X11-xorg.conf.d-00-keyboard.conf
 r1l33a5bz9vwsfd2lrbgag8nx3001xqy-etc-zinputrc
 23sqscnydcbpw3caa6ni29npzqcvjb0j-etc-zprofile
 h3ggsj5lnlwixfnm6hbik0289q4drbc8-etc-zshenv
@@ -1205,7 +1205,7 @@ fyaff3jkkfwgfv3fz41v2jwg99cxx7rh-nixos-manual.desktop
 v45jwqqq4fdzlmkpknln8wgs1c8csrx9-nixos-manual-html
 yrsn9xd81mn01lai3fwk09wjrr940fjn-nixos-option
 scni4n43a8j3pai7a2wab9m9lm60vgz9-nixos-rebuild
-pgqwh7dnxks4dv3vxfnkbldj937gr9m6-nixos-system-wired-24.11.20250119.107d5ef
+h9qc19vs57l40wsgg2q0c97xxh0cz3pn-nixos-system-wired-24.11.20250119.107d5ef
 mfd45p0v76xgg02pvg6qcpkpyqffz5zf-nixos-tmpfiles.d
 hva62cplp70mk6nw8q1wr5rgr7h1y3lc-nixos-version
 xwa640iak8y1zva3nwh4x5kyd04dbk3l-nix-zsh-completions-0.5.1

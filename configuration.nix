@@ -81,6 +81,8 @@
   services.xserver.xkb = {
     layout = "us";
     variant = "";
+    /* Default value is `"terminate:ctrl_alt_bksp"` which CLOSES ALL MY FUCKING WINDOWS (terminates X server). This has happened four times to great dismay before I figured out the culprit. Woohoo. */
+    options = "";
   };
 
   /* Enable CUPS to print documents. */
