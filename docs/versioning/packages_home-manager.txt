@@ -41,6 +41,7 @@ vesktop-1.5.4
 vscodium-1.96.2.24355
 wget-1.25.0
 zed-editor-0.161.2
+zoom-6.2.11.5069
 zoxide-0.9.6
 zsh-5.9
 zsh-5.9-man
