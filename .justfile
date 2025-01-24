@@ -157,6 +157,11 @@ codium-clear-cache:
     -trash ~/.vscode-oss
     -trash ~/.config/VSCodium
 
+[group('Misc Helper Recipes')]
+[doc('Crash chromium so when you relaunch, you get "restore tabs" dialog (remembers multiple desktops and PWAs).')]
+kill-chromium:
+    pkill -9 chromium
+
 
 
 
