@@ -97,6 +97,7 @@ in
       # exfatprogs
 
       /* gui: browser */
+      tor-browser
       librewolf
       # brave
 

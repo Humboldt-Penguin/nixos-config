@@ -35,6 +35,7 @@ rsync-3.3.0
 shared-mime-info-2.4
 systemd-256.10
 tldr-1.6.1
+tor-browser-14.0.4
 trashy-2.0.0
 ungoogled-chromium-132.0.6834.83
 vesktop-1.5.4
