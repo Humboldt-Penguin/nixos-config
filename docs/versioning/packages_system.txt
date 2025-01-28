@@ -463,7 +463,7 @@ gstreamer-1.24.10
 gtest-1.15.2
 gtk+3-3.24.43
 gtk+3-3.24.43
-gtk4-4.16.3
+gtk4-4.16.7
 gumbo-0.12.1
 gupnp-1.4.4
 gupnp-igd-1.2.0
@@ -482,8 +482,8 @@ hicolor-icon-theme-0.18
 hosts
 hspell-1.4
 hunspell-1.7.2
-hwdata-0.388
-hwdata-0.388
+hwdata-0.390
+hwdata-0.390
 hwdb.bin
 hyphen-2.8.8
 i3lock-color.pam
@@ -497,7 +497,6 @@ ilmbase-2.5.10
 imath-3.1.12
 inih-58
 iniparser-4.2.4
-initrd-fsinfo
 initrd-linux-6.6.72
 input.conf
 inputrc
@@ -1205,7 +1204,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.11.20250122.47addd7
+nixos-system-wired-24.11.20250126.4e96537
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
@@ -1494,7 +1493,7 @@ relaxedsandbox.nix
 reload-container
 roc-toolkit-0.4.0
 roc-toolkit-0.4.0
-rsync-3.3.0
+rsync-3.4.1
 rt5677-firmware-zstd
 rtkit-0.13
 rtl8192su-unstable-2016-10-05-zstd
@@ -1607,7 +1606,7 @@ steam-wrapped
 stoken-0.93
 stoken-0.93
 storage.conf
-strace-6.12
+strace-6.13
 strip.sh
 strongswan-5.9.14
 stub-ld-i686-unknown-linux-musl
