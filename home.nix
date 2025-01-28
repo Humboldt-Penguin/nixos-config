@@ -57,6 +57,7 @@ in
   };
 
 
+  /* Programs that don't require additional config (if that's required, move to a new entry in `/nix-modules/.../appname/`). */
   home.packages =
 
     (with pkgs; [
@@ -74,8 +75,6 @@ in
 
       /* meta-terminal tools */
       lf
-      # zoxide
-      # fzf
       # dmenu    # p sure there's a better alternative now, maybe for wayland...?
 
       /* cli tools [think pipx] */
@@ -84,9 +83,6 @@ in
       tldr
       rsync
       rclone
-      # ffmpeg
-      # ytarchive
-      # yt-dlp
 
       /* nix-specific stuff (ew lol) */
       # alejandra
@@ -118,16 +114,11 @@ in
     ++
     (with pkgs-unstable; [
       /* programming tools */
-      # uv
       just
 
       ## gui: media
       qbittorrent
 
-    ])
-    ++
-    (with pkgs-unstable-unfree; [
-      zoom-us
     ])
     ;
 
