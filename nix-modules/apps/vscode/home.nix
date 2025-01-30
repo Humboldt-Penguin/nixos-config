@@ -25,8 +25,8 @@
 
       userSettings = {
         /* `keyd` compatibility...
-                - This is a workaround for my `keyd` custom hotkeys -- specifically, my hotkeys for navigation involve holding "alt", which has unintended side effects in editors like vscode/vscodium since default behavior is that holding alt highlights stuff in the menu bar. To fix this, I add the four settings above to my 'settings.json'.
-                - Also note that there's some room for flexibility here (e.g. you can enable mnemonics, I just don't use it personally).
+            - This is a workaround for my `keyd` custom hotkeys -- specifically, my hotkeys for navigation involve holding "alt", which has unintended side effects in editors like vscode/vscodium since default behavior is that holding alt highlights stuff in the menu bar. To fix this, I add the four settings above to my 'settings.json'.
+            - Also note that there's some room for flexibility here (e.g. you can enable mnemonics, I just don't use it personally).
         */
         "window.customMenuBarAltFocus" = false;
         "window.enableMenuBarMnemonics" = false;
@@ -55,6 +55,9 @@
         # "github.copilot.enable" = {
         #   "*" = false;
         # };
+
+        /* autoDocstring extension */
+        "autoDocstring.docstringFormat" = "numpy";
       };
 
 
@@ -124,6 +127,9 @@
           /* Themes (https://vscodethemes.com/?type=dark) */
           teabyii.ayu
           jdinhlife.gruvbox
+
+          /* Python */
+          njpwerner.autodocstring  # https://github.com/NilsJPWerner/autoDocstring
         ])
         ++
         (with pkgs-unstable-unfree.vscode-extensions; [
