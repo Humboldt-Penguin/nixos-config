@@ -75,9 +75,9 @@ bash-interactive-5.2p37-man
 bash-interactive-5.2p37-man
 bc-1.07.1
 bcache-tools-1.0.8
-bind-9.18.28-host
-bind-9.18.28-lib
-bind-9.18.28-man
+bind-9.18.33-host
+bind-9.18.33-lib
+bind-9.18.33-man
 binfmt_nixos.conf
 binutils-2.43.1
 binutils-2.43.1-lib
@@ -1207,7 +1207,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.11.20250129.59e618d
+nixos-system-wired-24.11.20250130.666e1b3
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
