@@ -58,6 +58,23 @@
 
         /* autoDocstring extension */
         "autoDocstring.docstringFormat" = "numpy";
+
+
+
+        /* `mkdocs-material` recommended YAML schema validation (source: https://squidfunk.github.io/mkdocs-material/creating-your-site/ ) */
+        "yaml.schemas" = {
+          "https://squidfunk.github.io/mkdocs-material/schema.json" = "mkdocs.yml";
+        };
+        "yaml.customTags" = [
+          "!ENV scalar"
+          "!ENV sequence"
+          "!relative scalar"
+          "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg"
+          "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji"
+          "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+          "tag:yaml.org,2002:python/object/apply:pymdownx.slugs.slugify mapping"
+        ];
+        "redhat.telemetry.enabled" = false;  ## this is to curb the `redhat.vscode-yaml` extension
       };
 
 
@@ -118,6 +135,8 @@
           /* Syntax */
           jnoortheen.nix-ide
           nefrob.vscode-just-syntax
+          redhat.vscode-yaml
+          tamasfe.even-better-toml
 
           /* Jupyter */
           ms-toolsai.jupyter
