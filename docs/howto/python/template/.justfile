@@ -52,7 +52,7 @@ update-flake:
 [doc('Update dependencies and environment.')]
 update-dependencies:
     uv lock --upgrade
-    uv sync --all-extras
+    uv sync --all-extras --all-groups
 
 [group('2. uv tools')]
 [doc('Run tests.')]
@@ -68,14 +68,18 @@ test-verbose:
     uv run pytest -s
 
 [group('2. uv tools')]
+[doc('Check static types with `mypy`.')]
+type-check target=".":
+    uvx mypy {{target}}
+
+
+
+
+
+[group('3. misc')]
 [doc('Clean up Python bytecode artifacts.')]
 clean:
     find . -type d -name "__pycache__" -exec rm -r {} +
     find . -type f -name "*.pyc" -exec rm -f {} +
     find . -type d -name ".mypy_cache" -exec rm -r {} +
     find . -type d -name ".pytest_cache" -exec rm -r {} +
-
-[group('2. uv tools')]
-[doc('Check static types with `mypy`.')]
-type-check target=".":
-    uvx mypy {{target}}
