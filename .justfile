@@ -41,6 +41,25 @@ update-flake:
 
 
 [group('1. Update System')]
+[doc('Update flake then discard any changes.')]
+check-flake-updates:
+    #!/usr/bin/env bash
+    set -euo pipefail
+
+    if ! git diff --quiet HEAD -- flake.lock; then
+        git restore flake.lock
+    fi
+
+    just update-flake
+
+    if ! git diff --quiet HEAD -- flake.lock; then
+        git restore flake.lock
+    else
+        echo "No updates detected in flake.lock"
+    fi
+
+
+[group('1. Update System')]
 [doc('`update-flake` -> `rebuild-all`')]
 update-all: _cache-sudo update-flake rebuild-all
 
