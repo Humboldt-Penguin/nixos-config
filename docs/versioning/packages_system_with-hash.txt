@@ -171,7 +171,7 @@ fk2psrg5k3i6z7az5p2bkjc5721hcglw-db-4.8.30
 xp01i0ky5hsvgxr8pk3r0wqcficl13h5-db-4.8.30
 9ga2fkz4whkrnw0l7afpb1rsmbjxsk41-db-5.3.28
 r5f8wvknc1s7gcp3y5hrdwy3mh2ppg5k-db-5.3.28
-44g1p8bn4vq3lgjq23gmlbfwyybaqqkd-dbus-1
+7bi49a2j337ybclzjb9dxvs8blvivxf5-dbus-1
 af9ngaf6xzm44506ycw8fdnxkwib2s7p-dbus-1.14.10
 wcfwyjs9hlh4vsc7r324jyzqg4w23c2x-dbus-1.14.10
 f285z91jd3k5cl64bca5vxxrfam67y9d-dbus-1.14.10-dev
@@ -220,12 +220,11 @@ xzfvj60yz1ny8qlhpdaq1gdmrk5rl2b2-editline-1.17.1
 bwrr3vcg5yqn8xq29javix4q81pffvzl-editorconfig-core-c-0.12.9
 6spa4chpxyf7cwh4l4cl0i9r51dwvgdl-elfutils-0.191
 hsd4xxnjynslplmxcmly25mdlkjhc7iv-elfutils-0.191
-ymfcyrcn5794s6lqmz8k7cvnwjqadmy0-elisa-24.08.3
 5fb9q688qqnkkbfail7bp1jkx8sc282v-ell-0.69
 nqxn592xnrh7ifvb9p5lfan99kxbjdl4-ell-0.69
 i013kvypzlc454x48bgnk3nzgich97zm-enchant-2.6.9
 y5zrr2sa64djqvf5flijl2jckk9i56zi-espeak-ng-1.51.1
-rf7lc2lhjzx4mdc2xq9ycwa4d5pbb75q-etc
+5vgxhjzv08adh0i2cax0sdaysiyks4vc-etc
 g8z6n0r73fqlldki8fcd7lyxsnaq9p46-etc-alsa-conf.d-49-pipewire-modules.conf
 ndl33dxim7jb9p8i4lkhw22g6gv76na2-etc-bashrc
 w74xmw16avmlx030wz16fbpg1bsyz9da-etc-brave-policies-managed-default.json
@@ -534,7 +533,6 @@ ahfghq7hhig296sdxa686xmc5j2q7axm-kactivities-stats-5.116.0
 bll8wgpvj1j6a8dzaz1qgasc2hv02vkz-kactivitymanagerd-6.2.5
 a2flpy66l1fvbrvz42bg0ry0a6abysz2-karchive-5.116.0
 sfvccx75px7i1h1ycwm1wkdpgy5q7j0i-karchive-6.8.0
-1g1dr301agrzj28q2ngbkiv23mr3kwr2-kate-24.08.3
 c0zl8lmh0i7kd8ly1b9k5wdv9chnnspk-kauth-5.116.0
 2v0psl3gxpg6rhkyk0c8zzdlgx6vp56i-kauth-6.8.0
 4zjagix5ldcq57n3j6appczglga4czz0-kbd-2.6.4
@@ -642,7 +640,6 @@ pxaq3rm58g5nyz2fk792pzsl3i2caln0-kmod-blacklist-31+20240202-2ubuntu8
 54dsi5ss988ikyarlimqbvj6702yap90-knotifications-5.116.0-bin
 51idby10lys4x8bdg0axnk321ncccd1y-knotifications-6.8.0
 a9nvhfy8764havcqw3bfl3kw3n73zp64-knotifyconfig-6.8.0
-qmavm1nbf2n946ncdz1jcplq2gp8jz3f-konsole-24.08.3
 01qb6qlzywi1bbn3wliw34px15b857a8-kpackage-5.116.0
 c0jr9gb3dsh57i30rh9fvb4ikxbxhmqb-kpackage-6.8.0
 jw0j6n14p3hbhkllhak7vswqmcwswf90-kparts-6.8.0
@@ -1204,7 +1201,7 @@ vqi5fjxsw1ny1gp8m8h5j7ln17ad2bxf-nixos-manual.desktop
 65165rmy9dnczwgrdhcrzzd0jxxkpl8f-nixos-manual-html
 4g6frx2ifsrpw63mbhlvpzqb0mjpgzk2-nixos-option
 dhav4whad4m1is8r31x7cnm7zpzqqpkw-nixos-rebuild
-0mv2r4im7gh5ggra7s4a3vp84rczhwgv-nixos-system-wired-24.11.20250204.030ba19
+hpj3ly7wrl3vsg0dffbpqsgn189v9xi8-nixos-system-wired-24.11.20250204.030ba19
 mfd45p0v76xgg02pvg6qcpkpyqffz5zf-nixos-tmpfiles.d
 9x6cvqxxnlmv5lm9q42w8473qrvsvzq6-nixos-version
 xwa640iak8y1zva3nwh4x5kyd04dbk3l-nix-zsh-completions-0.5.1
@@ -1635,11 +1632,11 @@ cc7v2ln1afvdpfbs50ggsr1zjbslphym-systemd-boot
 qzpdmv5hnf52ln42hkbc874q37rrmbyy-systemd-minimal-libs-256.10
 isr6jx79p2q7ngm357wybpgkyrfij0db-systemd-user.pam
 rn1awk8ipiscal2775i50zpwjx7n7py6-system-generators
-y1jhihz9q4zmk9pi5n0j2kd04g4iyh6s-system-path
+ck5898slrmfa2086n7pawrpbcbxsgvy4-system-path
 8dzr2bndjm1rblw86fyha9wb1l2876cw-system-sendmail-1.0
 hg427c1bwnm0pkv789qn6ircc1xv5v8l-systemsettings-6.2.5
 46qvydfsjz2mf80fm0mj8dmxn02zmd0m-system-shutdown
-4lsbfay1258bhx3gvkz1n0ckqb31hq4a-system-units
+009jlgy0mycx8sh60rpyq4v4wgjm585q-system-units
 dqh4wx680qrgkfzndiv34jf00nb34j39-taglib-1.13.1
 z2167hk6wkwgkdc5l4cj27sih0ibvafn-talloc-2.4.2
 asr4jhp9qk1574mwsyqcbb87pc9lkh7y-tcb-1.2
@@ -1669,7 +1666,7 @@ h855q6zlfag7g6y1q618sxhwnjpdvz9l-umockdev-0.18.4
 2rbjg2k2rv73vr8jm5avwrb5d77wzf7l-unbound-1.21.1-lib
 mxqfy05lfijzxfdn6s3vfc4d722qf3ix-unbound-1.21.1-lib
 93vb13f35i15hd00sbkx55yk6hfkzla8-unifont-16.0.01
-yncm9x6ss24bmkcny67avn90iylin4cd-unit-accounts-daemon.service
+zc20bnsqalns15fg2icdmaq5946jq2yy-unit-accounts-daemon.service
 bbi5r46h1n0pdd5b3p3f5ph902vf7d7q-unit-audit.service
 rlrrmr5yc555zvxii1x1aiq5zkagk3j0-unit-autovt-.service
 gqf9mh0shfirrc59dg80is3q59avcrji-unit-bluetooth.service
@@ -1677,8 +1674,8 @@ v179wwn0x4w3390an6r0p97fn1q3hzda-unit-container-getty-.service
 2r26mvfl2fnfw8awygrk9ikqni0xpaxn-unit-container-.service
 5kf299w4gydh4kj3kmv56mbzabwrzv5k-unit-cups.service
 v0904fh0jw9f5xckvcya9p20bbxvkjgf-unit-cups.socket
-a4xarbsn2a7msk0gwgb93nnj0dm5nmjf-unit-dbus.service
-b156p7gp0fpim2klhmgwm57yh7hhywck-unit-dbus.service
+3v44pry2s1lyr96c9qb9mvb5y1gyn4wy-unit-dbus.service
+msfhyc9wg5asjlik03izgl5pscw3kccs-unit-dbus.service
 h13ra3wzj6l7j2xqqll9fwigvdbay15c-unit-dbus.socket
 1qh5skzdpabs0amqnx7s872dci3l7214-unit-display-manager.service
 lvqv1w9agz01fxbm45h5nvlfjy3lg2wl-unit-drkonqi-coredump-processor-.service
@@ -1716,7 +1713,7 @@ nh6gwm7lzrw85n8zpq0i2b1fqm3fd30j-unit-pipewire-pulse.service
 270dbj5jg16fqnaq87qdfpwqckzav7ry-unit-pipewire-pulse.socket
 xmrg7dgzm4jip4vwpznpw0r261qa2ljc-unit-pipewire.service
 pnq31ympz12bclrappnybz1h3p7803yr-unit-pipewire.socket
-c7rjsl0js8qlgm908lbq0119av835z1w-unit-polkit.service
+kcxf5sjwvd5h47wjvq675rdjsvq5irn9-unit-polkit.service
 vv2nbi3yzskmhdv8yi73knmrnl5qxjpz-unit-post-resume.service
 00rf97pjacj10adp42ggvphqmyc4xa8g-unit-post-resume.target
 kls4c0w932i39vfvm65g01smj24a5ciy-unit-prepare-kexec.service
@@ -1785,7 +1782,7 @@ d0v6p41q94ricj4j4qy3i81bgajrcv2b-userdel.pam
 dny1b8hdkqi3ywlwds3yqjsxkbxps5ls-user-generators
 a672mqrnc8cqlw50ji1nk545bc1941x7-usermod.pam
 a49wjc8fndkyvxszkaxa89h88rj38z3r-users-groups.json
-fa3saqb167p9rfaipvvzpbsk9mh5hn0q-user-units
+hb6b5bsk0062azjn2cfkqwy98q0rgdri-user-units
 62camdd58i8lfsv26wagljp1nqvvs4la-util-linux-2.39.4-bin
 9552wkyj9kairxg3x67iwmamkk18vzzs-util-linux-2.39.4-lib
 0zhqwdamks62hdvl3bkn8rrp71xkav98-util-linux-2.39.4-login
@@ -1874,12 +1871,12 @@ l260qqj4hkh82a9zmpwblidirpwv38l1-xmessage-1.0.7
 0vqxkvj4w0akvw28nb177cr3bfznihca-xorg-locale
 x79ks3lk3a6d4z6bsma21fx04vrp0nqd-xorgproto-2024.1
 g3y7lj2i3b11vbs4q7m99fpi93iq06hd-xrdb-1.2.2
-vwjvxv9swzf0igkav8gv6nmwh23axf69-X-Restart-Triggers-dbus
+3f5zm245g6fq6qrzm11al00hjaspi9q6-X-Restart-Triggers-dbus
 l2l8jr42xr7ibx17drzw95gi4aznb5aq-X-Restart-Triggers-keyd
 fxl8kqdnwklz0kbwxhzrxpiva0f7zpql-X-Restart-Triggers-NetworkManager
 6slr7drrxw29g180qkm53ns89byix9ra-X-Restart-Triggers-NetworkManager-dispatcher
 ah7clvnrhbvvbb0v5hr9zx4v21627h71-X-Restart-Triggers-nix-daemon
-91ms1p1b6cs08amnhj56srw5p1i5lkj8-X-Restart-Triggers-polkit
+sdb3ra6bbyl6pj40y9g6j0gzqpxxxmhi-X-Restart-Triggers-polkit
 jbk823zfj4fsm78hg0fyahnm729fwx7x-X-Restart-Triggers-reload-systemd-vconsole-setup
 a1ar0z01izgrifvrki3y8q57cdr1x6w6-X-Restart-Triggers-resolvconf
 4f8qvwjiq6w9psrpic91r4pv2w50584g-X-Restart-Triggers-systemd-journald

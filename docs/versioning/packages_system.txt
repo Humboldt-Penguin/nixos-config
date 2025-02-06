@@ -220,7 +220,6 @@ editline-1.17.1
 editorconfig-core-c-0.12.9
 elfutils-0.191
 elfutils-0.191
-elisa-24.08.3
 ell-0.69
 ell-0.69
 enchant-2.6.9
@@ -534,7 +533,6 @@ kactivities-stats-5.116.0
 kactivitymanagerd-6.2.5
 karchive-5.116.0
 karchive-6.8.0
-kate-24.08.3
 kauth-5.116.0
 kauth-6.8.0
 kbd-2.6.4
@@ -642,7 +640,6 @@ knotifications-5.116.0
 knotifications-5.116.0-bin
 knotifications-6.8.0
 knotifyconfig-6.8.0
-konsole-24.08.3
 kpackage-5.116.0
 kpackage-6.8.0
 kparts-6.8.0

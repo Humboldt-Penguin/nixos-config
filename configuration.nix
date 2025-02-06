@@ -8,6 +8,7 @@
     ./nix-modules/apps/steam/system.nix
 
     # ./nix-modules/system/fprintd/system.nix  /* see explanation at top of module file for why this is bad/buggy */
+    ./nix-modules/system/kde/system.nix
     ./nix-modules/system/keyd/system.nix
 
     ./nix-modules/terminal/podman/system.nix
@@ -68,14 +69,6 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  /* Enable the X11 windowing system. You can disable this if you're only using the Wayland session. */
-  # services.xserver.enable = true;
-  ## NOTE: ^ disabling this raises "SDDM requires either services.xserver.enable or services.displayManager.sddm.wayland.enable to be true", so i add:
-  services.displayManager.sddm.wayland.enable = true;   # TODO: consolidate all "services" stuff :3
-
-  /* Enable the KDE Plasma Desktop Environment. */
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
 
   /* Configure keymap in X11 */
   services.xserver.xkb = {
