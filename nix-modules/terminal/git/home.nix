@@ -24,8 +24,9 @@
           defaultBranch = "main";
         };
         core = {
-          # editor = "codium --wait --new-window";    # slow bleh
-          editor = "micro";
+          # editor = "codium --wait --new-window";  ## slow bleh
+          # editor = "micro";  ## fast, but minor pasting annoyances, plus you lose access/sight of terminal
+          editor = "zeditor --wait --new";
         };
       };
 
