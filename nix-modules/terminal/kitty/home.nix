@@ -16,7 +16,12 @@
       enable = true;
       package = pkgs.kitty;
 
-      themeFile = "gruvbox-dark-hard";
+      /*
+      This option takes the file name of a theme in kitty-themes, without the .conf suffix.
+        - See <https://github.com/kovidgoyal/kitty-themes/tree/master/themes> for a list of themes.
+      */
+      # themeFile = "gruvbox-dark-hard";
+      themeFile = "Catppuccin-Mocha";
 
       settings = {
         cursor_shape = "beam";

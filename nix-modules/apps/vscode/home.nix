@@ -37,10 +37,13 @@
         "workbench.sideBar.location" = "right";
         "window.commandCenter" = false;
         "workbench.layoutControl.enabled" = false;
-        # "workbench.colorTheme" = "Ayu Dark Bordered";
-        "workbench.colorTheme" = "Gruvbox Dark Hard";
         "workbench.tree.indent" = 24;    ## Increase indent width in sidebar file explorer (default value is 8).
         "workbench.startupEditor" = "none";
+
+        # "workbench.colorTheme" = "Ayu Dark Bordered";
+        # "workbench.colorTheme" = "Gruvbox Dark Hard";
+        "workbench.colorTheme" = "Catppuccin Mocha";
+        "workbench.iconTheme" = "catppuccin-mocha";
 
         /* Functional behavior: */
         "files.trimTrailingWhitespace" = true;
@@ -146,6 +149,8 @@
           /* Themes (https://vscodethemes.com/?type=dark) */
           teabyii.ayu
           jdinhlife.gruvbox
+          catppuccin.catppuccin-vsc
+          catppuccin.catppuccin-vsc-icons
 
           /* Python */
           njpwerner.autodocstring  # https://github.com/NilsJPWerner/autoDocstring
