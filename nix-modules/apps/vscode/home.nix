@@ -112,6 +112,14 @@
           key = "ctrl+shift+/";
           when = "editorTextFocus && !editorReadonly";
         }
+
+        /* C-A-d -- generate & insert docstring (extension: autoDocstring) */
+        {
+          command = "autoDocstring.generateDocstring";
+          key = "ctrl+alt+d";
+          when = "editorTextFocus";
+        }
+        { key = "ctrl+shift+2"; command = "-autoDocstring.generateDocstring"; when = "editorTextFocus"; }    ## Unbind default
       ];
 
 
