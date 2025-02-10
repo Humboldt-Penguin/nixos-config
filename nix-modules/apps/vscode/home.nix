@@ -59,6 +59,11 @@
         #   "*" = false;
         # };
 
+        /* Enable copilot for markdown files: */
+        "github.copilot.enable" = {
+          "markdown" = true;
+        };
+
         /* autoDocstring extension */
         "autoDocstring.docstringFormat" = "numpy";
 
