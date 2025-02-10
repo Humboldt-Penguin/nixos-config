@@ -280,6 +280,7 @@ exiv2-0.28.3-lib
 expat-2.6.4
 expat-2.6.4
 expat-2.6.4-dev
+extra-utils
 f2fs-tools-1.16.0
 faad2-2.11.1
 fallback-cursor-theme
@@ -353,6 +354,7 @@ gawk-5.3.1
 gawk-5.3.1
 gawk-5.3.1-info
 gawk-5.3.1-man
+gcc-13.3.0
 gcc-13.3.0-lib
 gcc-13.3.0-lib
 gcc-13.3.0-libgcc
@@ -402,6 +404,7 @@ glibmm-2.66.7
 glibmm-2.66.7
 glib-networking-2.80.0
 glu-9.0.3
+gmp-6.3.0
 gmp-with-cxx-6.3.0
 gmp-with-cxx-6.3.0
 gmp-with-cxx-6.3.0
@@ -496,7 +499,7 @@ imath-3.1.12
 inih-58
 iniparser-4.2.4
 initrd-fsinfo
-initrd-linux-6.6.75
+initrd-linux-6.6.76
 input.conf
 inputrc
 install-systemd-boot.sh
@@ -509,6 +512,7 @@ iptables-1.8.10
 iptables-1.8.10-man
 iputils-20240905
 iputils-20240905
+isl-0.20
 iso-codes-4.17.0
 iso-codes-4.17.0
 issue
@@ -585,6 +589,7 @@ kexec-tools-2.0.29
 kexec-tools-2.0.29
 keyd-2.5.0
 keyd-application-mapper-2.5.0
+keymap
 keyutils-1.6.3-lib
 keyutils-1.6.3-lib
 kfilemetadata-6.8.0
@@ -858,6 +863,7 @@ libmng-2.0.3
 libmnl-1.0.5
 libmnl-1.0.5
 libmodplug-0.8.9.0
+libmpc-1.3.1
 libmpeg2-0.5.1
 libmpg123-1.32.9
 libmpg123-1.32.9
@@ -1066,9 +1072,10 @@ libzip-1.11.1
 lilv-0.24.24
 lilv-0.24.24
 limits.conf
-linux-6.6.75
-linux-6.6.75-modules
-linux-6.6.75-modules-shrunk
+link-units
+linux-6.6.76
+linux-6.6.76-modules
+linux-6.6.76-modules-shrunk
 linux-firmware-20250109-zstd
 linux-headers-6.10
 linux-headers-static-6.10
@@ -1110,7 +1117,7 @@ make-initrd-ng-0.1.0
 man-db-2.13.0
 man-db-2.13.0-doc
 mariadb-connector-c-3.3.5
-mariadb-server-10.11.10
+mariadb-server-10.11.11
 mbedtls-3.6.2
 mbedtls-3.6.2
 mbrola-3.3
@@ -1138,6 +1145,7 @@ mount-pstore.sh
 mounts.sh
 mpdecimal-4.0.0
 mpdecimal-4.0.0
+mpfr-4.2.1
 mpfr-4.2.1
 mpg123-1.32.9
 mtdev-1.1.7
@@ -1201,7 +1209,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.11.20250206.f5a32fa
+nixos-system-wired-24.11.20250208.a45fa36
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
@@ -1586,6 +1594,7 @@ sratom-0.6.16
 srt-1.5.3
 srt-1.5.3
 sstp-client-unstable-2023-03-25
+stage-1-init.sh
 steam
 steam-bwrap
 steam-fhsenv-profile
@@ -1658,6 +1667,7 @@ twolame-2017-09-27
 tzdata-2024b
 tzdata-2024b
 udev-path
+udev-rules
 udev-rules
 udisks-2.10.1
 udisks-2.10.1-man
@@ -1826,8 +1836,8 @@ which-2.21
 wildmidi-0.4.6
 wildmidi.cfg
 wireless-regdb-2024.10.07-zstd
-wireplumber-0.5.7
-wireplumber-0.5.7-doc
+wireplumber-0.5.8
+wireplumber-0.5.8-doc
 wireplumber-configs
 wireplumber-extra-config
 wireplumber-extra-scrips
