@@ -11,7 +11,10 @@
 {
   home.file = {
 
-    /* Write SHA256 hash of a file to a text file with the same name but with a ".sha256" extension */
+    /*
+      NOTE: to make custom scripts in `~/.local/bin` available, you must add `export PATH="$HOME/.local/bin:$PATH"` to `programs.zsh.initExtra`.
+      This command takes a file path like "foo.txt" and writes the SHA256 hash to a file named "foo.txt.sha256".
+    */
     ".local/bin/write-sha256" = {
 
       executable = true;
