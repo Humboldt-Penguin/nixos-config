@@ -32,13 +32,26 @@
       syntaxHighlighting.enable = true;
 
       shellAliases = {
-        "l"     = "ls -la";
-        "ll"    = "ls -l";
-        ".."    = "cd ..";
-        "c"     = "clear";
-        "c."    = "codium .";
+        /* system */
+        "l" = "ls -la";
+        "ll" = "ls -l";
+        ".." = "cd ..";
+        "c" = "clear";
         "shlvl" = "echo $SHLVL";
-        "j"     = "just";
+
+        /* programs */
+        "c." = "codium .";
+        "j" = "just";
+
+        /* git */
+        "gs" = "git status";
+        "ga" = "git add";
+        "gaa" = "git add --all";
+        "gc" = "git commit";
+        "gcm" = "git commit -m";
+        "gca" = "git commit --amend";
+        "gd" = "git diff";
+        "gds" = "git diff --staged";
       };
 
       history = {
