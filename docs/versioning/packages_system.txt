@@ -280,7 +280,6 @@ exiv2-0.28.3-lib
 expat-2.6.4
 expat-2.6.4
 expat-2.6.4-dev
-extra-utils
 f2fs-tools-1.16.0
 faad2-2.11.1
 fallback-cursor-theme
@@ -589,7 +588,6 @@ kexec-tools-2.0.29
 kexec-tools-2.0.29
 keyd-2.5.0
 keyd-application-mapper-2.5.0
-keymap
 keyutils-1.6.3-lib
 keyutils-1.6.3-lib
 kfilemetadata-6.8.0
@@ -1072,11 +1070,10 @@ libzip-1.11.1
 lilv-0.24.24
 lilv-0.24.24
 limits.conf
-link-units
 linux-6.6.76
 linux-6.6.76-modules
 linux-6.6.76-modules-shrunk
-linux-firmware-20250109-zstd
+linux-firmware-20250211-zstd
 linux-headers-6.10
 linux-headers-static-6.10
 linux-pam-1.6.1
@@ -1209,7 +1206,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.11.20250210.44534bc
+nixos-system-wired-24.11.20250213.0b73e36
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
@@ -1594,7 +1591,6 @@ sratom-0.6.16
 srt-1.5.3
 srt-1.5.3
 sstp-client-unstable-2023-03-25
-stage-1-init.sh
 steam
 steam-bwrap
 steam-fhsenv-profile
@@ -1667,7 +1663,6 @@ twolame-2017-09-27
 tzdata-2024b
 tzdata-2024b
 udev-path
-udev-rules
 udev-rules
 udisks-2.10.1
 udisks-2.10.1-man
@@ -1757,6 +1752,7 @@ unit-sysinit-reactivation.target
 unit-systemd-backlight-.service
 unit-systemd-fsck-.service
 unit-systemd-importd.service
+unit-systemd-journald-audit.socket
 unit-systemd-journald-.service
 unit-systemd-journald.service
 unit-systemd-journal-flush.service
