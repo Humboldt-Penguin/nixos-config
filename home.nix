@@ -83,6 +83,7 @@ in
       tldr
       rsync
       rclone
+      nh
 
       /* nix-specific stuff (ew lol) */
       # alejandra

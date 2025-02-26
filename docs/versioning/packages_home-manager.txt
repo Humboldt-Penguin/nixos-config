@@ -24,6 +24,7 @@ man-db-2.13.0
 micro-2.0.14
 micro-2.0.14-man
 mpv-with-scripts-0.39.0
+nh-3.5.26
 nix-zsh-completions-0.5.1
 obs-studio-30.2.3
 oh-my-posh-23.20.3

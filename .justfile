@@ -20,13 +20,15 @@ help:
 [group('1. Update System')]
 [doc('Rebuild system-level config (TODO: explain this better).')]
 rebuild-system: && _update_nixos_generation_number _update_system_package_list
-    sudo nixos-rebuild switch --flake .
+    @# sudo nixos-rebuild switch --flake .
+    nh os switch .
 
 
 [group('1. Update System')]
 [doc('Rebuild home-level config (TODO: explain this better).')]
 rebuild-home: && _update_hm_generation_number _update_hm_package_list
-    home-manager switch --flake .
+    @# home-manager switch --flake .
+    nh home switch .
 
 
 [group('1. Update System')]
