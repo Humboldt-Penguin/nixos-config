@@ -39,6 +39,7 @@
         "workbench.layoutControl.enabled" = false;
         "workbench.tree.indent" = 24;    ## Increase indent width in sidebar file explorer (default value is 8).
         "workbench.startupEditor" = "none";
+        "editor.wordWrap" = "on";    ## Word wrap by default (prevents accidentally/maliciously hidden text)
 
         # "workbench.colorTheme" = "Ayu Dark Bordered";
         # "workbench.colorTheme" = "Gruvbox Dark Hard";
