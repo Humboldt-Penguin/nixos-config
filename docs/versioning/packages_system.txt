@@ -280,6 +280,7 @@ exiv2-0.28.3-lib
 expat-2.6.4
 expat-2.6.4
 expat-2.6.4-dev
+extra-utils
 f2fs-tools-1.16.0
 faad2-2.11.1
 fallback-cursor-theme
@@ -497,7 +498,8 @@ ijs-10.04.0
 imath-3.1.12
 inih-58
 iniparser-4.2.4
-initrd-linux-6.6.79
+initrd-fsinfo
+initrd-linux-6.6.80
 input.conf
 inputrc
 install-systemd-boot.sh
@@ -587,6 +589,7 @@ kexec-tools-2.0.29
 kexec-tools-2.0.29
 keyd-2.5.0
 keyd-application-mapper-2.5.0
+keymap
 keyutils-1.6.3-lib
 keyutils-1.6.3-lib
 kfilemetadata-6.8.0
@@ -1069,9 +1072,10 @@ libzip-1.11.1
 lilv-0.24.24
 lilv-0.24.24
 limits.conf
-linux-6.6.79
-linux-6.6.79-modules
-linux-6.6.79-modules-shrunk
+link-units
+linux-6.6.80
+linux-6.6.80-modules
+linux-6.6.80-modules-shrunk
 linux-firmware-20250211-zstd
 linux-headers-6.10
 linux-headers-static-6.10
@@ -1205,7 +1209,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.11.20250225.5d7db46
+nixos-system-wired-24.11.20250228.b27ba4e
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
@@ -1590,6 +1594,7 @@ sratom-0.6.16
 srt-1.5.3
 srt-1.5.3
 sstp-client-unstable-2023-03-25
+stage-1-init.sh
 steam
 steam-bwrap
 steam-fhsenv-profile
@@ -1662,6 +1667,7 @@ twolame-2017-09-27
 tzdata-2024b
 tzdata-2024b
 udev-path
+udev-rules
 udev-rules
 udisks-2.10.1
 udisks-2.10.1-man
@@ -1896,7 +1902,7 @@ xsetroot-1.1.3
 xsettingsd-1.0.2
 xvidcore-1.3.7
 xvidcore-1.3.7
-xwayland-24.1.5
+xwayland-24.1.6
 xwaylandvideobridge-0.4.0
 xxHash-0.8.2
 xz-5.6.3
