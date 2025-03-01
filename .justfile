@@ -79,6 +79,8 @@ update-all-reboot: update-all
         git add docs/versioning/ flake.lock
         git commit -m "Full update"
     fi
+    
+    sleep 10s # pause for 10s to review changes
 
     reboot
 
