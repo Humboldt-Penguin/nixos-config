@@ -186,8 +186,8 @@
             ## Link: https://open-vsx.org/extension/phil294/git-log--graph
             name = "git-log--graph";
             publisher = "phil294";
-            version = "0.1.15";
-            sha256 = "sha256-lvjDkvXSX7rw7HyyK3WWQLnGezvL6FPEgtjIi8KWkU0=";
+            version = "0.1.23";
+            sha256 = "sha256-i18ot6O9n5ooJ9jWccLq3KEo5UoonEzPHG0e90INX4Y=";
           }
           {
             ## Link: https://marketplace.visualstudio.com/items?itemName=stackbreak.comment-divider
@@ -202,6 +202,13 @@
             publisher = "matthewthorning";
             version = "0.2.0";
             sha256 = "sha256-kf3FpOm2E6Cyi2UFExgrGf03mkEMeIURul4GaRXAglg=";
+          }
+          {
+            ## Link: https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable
+            name = "markdowntable";
+            publisher = "TakumiI";
+            version = "0.13.0";
+            sha256 = "sha256-N1FZbDFiX5S+qKrtWpA+zGUhC81db5JiqcSPxeHmkhE=";
           }
         ];
 
