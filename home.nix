@@ -100,6 +100,7 @@ in
 
       /* gui: comms */
       vesktop
+      signal-desktop
 
       /* gui: office */
       libreoffice
