@@ -54,6 +54,7 @@
         "gds" = "git diff --staged";
         "gl" = "git log";
         "glo" = "git log --oneline --graph";
+        "glg" = "git log --grep";
       };
 
       history = {
