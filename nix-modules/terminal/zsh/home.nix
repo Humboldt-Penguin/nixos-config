@@ -55,6 +55,8 @@
         "gl" = "git log";
         "glo" = "git log --oneline --graph";
         "glg" = "git log --grep";
+        "gp" = "git push";
+        "gpa" = "git push --all";
       };
 
       history = {
