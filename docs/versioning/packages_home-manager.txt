@@ -19,7 +19,7 @@ kolourpaint-24.08.3
 kwallet-6.8.0
 lf-33
 libreoffice-24.2.7.2-wrapped
-librewolf-136.0-1
+librewolf-136.0-2
 man-db-2.13.0
 micro-2.0.14
 micro-2.0.14-man
@@ -37,7 +37,7 @@ shared-mime-info-2.4
 signal-desktop-7.44.0
 systemd-256.10
 tldr-1.6.1
-tor-browser-14.0.6
+tor-browser-14.0.7
 trashy-2.0.0
 ungoogled-chromium-133.0.6943.141
 vesktop-1.5.5
