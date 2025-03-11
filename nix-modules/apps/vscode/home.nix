@@ -169,7 +169,8 @@ in
           redhat.vscode-yaml
           tamasfe.even-better-toml
 
-          /* Jupyter */
+          /* Python/Jupyter */
+          ms-python.python
           ms-toolsai.jupyter
           ms-toolsai.jupyter-renderers
           ms-toolsai.jupyter-keymap
