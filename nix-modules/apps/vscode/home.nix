@@ -8,20 +8,6 @@
   ...
 }:
 
-
-let
-  pkgs-unstable-unfree-250304 = import (pkgs-unstable.fetchFromGitHub {
-    owner  = "NixOS";
-    repo   = "nixpkgs";
-    rev    = "1546c45c538633ae40b93e2d14e0bb6fd8f13347";
-    sha256 = "F0qDu2egq18M3edJwEOAE+D+VQ+yESK6YWPRQBfOqq8=";
-  }) {
-    inherit (pkgs-unstable) system;
-    config.allowUnfree = true;
-  };
-in
-
-
 {
 
   programs = {
@@ -185,7 +171,7 @@ in
           njpwerner.autodocstring  # https://github.com/NilsJPWerner/autoDocstring
         ])
         ++
-        (with pkgs-unstable-unfree-250304.vscode-extensions; [
+        (with pkgs-unstable-unfree.vscode-extensions; [
           github.copilot
           github.copilot-chat
         ])
