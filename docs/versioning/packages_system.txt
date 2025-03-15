@@ -1072,7 +1072,7 @@ limits.conf
 linux-6.6.82
 linux-6.6.82-modules
 linux-6.6.82-modules-shrunk
-linux-firmware-20250211-zstd
+linux-firmware-20250311-zstd
 linux-headers-6.10
 linux-headers-static-6.10
 linux-pam-1.6.1
@@ -1205,7 +1205,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.11.20250310.ebe2788
+nixos-system-wired-24.11.20250313.cdd2ef0
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
