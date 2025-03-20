@@ -167,13 +167,15 @@
           catppuccin.catppuccin-vsc
           catppuccin.catppuccin-vsc-icons
 
-          /* Python */
-          njpwerner.autodocstring  # https://github.com/NilsJPWerner/autoDocstring
+          /* Misc */
+          njpwerner.autodocstring  # Python docstring generator (https://github.com/NilsJPWerner/autoDocstring )
         ])
         ++
         (with pkgs-unstable-unfree.vscode-extensions; [
           github.copilot
           github.copilot-chat
+
+          mhutchie.git-graph
         ])
         ++
 
@@ -183,13 +185,13 @@
             - Search GitHub for examples: https://github.com/search?q=extensionsFromVscodeMarketplace&type=code
         */
         pkgs-unstable.vscode-utils.extensionsFromVscodeMarketplace [
-          {
-            ## Link: https://open-vsx.org/extension/phil294/git-log--graph
-            name = "git-log--graph";
-            publisher = "phil294";
-            version = "0.1.23";
-            sha256 = "sha256-i18ot6O9n5ooJ9jWccLq3KEo5UoonEzPHG0e90INX4Y=";
-          }
+          # {
+          #   ## Link: https://open-vsx.org/extension/phil294/git-log--graph
+          #   name = "git-log--graph";
+          #   publisher = "phil294";
+          #   version = "0.1.23";
+          #   sha256 = "sha256-i18ot6O9n5ooJ9jWccLq3KEo5UoonEzPHG0e90INX4Y=";
+          # }
           {
             ## Link: https://marketplace.visualstudio.com/items?itemName=stackbreak.comment-divider
             name = "comment-divider";
