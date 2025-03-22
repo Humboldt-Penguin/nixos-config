@@ -1209,7 +1209,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.11.20250319.b75693f
+nixos-system-wired-24.11.20250320.7105ae3
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
