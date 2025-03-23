@@ -224,7 +224,7 @@ canjg0nhj8qwvpvs65xymikvmggs1wwr-elfutils-0.191
 m45d7wswxdjpcpw666l22hgrfn921pak-ell-0.70
 2pdbwlc3dp9x4nqk7sjxs9x9lylj68mr-enchant-2.6.9
 vfx37294if2fcf6zxp2ndjg71mqvymyc-espeak-ng-1.51.1
-jdrwinsznxx840vdl4zjacxym7la2lb7-etc
+mj8r1xcisyvzphrnjxyax0ig4m9clygb-etc
 ic4k1p79q2v7jcfl8i2h8fdrrg3d9p5k-etc-alsa-conf.d-49-pipewire-modules.conf
 063ssn2sk3d9hwcljkkyx9q6fgi0mvkx-etc-bashrc
 bh21av2kcccphg6pa4mkk5pwcrz533nn-etc-brave-policies-managed-default.json
@@ -1192,7 +1192,7 @@ shzq2sgrdk5snwbin3a07w58nf4wkzjq-nix-2.24.12
 k0fllncna8sw6nvbbcaai4ml4l4cw7wv-nix-2.24.12-doc
 0bz99xydza7f8ib39hcgwhj7ry92z2js-nix-2.24.12-man
 zzknflhkh33q5k6xr5dc78ssn16gi91x-nix-bash-completions-0.6.8
-27vm23n5x9in290xig7gdfcbpvzyg4hb-nix.conf
+2hql006xhwk196ipy8hbilvxjm4hxrff-nix.conf
 awqcpa8shpdcjavdzdv9l8hxijck5wrm-nix-info
 7hfqcr5viw1h8yri3fphqwgqaxgljhsp-nixos-build-vms
 2zyb0r9zd7zlhidy7hspxagbb5nclghm-nixos.conf
@@ -1209,7 +1209,7 @@ jr9ac7hqhrm75sqwxzq7r8al5nwsgwsi-nixos-manual.desktop
 p2qg6c6n7vsky2ngw3yd8wp6aci6cih4-nixos-manual-html
 prvd0giv1wawxv72y8hq8qxy8srda5l7-nixos-option
 zk9ybjh1n4n0zkl5hm1nwjh4jh6byirm-nixos-rebuild
-fkhz9m2cnh2wnr08fnqiykixgy3xxxib-nixos-system-wired-24.11.20250320.7105ae3
+zd0j3pbzbhjm5w47b9jq0p8pnmzq2hck-nixos-system-wired-24.11.20250320.7105ae3
 w3kif2pdqqq28jagwb05f0jscmp8r280-nixos-tmpfiles.d
 yxljchgkzs0ms34j3r2k6k102hzsffjb-nixos-version
 1dv389nrc1yifa3mlwwd8nr2dlj6zhkk-nix-zsh-completions-0.5.1
@@ -1645,7 +1645,7 @@ bcraj2d9spzb4pi72axc44wmc0dzdszy-system-path
 sl945whmx8b94blb4m1cfi4q0sjc2lbg-system-sendmail-1.0
 hc8pln6fp7z2bjbmlsrc0qkkpf27hrc1-systemsettings-6.2.5
 s4dl65q19vnp18xhif4p51qp1iyxmxsc-system-shutdown
-qy259n7gb083ia3z1md9akp2i128rzrv-system-units
+gz71nr4dc9f1nsam7lw9wqx3w5sh45w2-system-units
 bfljjqhvdnv9gyqgc252czlpx5nw9v89-taglib-1.13.1
 9v14jzrxq9cry4sgmbsbc3qmz7p2j78w-talloc-2.4.2
 6lyl8bn2f91pb981jvycr5arl5jvvqpq-tcb-1.2
@@ -1710,7 +1710,7 @@ b0j6ammjhh60arl38x9znh4nh43wd0kn-unit-NetworkManager-dispatcher.service
 9aiqaa0bs4gmn1ph868cr87b697xfr20-unit-NetworkManager-wait-online.service
 f9cn26aqvb1p1r1kakbn8wvx30pm99h7-unit-network-online.target
 knvd6i6w2i5dm41nf1f66ryaqvkhrnpa-unit-network-setup.service
-s6dcwh307c2vlgqxgfkp54ac3dsp5hkd-unit-nix-daemon.service
+whz9y45w81v6ya5aybpwqyr0isrm16ba-unit-nix-daemon.service
 7rhfs234sblnfqnml41ia4qsn6wrs72k-unit-nix-daemon.socket
 67vhsjgzzphlyxla7lglm50xaryx5zng-unit-nix-gc.service
 mmkql2w1wzfs7wmmsvhla0ifhhqli8cj-unit-nix-optimise.service
@@ -1886,7 +1886,7 @@ zm35bbqcvdfl2wkyni1943rka582632f-xorgproto-2024.1
 26jkds2zpdl9z27k2h4z5b4lacl55ws3-X-Restart-Triggers-keyd
 5g8xq1rz7jvfiz0l9q2p1mipiklikk47-X-Restart-Triggers-NetworkManager
 x4h22srddwfh4kaspb848qgar3xipfvl-X-Restart-Triggers-NetworkManager-dispatcher
-mqg8mpvjz3mk253fxwgmfia3pd3kizwy-X-Restart-Triggers-nix-daemon
+ci9kb7xrgb5mqbiqz2s9g35rjajvwy1f-X-Restart-Triggers-nix-daemon
 q9h5llnlzd8xy5r2cs862am3jydlz8hl-X-Restart-Triggers-polkit
 ajjix462v5agn7xjc74ghsaylnr2apkn-X-Restart-Triggers-reload-systemd-vconsole-setup
 y12zm2azrj748jsbbafnj94ayiqgrm70-X-Restart-Triggers-resolvconf

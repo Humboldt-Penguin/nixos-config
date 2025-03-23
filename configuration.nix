@@ -155,4 +155,7 @@
   /* Enable flakes */
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  /* Automatically optimize the store during every build (https://wiki.nixos.org/wiki/Storage_optimization ) */
+  nix.settings.auto-optimise-store = true;
+
 }

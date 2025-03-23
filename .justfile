@@ -79,7 +79,7 @@ update-all-reboot: update-all
         git add docs/versioning/ flake.lock
         git commit -m "Full update"
     fi
-    
+
     sleep 10s # pause for 10s to review changes
 
     reboot
@@ -132,28 +132,33 @@ _update_system_package_list: _mkpath_versioning
 
 
 
-[group('2. Garbage Collection')]
-[doc('"Deletes all unreachable store objects in the Nix store to clean up your system."')]
-clean-dangling:
-    @# For more info, see: https://nix.dev/manual/nix/2.18/command-ref/nix-collect-garbage.html
-    sudo nix-collect-garbage
+# [group('2. Garbage Collection')]
+# [doc('"Deletes all unreachable store objects in the Nix store to clean up your system."')]
+# clean-dangling:
+#     @# For more info, see: https://nix.dev/manual/nix/2.18/command-ref/nix-collect-garbage.html
+#     sudo nix-collect-garbage
+
+# [group('2. Garbage Collection')]
+# [doc('"Deletes old profiles, allowing potentially more store objects to be deleted because profiles are also garbage collection roots."')]
+# clean-nixos:
+#     @# Further reading: https://nix.dev/manual/nix/2.18/command-ref/nix-collect-garbage.html
+#     sudo nix-collect-garbage --delete-old
+#     @# DEV NOTE: I don't think you need `clean-dangling` afterwards, whenever I do it doesn't remove anything
+
+# [group('2. Garbage Collection')]
+# [doc('Delete all old `home-manager` generations (exceupt current).')]
+# clean-hm:
+#     @# Further reading: run `home-manager` and it'll autoprint the help message.
+#     home-manager expire-generations "-1 second"
+
+# [group('2. Garbage Collection')]
+# [doc('`clean-hm` -> `clean-nixos`.')]
+# clean-all: _cache-sudo clean-hm clean-nixos
 
 [group('2. Garbage Collection')]
-[doc('"Deletes old profiles, allowing potentially more store objects to be deleted because profiles are also garbage collection roots."')]
-clean-nixos:
-    @# Further reading: https://nix.dev/manual/nix/2.18/command-ref/nix-collect-garbage.html
-    sudo nix-collect-garbage --delete-old
-    @# DEV NOTE: I don't think you need `clean-dangling` afterwards, whenever I do it doesn't remove anything
-
-[group('2. Garbage Collection')]
-[doc('Delete all old `home-manager` generations (exceupt current).')]
-clean-hm:
-    @# Further reading: run `home-manager` and it'll autoprint the help message.
-    home-manager expire-generations "-1 second"
-
-[group('2. Garbage Collection')]
-[doc('`clean-hm` -> `clean-nixos`.')]
-clean-all: _cache-sudo clean-hm clean-nixos
+[doc('Clean root profiles and call a store gc.')]
+clean-all:
+    nh clean all
 
 
 
