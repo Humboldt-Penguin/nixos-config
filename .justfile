@@ -48,6 +48,8 @@ check-flake-updates:
     #!/usr/bin/env bash
     set -euo pipefail
 
+    uptime
+
     if ! git diff --quiet HEAD -- flake.lock; then
         git restore flake.lock
     fi
