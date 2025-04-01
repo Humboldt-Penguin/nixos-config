@@ -126,6 +126,13 @@
           when = "editorTextFocus";
         }
         { key = "ctrl+shift+2"; command = "-autoDocstring.generateDocstring"; when = "editorTextFocus"; }    ## Unbind default
+
+        /* A-\ -- align vertically (extension) */
+        {
+          command = "extension.alignVertically";
+          key = "alt+\\";
+        }
+        { key = "alt+\\"; command = "-editor.action.inlineSuggest.trigger"; when = "editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"; }    ## Unbind default
       ];
 
 
