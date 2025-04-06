@@ -50,6 +50,8 @@
         "files.trimTrailingWhitespace" = true;
         # "window.closeWhenEmpty" = true;    ## Nah, when programming I like periodically closing all my tabs -- use `C-S-w` instead
         "files.insertFinalNewline" = true;
+        "window.zoomLevel" = -1;  ## Zoom out a bit (default is 0).
+        "window.zoomPerWindow" = false;  ## Fix bug where opening a second instance of vscode will "forget" what you used last time and reset zoom to 0.
 
         /* Jupyter stuff: */
         "jupyter.askForKernelRestart" = false;
