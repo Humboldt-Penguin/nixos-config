@@ -37,13 +37,14 @@ shared-mime-info-2.4
 signal-desktop-7.47.0
 systemd-256.10
 tldr-1.6.1
-tor-browser-14.0.7
+tor-browser-14.0.9
 trashy-2.0.0
-ungoogled-chromium-134.0.6998.165
+ungoogled-chromium-135.0.7049.52
 vesktop-1.5.5
 vscodium-1.98.2.25078
 wget-1.25.0
 zed-editor-0.161.2
+zotero-7.0.15
 zoxide-0.9.6
 zsh-5.9
 zsh-5.9-man
