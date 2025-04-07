@@ -121,6 +121,8 @@ in
       ## gui: media
       qbittorrent
 
+      zotero
+
     ])
     ;
 
