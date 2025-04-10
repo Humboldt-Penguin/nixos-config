@@ -135,6 +135,13 @@
           key = "alt+\\";
         }
         { key = "alt+\\"; command = "-editor.action.inlineSuggest.trigger"; when = "editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"; }    ## Unbind default
+
+        /* A-c -- horizontal line (extension) */
+        {
+          command = "comment-divider.insertSolidLine";
+          key = "alt+c";
+          when = "editorTextFocus";
+        }
       ];
 
 
