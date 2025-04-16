@@ -123,6 +123,8 @@ in
 
       zotero
 
+      kdePackages.kdenlive
+
     ])
     ;
 
