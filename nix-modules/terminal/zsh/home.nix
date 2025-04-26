@@ -26,6 +26,22 @@
       initExtra = ''
         eval "$(${pkgs.oh-my-posh}/bin/oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen.toml)"
         export PATH="$HOME/.local/bin:$PATH"    # make custom scripts in `~/.local/bin` available
+
+        # Ensure `nix-shell` and `nix develop` use the user's shell — note the latter doesn't work when a flake uses `buildFHSEnv`, see "RedPlanet" flake for workaround.
+        nix-shell() {
+          command nix-shell --run "$SHELL" "$@"
+        }
+        nix() {
+          case "$1" in
+            develop)
+              shift
+              command nix develop -c "$SHELL" "$@"
+              ;;
+            *)
+              command nix "$@"
+              ;;
+          esac
+        }
       '';
 
       autosuggestion.enable = true;
