@@ -11,6 +11,13 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
   newline = true
 
   [[blocks.segments]]
+  type = 'text'
+  style = 'plain'
+  background = 'transparent'
+  foreground = 'magenta'
+  template = '{{ if gt .SHLVL 1 }}({{ .SHLVL }}) {{ end }}'
+
+  [[blocks.segments]]
     type = 'path'
     style = 'plain'
     background = 'transparent'
