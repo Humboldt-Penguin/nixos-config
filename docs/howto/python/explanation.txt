@@ -1,26 +1,43 @@
-- Just adding `pkgs.uv` to 'home.nix' isn't sufficient.
-    - Trying to run `uv init` downloads python 3.12, but you get a "dynamically linked" error: https://www.reddit.com/r/NixOS/comments/1fdxpam/help_request_python_development_specifically_with/
-    - If you run `uv python list`, you see that although uv seemed to download the python binary, it doesn't show up in available python versions. This is likely because the method/location how uv stores python binaries is different from nixos.
-
-
+- MOTIVATION/REASONING:
+    - Just adding `pkgs.uv` to 'home.nix' isn't sufficient.
+        - Trying to run `uv init` downloads python 3.12, but you get a "dynamically linked" error: https://www.reddit.com/r/NixOS/comments/1fdxpam/help_request_python_development_specifically_with/
+        - If you run `uv python list`, you see that although uv seemed to download the python binary, it doesn't show up in available python versions. This is likely because the method/location how uv stores python binaries is different from nixos.
 - SOLUTION:
     - STEPS/EXPLANATION:
         1. Properly installing uv:
-            1.1. Copy two file ('flake.nix' and '.justfile') from 'template/' to project directory.
-                - The flake is creating a development shell (which allows uv to work as opposed to installing it through home-manager for some reason), with FHS (which allows uv to install/manage its own python binaries).
-            1.2. If you're in a git repo, add 'flake.nix' or else the next step fails without explanation.
-            1.3. Run `just activate-devshell` (or `nix develop` if you don't have 'just' installed) -- `uv` should work now! :)
-                - NOTE: YOU MUST LAUNCH EDITORS LIKE VSCODE/JUPYTER FROM INSIDE OF AN ACTIVATED DEVSHELL SO THEY PICK UP YOUR VENV/KERNEL PROPERLY!!!
-                - Additionally, if you run `uv python list`, you'll see that python binaries are installed in the right place (thanks to the FHS environment) as opposed to pointing to shit in the nix store. See `uv python help` for more commands/information about managing different python binaries/versions.
-                - Whenever you're done, make sure to `exit` or else you'll stay in the devshell which has unintended behavior (there's no obvious indication whether you're in the devshell besides seeing if you have access to the package -- check explicitly by running `echo $SHLVL`, if it outputs greater than 1, you're in the devshell -- eventually I'll fix this by setting up direnv).
+            1.1. Make sure that `nix-ld` is enabled by adding `programs.nix-ld.enable = true;` to your nixos system config and rebuilding.
+            1.2. Copy two files ('flake.nix' and '.justfile') from this 'template/' to your project directory.
+                - The flake is creating a development shell (which allows uv to work as opposed to installing it through home-manager for some reason).
+            1.3. If you're in a git repo, add 'flake.nix' or else the next step fails without explanation.
+            1.4. Run `just activate-devshell` (or `nix develop` if you don't have 'just' installed) -- `uv` should work now! :)
+                - NOTE: YOU MUST LAUNCH EDITORS LIKE VSCODE/JUPYTER FROM INSIDE OF AN ACTIVATED DEVSHELL SO THEY PICK UP YOUR VENV/KERNEL PROPERLY!!! (I think)
+                - Additionally, if you run `uv python list`, you'll see that python binaries are installed in the right place as opposed to pointing to shit in the nix store. See `uv python help` for more commands/information about managing different python binaries/versions.
+                - Whenever you're done, make sure to `exit` or else you'll stay in the devshell which has unintended behavior (there's no obvious indication whether you're in the devshell besides seeing if you have access to the package -- check explicitly by running `echo $SHLVL`, if it outputs greater than 1, you're in the devshell.
         2. Library/package development:
             2.1. Init the library structure with `uv init --lib`.
             2.2. If you want to change the python version, edit the 'pyproject.toml', and then pin the version with `uv python pin 311` (change '311' for whatever version you want, but you may have to install it first I'm not sure).
-            2.3. Add normal dependencies with `uv add pkg1 pkg2 ...`.
-            2.4. Add dev dependencies with `uv add pkg1 --dev`.
-                - Note conceptual: the uv docs say that they don't currently support installing mutually incompatible dependency groups (i think?), so I assume that the venv we activate later on includes your dev stuff.
+            2.3. Add required/optional/dev dependencies...
+                - Explaining **[1] OPTIONAL** vs **[2] DEV** dependecy groups ---- (I've forgotten this a few times, so immortalizing it here):
+                    - flag (for commands like `uv add ...`):
+                        - [1] `--optional`
+                        - [2] `--group`
+                            - note that `--group dev` is equivalent to `--dev`...
+                                - "The `dev` group is special-cased; there are `--dev`, `--only-dev`, and `--no-dev` flags to toggle inclusion or exclusion of its dependencies. Additionally, the `dev` group is synced by default."
+                    - location:
+                        - [1] `[project.optional-dependencies]`
+                        - [2] `[dependency-groups]`
+                    - purpose:
+                        - [1] These dependecy groups are exposed to everyday users as installable “extras” (e.g. `pip install redplanet[docs]`), and they show up on PyPI as optional features of your package.
+                        - [2] NOT included in the metadata that goes to PyPI, so end users won’t be able to install them via the extra syntax. Instead, they’re treated as a group for your own local development tooling.
+                    - `uv sync...`:
+                        - [1] `--all-extras`
+                        - [2] `--all-groups`
+                            - (note that "dev" is installed by default unless you explicitly specify otherwise, I think?)
         3. Personal editor preferences:
-            - I like jupyter, but jupyter notebook/lab are trash, the vscode interface is much more customizeable/convenient/powerful. The only dependency for using jupyter in vscode is `ipykernel`, not the entire `jupyter` suite (see uv docs for more info). This varies, but sometimes to make sure vscode can find the venv, activate it with `source .venv/bin/activate` (see sub-bullet for 2.4. to see why we don't need to do anything extra to get dev packages), then launch with `code .` / `codium .` (it should auto-select the kernel when opening a '.ipynb' file, make sure the file exists, if not just restart I guess -- also make sure you have the jupyter vscode extension).
+            - I like jupyter, but jupyter notebook/lab are trash, the vscode interface is much more customizeable/convenient/powerful.
+                - Make sure you have the jupyter vscode extension.
+                - The uv docs claim that the only dependency for using jupyter in vscode is `ipykernel`, but I've had issues with this a long time ago so I just install `jupyter` entirely.
+                - This varies, but sometimes to make sure vscode can find the venv, activate it with `source .venv/bin/activate`, then launch with `code .` / `codium .` (it should auto-select the kernel when opening a '.ipynb' file, make sure the file exists, if not just restart I guess.
 
 - NOTES/REMINDERS:
-    - You must launch editors like VSCode/Jupyter from inside of an activated devshell so they pick up your venv/kernel properly!!!
+    - You must launch editors like VSCode/Jupyter from inside of an activated devshell so they pick up your venv/kernel properly!
