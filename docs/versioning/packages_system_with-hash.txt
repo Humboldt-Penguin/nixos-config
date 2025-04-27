@@ -171,7 +171,7 @@ hbmjbi1f34jyxnid5ha5x0d4q7150794-db-4.8.30
 s19kwb9ipxb6j6xbhbgngs39rv5wjspg-db-4.8.30
 9kg5f5c1s3iafp6g7jjqa0kl200x34lg-db-5.3.28
 z062xm1xhg12nh2sb2xx75b5fa8yd322-db-5.3.28
-lvp06ircm6azxj879bfr630zx41jrclq-dbus-1
+4xmbl3s3qhg4nsdm04nmbka62r13h2rj-dbus-1
 fcs9kzr7yr3l6l7jyx0rvxs8fzxn0cqs-dbus-1.14.10
 sdcwi25sk7a091nz9g7bjm3mgvyl6540-dbus-1.14.10
 c61x984ghb825j49h51k5wibcdn2wz7j-dbus-1.14.10-dev
@@ -224,7 +224,7 @@ mz53myclg9kxbfp85yswy7c25h5qpwvf-elfutils-0.191
 glyzrbixyw27snyl9r8lg3jv1gkyw8ab-ell-0.70
 p15dicvacmrpfmg5x5q8rqp9hpa4pkxw-enchant-2.6.9
 2n01939byb09bnaxz7q10y009qvc7crv-espeak-ng-1.51.1
-f8l03gi2fda9i8jq8b6hbwrf4fkkgfaw-etc
+gd89wjnz6vhghjxhcynnx04fkbf1g14w-etc
 xr663087zmfvcfznng3byg33gvmxgagl-etc-alsa-conf.d-49-pipewire-modules.conf
 dwj8r8wqmxwl2ydc2dz6vcnnyin2mknf-etc-bashrc
 jwz9dsmpjvbnjwzhf3fwpcgyzlzw3khb-etc-brave-policies-managed-default.json
@@ -248,9 +248,9 @@ m31mlbr0kfzdxv4khxyzy4rdilazv77y-etc-nscd.conf
 dywzy4nicvkqi7ik14ycx2qqj887d83g-etc-nsswitch.conf
 9piwv9rjxmpv7dsyb69mg86c3xnxcj1x-etc-opt-chrome-policies-managed-default.json
 nvgw9llvgkfpfkmizwshszgzjgnf6xyn-etc-os-release
-py6wcnlvn9x8sgxqq80i3mry5cb11a9v-etc-pam-environment
+9rhbpm0crkrybch8sc5y72n2ngxhc8jl-etc-pam-environment
 gy9dk8lcz8n764kqvhplpbcbj5simj48-etc-polkit-1-rules.d-10-nixos.rules
-ym3n8lqjz0kqj07l1azhldigwrvmvzax-etc-profile
+h5z8nwfgv348bn44sqrn8alwddh5sj3m-etc-profile
 h2mn2lqliyjdha2iiapljhv9iq00rdnv-etc-resolvconf.conf
 vdgzz5178xnvgbqqr9ixhcmnh0hlrwij-etc-shells
 0rk9iyswzxazv02gh2bmi2f84bcddxwj-etc-ssh-ssh_config
@@ -270,7 +270,7 @@ ahz38azlxf5416kbcxyrqf5jwl2x5vf3-etc-UPower-UPower.conf
 fxnnkark217973hyfjp8m1vb54a0kr5h-etc-X11-xorg.conf.d-00-keyboard.conf
 wx7sbnv49sf982ad32s0xgnq15cfrjsl-etc-zinputrc
 pdxycarbml3pg7x3v7z4izs49dh9p4b2-etc-zprofile
-dldr2z23pym94cxwhj4cwp6smwayyyzg-etc-zshenv
+ck3b66aq3970jsnxxfbixrv41kk0qsg3-etc-zshenv
 im16bc3kxq7qarh657flpfgh7xifr16h-etc-zshrc
 8w4hj21d3z5j1zavfqgg937z6lxv8f7v-ethtool-6.11
 kbmqjdha6d2200m391qf8xcj6css8njb-ethtool-6.11
@@ -697,6 +697,7 @@ hgfm020gv5rgkqliqhy5bclrfi9fgyn3-ldacBT-2.0.2.3
 jv9ma7nnlsdg8vxijla333c8hxfn4cf3-ldacBT-2.0.2.3
 03qjcs45wvprysllvw4hxrd24lr4czia-ldb-2.9.1
 m8djf8pd9m4883a1sy4h88rg5mk881ps-ldconfig
+620xvi3s37dzyagbxcsilc5s7n8v1xpg-ld-library-path
 7kfp4253plc0kbn27jc8gbncxf21bjga-ldns-1.8.4
 lbsmhsgshbb45sh1pabfnfjfhxihz37g-lerc-4.0.0
 lhvaxhpzxkg9pf02c8wfdy15dz4rcjp8-lerc-4.0.0
@@ -1191,6 +1192,7 @@ mz8c144x33x0nkx11jwyr0zv3igng6kz-nilfs-utils-2.2.11
 mrnqs6bhmyq6m5g5x6n85x8miq3lzqk5-nix-bash-completions-0.6.8
 asqvpmnzcrch2gicd7dbjc9ks2fmwmqb-nix.conf
 v8rarjrzpyxqdh1skc9dk8qh3gbnzx02-nix-info
+mv3wrs2cj0g4l6prljwk3k4fllks6vy8-nix-ld-2.0.3
 i9rl818xp6m63q76cyy1805y9pq94yrv-nixos-build-vms
 f9h5az52w4w4xvrqf21xdgxaspa53hax-nixos.conf
 pl3ngrbc3ld26zxy05ff0zkxrsdhgmfr-nixos-configuration-reference-manpage
@@ -1206,8 +1208,8 @@ hcxh8lfq0rc8y91p3704kga6qy00ypz7-nixos-manual.desktop
 gr3ddzmbfypi2wlgdxa4l8lnv497wpcw-nixos-manual-html
 pybjm1mqgpr7yrxh8fc4d5vbx5brql6m-nixos-option
 cfy5lfr5bmvbpq19z71iqbs27d0r231j-nixos-rebuild
-3n46l64y6krqhbrjcg7yvgjc3fn2w68b-nixos-system-wired-24.11.20250421.9684b53
-6i6b7wj98c6dc0jqa7pgawk3an6n0415-nixos-tmpfiles.d
+hk2nw4avxkvjjdp9sg8b6l12wvdxadvg-nixos-system-wired-24.11.20250421.9684b53
+0pykqcni8df0ay4dqbpq78j70xplsz0k-nixos-tmpfiles.d
 i5r8v2a529ds9nmvaavnv336s100cl5l-nixos-version
 1m485ncni27b2csmsw079x978crjc0yd-nix-zsh-completions-0.5.1
 xdigy14c3g4x9hwhgbdzhcpgjbkaljis-noto-fonts-24.3.1
@@ -1539,7 +1541,7 @@ fbrcdias71mzv8g3p3jfabx2zqv8jnjd-security-wrapper-umount-x86_64-unknown-linux-mu
 d7y1zbh47gy9z5z9yvijzg3553vqqdrr-security-wrapper-unix_chkpwd-x86_64-unknown-linux-musl
 6jp7fxvlwjvx55q6k1v19xznw25nfika-serd-0.32.2
 cg8qn1bgjdqfgl75mvyznc989m11zx31-serd-0.32.2
-3jb29ivg1z8k6gf3n86yzmfajvvy56qh-set-environment
+4ixy2yxbvqsygxpc58s87nnqx5bhvmam-set-environment
 rwgvww93dwp0dyzmhwjyd9p6nd95wiqh-set-gdfontpath-from-fontconfig.sh
 dq2wd2jhnz8r2ixjql97j5qpaa9x7sgh-setup-debug-info-dirs-hook
 rg5rf512szdxmnj9qal3wfdnpfsx38qi-setup-etc.pl
@@ -1612,7 +1614,6 @@ xf0zg408psn4ljm5ry58fmngmq6kw7sq-strace-6.14-man
 gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh
 q12l7msp661gjk0pl05vfadr00m7z0r7-strongswan-5.9.14
 kcj574nnyf3xx1s35kl1an6hgarckg5j-stub-ld-i686-unknown-linux-musl
-smnvrp5zfc975anzbqk9bvmazf3vl21h-stub-ld-x86_64-unknown-linux-musl
 4hgmf1xkjp06x3xcv66389fq27nnkv5r-sudo-1.9.16p2
 7yiqk5r1r48xy8831vyv71k8w7dnr3q6-sudoers
 l3l7gqq0xr2kzq05l9lm7fzc2fra5jmf-sudo.pam
@@ -1638,11 +1639,11 @@ bbbxrqsgb5zmyhm0r38g6nmv9wbarz51-systemd-minimal-libs-256.10
 ih7bmsy7vdd1s7lya3nfmqs3mp8i942p-systemd-minimal-libs-256.10
 n1k79n7dalnhgczz8vk3kwiadb2w7ca1-systemd-user.pam
 78v2lys78zj4vzb1wqzdyna5cy4yp02b-system-generators
-h69p113478n9pzpma8n9qwdh912qi68c-system-path
+3xmipaicqj6rcg9syv2m2mpndnx6q2p0-system-path
 zg2favzclpz707g9f11zzsw11xdkqifz-system-sendmail-1.0
 figrxj8mc7593hnbcm3kjgp9rb5mpzjl-systemsettings-6.2.5
 0rmrxz4hydbjf3qnn8yf5r0snmkpxa6r-system-shutdown
-cfshrjz8jxbvgnn77pk45f6dcn91m9hy-system-units
+mn7c0dzsm2p6b0dy67hlfwb99v95833v-system-units
 3jr8ndrkkrw777hk5c2s67kw6r7vrq5y-taglib-1.13.1
 5i5cirr35p448gg49xmar4w44fgy138c-talloc-2.4.2
 y3m9mf4f681i2dim8fyny75l4vy346d5-tcb-1.2
@@ -1655,7 +1656,7 @@ z00kyzgf3yyac9z7dmnhg16q2qdnkmnq-threadweaver-6.8.0
 zac4sfxjsh7xw0w08fd5qmsj59hpbxk9-time-1.9
 14iw9lw5id1145wlkaswlzjq50hs1xa5-tinysparql-3.8.1
 vm3fv148i65b9g5x1mdvl5khn2hza91h-tinysparql-3.8.1
-58srd0gndsij2mmj6ij62rm68nzk96qn-tmpfiles.d
+chqwcps2sbyhv015991rxlfqik34lrr0-tmpfiles.d
 3v4i8787mn9q2srlsswvxzmggfwzhr7v-tpm2-tss-4.1.3
 5602silyr9p5hasl3pkvp7s9qq8laxpl-tpm2-tss-4.1.3
 mc0v06bnnkg3nvadga8i2idq1lzgj1yi-tremor-unstable-2018-03-16
@@ -1672,7 +1673,7 @@ hky7jp3vaf99hinrnibqsq3hf6qf60m1-umockdev-0.18.4
 jgpsfjxfa5cf9d6rywn01wgjvdb4b739-unbound-1.22.0-lib
 sswcazfq28ys6d916ak1a86j0csy43rf-unbound-1.22.0-lib
 lc9l1wg361h0zrw1hcv78aygzcyxsa88-unifont-16.0.01
-p8z20f55c6vnjz1psjh1hg4jc6a20ixb-unit-accounts-daemon.service
+4nycz6ffw9498nvrhvvxifs574lhzxww-unit-accounts-daemon.service
 8qi13vvr33hqk69gi367bf9yrgvg40fn-unit-audit.service
 l73p6dp9py79b0gjdb09jq0a0ab06j2v-unit-autovt-.service
 nl72xq2y3ghslzpkj27v0nxxgsskw5gx-unit-bluetooth.service
@@ -1680,8 +1681,8 @@ lf1babzyk2x3b788d8nnpichx4x8gjvr-unit-container-getty-.service
 i234p7db6ipsya3kh46lg7mi7gl3qkr7-unit-container-.service
 nfgi053z9b0gzyk2nqx0qbvah6xdwg8c-unit-cups.service
 h7k7v9fwmr2a2qbz3jnv3wfn6584cv5i-unit-cups.socket
-qkhlq2hfn68nc562gxnbc4zgfmq171mw-unit-dbus.service
-z831nv8pxfqp2i37cm21vs670idi5v3w-unit-dbus.service
+cnnzyn41pvhwqzkq70k1j0nfzxx9lfw0-unit-dbus.service
+q4h17gh8wd208l2zc8yrp7iryppk57cf-unit-dbus.service
 hiizsvki2zy5s6wb6fjq0hmlmx43bg9b-unit-dbus.socket
 vs30cm17ga30ci5scvd73g4y9f47gx8j-unit-display-manager.service
 vp94hia2pnwqy9flk8may9kgwxnpxs1y-unit-drkonqi-coredump-processor-.service
@@ -1719,7 +1720,7 @@ bmc98bzk1fccm9xmn4b5armv20gpwyma-unit-pipewire-pulse.service
 dqp70xp41cj6fr0q535dlx3sdbhr9pwj-unit-pipewire-pulse.socket
 hl2nw45ghmbyd1zc19x5jbl5p3r63k8s-unit-pipewire.service
 8mybccrpb1yfm24h2skpgllhvhc4vzwm-unit-pipewire.socket
-x6rvj4nwbw8hx6fyid0jypr511ch2v8b-unit-polkit.service
+a8i2sj3123jrbdpfs9gc0lfwm9jji545-unit-polkit.service
 5dz8yi78rm4d7vlasdrrlzvdwccmb4vw-unit-post-resume.service
 kn0imvrhsgk8s1h3wl6dd7maynnarqkj-unit-post-resume.target
 09977iqwdv2md605b5pigrm6byspj3qz-unit-prepare-kexec.service
@@ -1769,7 +1770,7 @@ sd7l08krjbpp3p0pmiaykzncbp0laccb-unit-systemd-oomd.service
 aaf1sakmv173mvh41ligc4gg8d08dcmd-unit-systemd-sysctl.service
 z5fsd67zkr0wp8ff58ycdprnws7p2zgf-unit-systemd-timedated.service
 3jq2s4y11pnqs33amci9kikj9xa0g5br-unit-systemd-timesyncd.service
-j5rgyfk5c3hxxj07g2qvylzjj3lpjs0j-unit-systemd-tmpfiles-resetup.service
+m5dyh3g6r5gh34xha4kay3bpy32n70qn-unit-systemd-tmpfiles-resetup.service
 1vsra7q44mcard65w8d9zbwia7av3c4p-unit-systemd-tmpfiles-setup.service
 lxybzxvfm9rv2gmhpsm674rfq7chgh63-unit-systemd-udevd.service
 ckkk98fyv7r7fss9x3sbc2mhqr3ksk6h-unit-systemd-udev-settle.service
@@ -1789,7 +1790,7 @@ fs6lzpv1wk0nxw4zvcxclmwzxjrxcafs-userdel.pam
 2g3d1ln6m79m77d3r69ssdclxks5x298-user-generators
 p74rr88in9bvidsdm673k3fyhv2xb7h7-usermod.pam
 155kjccmpf65n9qnjwpbrniflkg585xz-users-groups.json
-2a4pzcwh5381px0ch72kk3l806qshg1f-user-units
+4vjn2gmax5snjsmmlm4kr3fqix988ykp-user-units
 q6lh1ywsmby6sp96bnh8f1jlnwxvfkva-util-linux-2.39.4-bin
 060y1xl35fk33j56nng6chm5fp762vqq-util-linux-2.39.4-lib
 4rxwwas98f4nnsxvgkmlj6w6r62kv657-util-linux-2.39.4-login
@@ -1878,12 +1879,12 @@ m65vkgycg83d221wjm8al7cpzi2frw72-xlock.pam
 5px363nwq7x9npvswz8i48sgibrvl2r2-xorg-locale
 qwzsn5kzhk7qqi62h4a80shshrf318lv-xorgproto-2024.1
 lzg2xrl0s1jydz6yb16v6ilpbgsk5dvp-xrdb-1.2.2
-n412nzhipq3x6dg8fbaf699vgyq47lqx-X-Restart-Triggers-dbus
+hr5gm1zy73vbw0ppma0f5biylwg6czqf-X-Restart-Triggers-dbus
 why8pj3g0i24vvhzph9n1x0li2snhmq8-X-Restart-Triggers-keyd
 a16ss4cz3z59f8k8gz885vf6jchajzfk-X-Restart-Triggers-NetworkManager
 r2mgx71s455q1lmzrjqv2n2bfshb0p6h-X-Restart-Triggers-NetworkManager-dispatcher
 dga3aspll090z7x9fnvnxffigqh4axkh-X-Restart-Triggers-nix-daemon
-f838qgfml4w2kw3nb2bh5hi6cak430bl-X-Restart-Triggers-polkit
+46scwyhw1dr4xbfdy8cqshvif4qwhffr-X-Restart-Triggers-polkit
 py2dc0p7lvcbg624q5byyz5ig82llwzm-X-Restart-Triggers-reload-systemd-vconsole-setup
 7j5mqhblkkx26prkpbpzcxw9d0mk2a5w-X-Restart-Triggers-resolvconf
 49s9dffrljff1bg9w0xcmz6jxgn8nbwl-X-Restart-Triggers-systemd-journald
@@ -1891,7 +1892,7 @@ cszkmibhwrhi56m35zgb1bi07knsbfy1-X-Restart-Triggers-systemd-journald-
 z03wz6kmnghpa678lbabjscq8gy68xr1-X-Restart-Triggers-systemd-modules-load
 hr0bwfzx61sxfw4schs49nrm82liw060-X-Restart-Triggers-systemd-sysctl
 iybffxxhax15vj79i9lir3i4s1cpx7f2-X-Restart-Triggers-systemd-timesyncd
-cc8gg59h5apmyfih55hshh5zvvrkf5az-X-Restart-Triggers-systemd-tmpfiles-resetup
+8qhbmv1m8mr5bx8m5mzv6q1xq2i1yjac-X-Restart-Triggers-systemd-tmpfiles-resetup
 ldp1lw03x3nn3v307zlk254rmdwrpqbh-X-Restart-Triggers-systemd-udevd
 mp7z4yg7sd4c9acgrs8s5x549i8rc9fs-xscreensaver.pam
 cvhx52v6r5vbbqislf60w1das607yz0k-xsetroot-1.1.3

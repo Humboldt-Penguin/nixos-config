@@ -158,4 +158,7 @@
   /* Automatically optimize the store during every build (https://wiki.nixos.org/wiki/Storage_optimization ) */
   nix.settings.auto-optimise-store = true;
 
+  /* Run unpatched binaries, required for using Python with uv (https://github.com/nix-community/nix-ld ) */
+  programs.nix-ld.enable = true;
+
 }

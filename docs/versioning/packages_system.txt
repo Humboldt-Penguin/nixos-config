@@ -697,6 +697,7 @@ ldacBT-2.0.2.3
 ldacBT-2.0.2.3
 ldb-2.9.1
 ldconfig
+ld-library-path
 ldns-1.8.4
 lerc-4.0.0
 lerc-4.0.0
@@ -1191,6 +1192,7 @@ nix-2.24.14-man
 nix-bash-completions-0.6.8
 nix.conf
 nix-info
+nix-ld-2.0.3
 nixos-build-vms
 nixos.conf
 nixos-configuration-reference-manpage
@@ -1612,7 +1614,6 @@ strace-6.14-man
 strip.sh
 strongswan-5.9.14
 stub-ld-i686-unknown-linux-musl
-stub-ld-x86_64-unknown-linux-musl
 sudo-1.9.16p2
 sudoers
 sudo.pam
