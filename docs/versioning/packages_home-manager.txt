@@ -48,7 +48,7 @@ systemd-257.3
 tldr-1.6.1
 tor-browser-14.5
 trashy-2.0.0
-ungoogled-chromium-135.0.7049.95
+ungoogled-chromium-135.0.7049.114
 vesktop-1.5.6
 vscodium-1.99.32562
 wget-1.25.0
