@@ -59,6 +59,15 @@
         "c." = "codium .";
         "j" = "just";
 
+        /* misc util */
+        "inhibit" = "systemd-inhibit sleep";
+          /*
+          - NOTE on `inhibit`: since this is using the `sleep` command, time can be formatted as:
+            - SUFFIX may be 's' for seconds (the default), 'm' for minutes, 'h' for hours or 'd' for days.
+            - NUMBER need not be an integer.
+            - Given two or more arguments, pause for the amount of time specified by the *sum* of their values.
+          */
+
         /* git */
         "gs" = "git status";
         "ga" = "git add";
