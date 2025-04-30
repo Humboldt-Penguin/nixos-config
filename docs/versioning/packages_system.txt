@@ -707,7 +707,7 @@ lessconfig
 lesspipe-2.17
 libaccounts-glib-1.27
 libaccounts-glib-1.27-dev
-libadwaita-1.6.2
+libadwaita-1.6.4
 libaio-0.3.113
 libao-1.2.2
 libao-1.2.2
@@ -1207,7 +1207,7 @@ nixos-manual.desktop
 nixos-manual-html
 nixos-option
 nixos-rebuild
-nixos-system-wired-24.11.20250427.26245db
+nixos-system-wired-24.11.20250429.b000159
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
