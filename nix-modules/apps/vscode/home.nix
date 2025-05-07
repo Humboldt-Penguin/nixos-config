@@ -86,6 +86,27 @@
           "tag:yaml.org,2002:python/object/apply:pymdownx.slugs.slugify mapping"
         ];
         "redhat.telemetry.enabled" = false;  ## this is to curb the `redhat.vscode-yaml` extension
+
+
+
+        /* LaTeX */
+
+        "latex-workshop.latex.autoBuild.run" = "onSave";
+
+        "latex-workshop.formatting.latex" = "tex-fmt";
+        "latex-workshop.formatting.tex-fmt.args" = [
+          "--nowrap"
+          "--tabsize" "4"
+        ];
+
+        "[latex]" = {
+          "editor.formatOnSave" = true;
+          "editor.defaultFormatter" = "James-Yu.latex-workshop";
+        };
+
+
+
+
       };
 
 
@@ -176,6 +197,9 @@
           ms-toolsai.jupyter
           ms-toolsai.jupyter-renderers
           ms-toolsai.jupyter-keymap
+
+          /* LaTeX */
+          james-yu.latex-workshop
 
           /* Themes (https://vscodethemes.com/?type=dark) */
           teabyii.ayu
