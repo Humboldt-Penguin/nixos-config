@@ -126,6 +126,10 @@ in
       kdePackages.kdenlive
 
     ])
+    ++
+    (with pkgs-unstable-unfree; [
+      code-cursor
+    ])
     ;
 
 

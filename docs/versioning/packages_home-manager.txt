@@ -1,6 +1,7 @@
 bash-interactive-5.2p37
 bash-interactive-5.2p37-man
 cups-2.4.11
+cursor-0.49.6
 dbus-1.14.10
 git-2.47.2
 hm-session-vars.sh
