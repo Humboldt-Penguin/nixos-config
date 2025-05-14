@@ -163,6 +163,13 @@
           key = "alt+c";
           when = "editorTextFocus";
         }
+
+        /* C-k g -- open extension: git log graph */
+        {
+          command = "git-graph.view";
+          key = "ctrl+k g";
+        }
+
       ];
 
 
