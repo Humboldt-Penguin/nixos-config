@@ -23,7 +23,7 @@
       enable = true;
 
       /* Make zsh init with a custom-written oh-my-posh config file written by home-manager (see `home.file = ...`). */
-      initExtra = ''
+      initContent = ''
         eval "$(${pkgs.oh-my-posh}/bin/oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen.toml)"
         export PATH="$HOME/.local/bin:$PATH"    # make custom scripts in `~/.local/bin` available
 
