@@ -112,6 +112,8 @@ in
       # simplescreenrecorder # not on wayland :(
       obs-studio # this is only for screen recording with audio, use KDE Spectacle (or maybe try flameshot at some point?) for screenshots and recordings without audio!
 
+      localsend
+
     ])
     ++
     (with pkgs-unstable; [
