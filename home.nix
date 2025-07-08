@@ -37,6 +37,7 @@ in
 {
   imports = [
     ./nix-modules/apps/chromium/home.nix
+    ./nix-modules/apps/localsend/home.nix
     ./nix-modules/apps/vscode/home.nix
 
     ./nix-modules/system/keyd/home.nix
@@ -111,8 +112,6 @@ in
       mpv
       # simplescreenrecorder # not on wayland :(
       obs-studio # this is only for screen recording with audio, use KDE Spectacle (or maybe try flameshot at some point?) for screenshots and recordings without audio!
-
-      localsend
 
     ])
     ++

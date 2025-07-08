@@ -5,6 +5,7 @@
     ./nix-modules/.hardware-configuration/ThinkPad_X1_Yoga_4th.nix
 
     ./nix-modules/apps/chromium/system.nix
+    ./nix-modules/apps/localsend/system.nix
     ./nix-modules/apps/steam/system.nix
 
     # ./nix-modules/system/fprintd/system.nix  /* see explanation at top of module file for why this is bad/buggy */
