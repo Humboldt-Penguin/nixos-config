@@ -5,6 +5,7 @@
     ./nix-modules/.hardware-configuration/ThinkPad_X1_Yoga_4th.nix
 
     ./nix-modules/apps/chromium/system.nix
+    ./nix-modules/apps/kdeconnect/system.nix
     ./nix-modules/apps/localsend/system.nix
     ./nix-modules/apps/steam/system.nix
 

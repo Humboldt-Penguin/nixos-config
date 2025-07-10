@@ -37,6 +37,7 @@ in
 {
   imports = [
     ./nix-modules/apps/chromium/home.nix
+    ./nix-modules/apps/kdeconnect/home.nix
     ./nix-modules/apps/localsend/home.nix
     ./nix-modules/apps/vscode/home.nix
 
