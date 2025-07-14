@@ -3,6 +3,7 @@ bash-interactive-5.2p37-man
 cups-2.4.11
 cursor-1.2.1
 dbus-1.14.10
+freecad-1.0.1
 git-2.49.0
 hm-session-vars.sh
 home-configuration-reference-manpage
