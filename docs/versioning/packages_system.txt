@@ -497,7 +497,7 @@ imath-3.1.12
 inih-58
 iniparser-4.2.6
 initrd-fsinfo
-initrd-linux-6.12.37
+initrd-linux-6.12.39
 input.conf
 inputrc
 install-systemd-boot.sh
@@ -1086,9 +1086,9 @@ lilv-0.24.24
 lilv-0.24.24
 limits.conf
 link-units
-linux-6.12.37
-linux-6.12.37-modules
-linux-6.12.37-modules-shrunk
+linux-6.12.39
+linux-6.12.39-modules
+linux-6.12.39-modules-shrunk
 linux-firmware-20250708-zstd
 linux-headers-6.12.7
 linux-headers-static-6.12.7
@@ -1150,7 +1150,7 @@ messagelib-25.04.3
 milou-6.3.6
 minizip-1.3.1
 mjpegtools-2.2.1-lib
-mkpasswd-5.6.2
+mkpasswd-5.6.3
 mobile-broadband-provider-info-20240407
 mobile-broadband-provider-info-20240407
 modemmanager-1.22.0
@@ -1184,10 +1184,10 @@ nettle-3.10.1
 net-tools-2.10
 net-tools-2.10
 network.conf
-networkmanager-1.52.0
-networkmanager-1.52.0
-networkmanager-1.52.0-doc
-networkmanager-1.52.0-man
+networkmanager-1.52.1
+networkmanager-1.52.1
+networkmanager-1.52.1-doc
+networkmanager-1.52.1-man
 NetworkManager.conf
 NetworkManager-fortisslvpn-gnome-1.4.0
 NetworkManager-iodine-gnome-1.2.0-unstable-2024-11-02
@@ -1227,7 +1227,7 @@ nixos-manual-html
 nixos-option
 nixos-option.nix
 nixos-rebuild
-nixos-system-wired-25.05.20250712.650e572
+nixos-system-wired-25.05.20250718.f01fe91
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
