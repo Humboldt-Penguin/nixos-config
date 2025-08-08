@@ -4,7 +4,7 @@ cups-2.4.11
 cursor-1.3.8
 dbus-1.14.10
 freecad-1.0.1
-git-2.49.0
+git-2.50.1
 hm-session-vars.sh
 home-configuration-reference-manpage
 home-manager
@@ -24,7 +24,7 @@ kstatusnotifieritem-6.14.0
 kwallet-6.14.1
 lf-35
 libreoffice-24.8.7.2-wrapped
-librewolf-141.0-1
+librewolf-141.0.2-1
 localsend-1.17.0
 man-db-2.13.0
 micro-2.0.14
@@ -41,12 +41,12 @@ rclone-1.69.1
 rclone-1.69.1-man
 rsync-3.4.1
 shared-mime-info-2.4
-signal-desktop-7.62.0
-systemd-257.6
+signal-desktop-7.64.0
+systemd-257.7
 tldr-3.3.0
 tor-browser-14.5.5
 trashy-2.0.0
-ungoogled-chromium-138.0.7204.183
+ungoogled-chromium-139.0.7258.66
 vesktop-1.5.8
 vscodium-1.102.35058
 wget-1.25.0
