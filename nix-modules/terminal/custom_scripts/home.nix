@@ -8,8 +8,11 @@
   ...
 }:
 
+let
+  uv = lib.getExe pkgs.uv;
+in
 {
-  /* NOTE: to make custom scripts in `~/.local/bin` available, you must add `export PATH="$HOME/.local/bin:$PATH"` to `programs.zsh.initExtra`. */
+  /* NOTE: to make custom scripts in `~/.local/bin` available, you must add `export PATH="$HOME/.local/bin:$PATH"` to `programs.zsh.initContent`. */
   home.file = {
 
     /*
@@ -17,7 +20,7 @@
     */
     ".local/bin/write-sha256" = {
       executable = true;
-      source = ./src/write-sha256;
+      source = ./src/write-sha256.sh;
     };
 
     /*
@@ -25,7 +28,18 @@
     */
     ".local/bin/stay-awake" = {
       executable = true;
-      source = ./src/stay-awake;
+      source = ./src/stay-awake.sh;
+    };
+
+    /*
+      This makes a backup of a file/directory like "foo.bar" -> "foo__backup_YYMMDD-HHMM.bar.tar.gz" or "foo/" -> "foo__backup_YYMMDD-HHMM.tar.gz"
+    */
+    ".local/bin/backup" = {
+      executable = true;
+      text = ''
+        #!/usr/bin/env bash
+        exec ${uv} run --script ${./src/backup.py} "$@"
+      '';
     };
 
   };
