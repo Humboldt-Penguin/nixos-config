@@ -190,11 +190,6 @@
               - Search unstable: https://search.nixos.org/packages?channel=unstable&query=vscode-extensions
           */
           (with pkgs.vscode-extensions; [
-            /* Python/Jupyter (TODO: move back to unstable once this is fixed: https://github.com/NixOS/nixpkgs/issues/437024) */
-            ms-python.python
-            ms-toolsai.jupyter
-            ms-toolsai.jupyter-renderers
-            ms-toolsai.jupyter-keymap
           ])
           ++
           (with pkgs-unstable.vscode-extensions; [
@@ -203,6 +198,12 @@
             nefrob.vscode-just-syntax
             redhat.vscode-yaml
             tamasfe.even-better-toml
+
+            /* Python/Jupyter */
+            ms-python.python
+            ms-toolsai.jupyter
+            ms-toolsai.jupyter-renderers
+            ms-toolsai.jupyter-keymap
 
             /* LaTeX */
             james-yu.latex-workshop
