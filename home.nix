@@ -163,25 +163,4 @@ in
   /* (this was here by default, I did not add this, do not remove) Let Home Manager install and manage itself. */
   programs.home-manager.enable = true;
 
-
-
-
-  programs = {
-
-    bash = {
-      enable = true;
-      bashrcExtra = ''
-        PS1='$(if [ $SHLVL -gt 1 ]; then echo "($SHLVL) "; fi)'$PS1
-      '';
-      # shellAliases = {
-      #   l = "ls -la";
-      #   ".." = "cd ..";
-      #   c = "clear";
-      # };
-    };
-
-  };
-
-
-
 }

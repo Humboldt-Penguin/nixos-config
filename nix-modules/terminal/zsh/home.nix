@@ -99,6 +99,16 @@
     };
 
 
+
+    bash = {
+      enable = true;
+      /* Prepend SHLVL to prompt if greater than 1, to help distinguish nested shells. Note this is for bash in case I ever land in a bash shell -- zsh is configured via `zen.toml`. */
+      bashrcExtra = ''
+        PS1='$(if [ $SHLVL -gt 1 ]; then echo "($SHLVL) "; fi)'$PS1
+      '';
+    };
+
+
   };
 
 }
