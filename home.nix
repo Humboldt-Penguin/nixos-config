@@ -114,7 +114,8 @@ in
       # simplescreenrecorder # not on wayland :(
       obs-studio # this is only for screen recording with audio, use KDE Spectacle (or maybe try flameshot at some point?) for screenshots and recordings without audio!
 
-      freecad
+      /* unsorted */
+      # freecad  # occasional use (install as needed via nix-shell)
 
     ])
     ++
@@ -122,12 +123,10 @@ in
       /* programming tools */
       just
 
-      ## gui: media
+      /* unsorted */
       qbittorrent
-
-      zotero
-
-      kdePackages.kdenlive
+      # zotero  # TODO: REVISIT
+      # kdePackages.kdenlive  # occasional use (install as needed via nix-shell)
 
     ])
     ++
