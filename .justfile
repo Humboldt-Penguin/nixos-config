@@ -33,7 +33,10 @@ rebuild-home: && _update_hm_generation_number _update_hm_package_list
 
 [group('1. Update System')]
 [doc('`rebuild-system` -> `rebuild-home`')]
-rebuild-all: rebuild-system rebuild-home
+rebuild-all:
+    just rebuild-system
+    sleep 5s  # sometimes system rebuild will disconnect/reconnect wifi
+    just rebuild-home
 
 
 [group('1. Update System')]
@@ -186,6 +189,8 @@ get-path pkg:
 codium-clear-cache:
     -trash ~/.vscode-oss
     -trash ~/.config/VSCodium
+
+## TODO: at some point, consider a script which makes the vscodium `settings.json` editable (see chatgpt convo: https://chatgpt.com/share/68b8556d-f890-800e-bfc5-4e7fe207a7e9 -- script looks good, I just didn't implement it yet bc lazy)
 
 [group('Misc Helper Recipes')]
 [doc('Crash chromium so when you relaunch, you get "restore tabs" dialog (remembers multiple desktops and PWAs).')]
