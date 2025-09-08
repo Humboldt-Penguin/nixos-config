@@ -9,6 +9,7 @@
     ./nix-modules/apps/localsend/system.nix
     ./nix-modules/apps/steam/system.nix
 
+    ./nix-modules/system/battery/system.nix
     # ./nix-modules/system/fprintd/system.nix  /* see explanation at top of module file for why this is bad/buggy */
     ./nix-modules/system/kde/system.nix
     ./nix-modules/system/keyd/system.nix
