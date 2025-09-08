@@ -215,6 +215,8 @@ ebook-tools-0.2.2
 ed-1.21.1
 editline-1.17.1
 editorconfig-core-c-0.12.9
+efibootmgr-18
+efivar-39
 elfutils-0.192
 elfutils-0.192
 ell-0.76
@@ -264,6 +266,7 @@ etc-systemd-system-preset-00-nixos.preset
 etc-systemd-timesyncd.conf
 etc-systemd-user.conf
 etc-systemd-user-preset-00-nixos.preset
+etc-tlp.conf
 etc-UPower-UPower.conf
 etc-X11-xorg.conf.d-00-keyboard.conf
 etc-zinputrc
@@ -346,6 +349,11 @@ fuse-2.9.9-man
 fuse-3.16.2
 fuse-3.16.2-bin
 fuse-3.16.2-man
+fwupd-2.0.9
+fwupd-2.0.9-lib
+fwupd-2.0.9-man
+fwupd.conf
+fwupd-efi-1.7
 game-music-emu-0.6.3
 gawk-5.3.2
 gawk-5.3.2
@@ -477,9 +485,11 @@ hack-font-3.003
 harfbuzz-10.2.0
 harfbuzz-10.2.0
 harfbuzz-icu-10.2.0
+hdparm-9.65
 hfst-ospell-0.5.4
 hicolor-icon-theme-0.18
 hidapi-0.14.0
+hostname-net-tools-2.10
 hosts
 hspell-1.4
 hunspell-1.7.2
@@ -512,6 +522,7 @@ isl-0.20
 iso-codes-4.17.0
 iso-codes-4.17.0
 issue
+iw-6.9
 jansson-2.14
 jansson-2.14
 jasper-4.2.5-lib
@@ -838,6 +849,7 @@ libinput-1.27.1
 libipt-2.1.2
 libjack2-1.9.22
 libjack2-1.9.22
+libjcat-0.2.3
 libjpeg-turbo-3.0.4
 libjpeg-turbo-3.0.4
 libjpeg-turbo-3.0.4-bin
@@ -1224,7 +1236,7 @@ nixos-manual-html
 nixos-option
 nixos-option.nix
 nixos-rebuild
-nixos-system-wired-25.05.20250901.7c815e5
+nixos-system-wired-25.05.20250904.fe83bbd
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
@@ -1422,7 +1434,6 @@ poppler-utils-25.07.0
 popt-1.19
 popt-1.19
 powerdevil-6.3.6
-power-profiles-daemon-0.30
 ppp-2.5.2
 ppp-2.5.2
 pre-switch-checks
@@ -1431,6 +1442,7 @@ prison-6.14.0
 procps-4.0.4
 procps-4.0.4
 protobuf-30.2
+protobuf-c-1.5.2-lib
 publicsuffix-list-0-unstable-2025-03-12
 publicsuffix-list-0-unstable-2025-03-12
 pulseaudio-17.0
@@ -1575,6 +1587,7 @@ shutdown-ramfs-contents.json
 signond-8.61-unstable-2023-11-24
 slang-2.3.3
 slang-2.3.3
+smartmontools-7.5
 snappy-1.2.1
 snmp.conf
 socat-1.8.0.3
@@ -1674,12 +1687,16 @@ tcl-8.6.16
 tdb-1.4.13
 tevent-0.16.2
 texinfo-interactive-7.2
+thermald-2.5.9
 thin-provisioning-tools-1.1.0
 threadweaver-6.14.0
 time-1.9
 tinysparql-3.9.2
 tinysparql-3.9.2
+tlp-1.8.0
 tmpfiles.d
+tpm2-abrmd-3.0.0
+tpm2-tools-5.7
 tpm2-tss-4.1.3
 tpm2-tss-4.1.3
 tremor-unstable-2018-03-16
@@ -1702,6 +1719,7 @@ unit-autovt-.service
 unit-bluetooth.service
 unit-container-getty-.service
 unit-container-.service
+unit-cpufreq.service-disabled
 unit-cups.service
 unit-cups.socket
 unit-dbus.service
@@ -1712,6 +1730,8 @@ unit-drkonqi-coredump-processor-.service
 unit-firewall.service
 unit-fs.target
 unit-fstrim.timer
+unit-fwupd-refresh.service
+unit-fwupd-refresh.timer
 unit-generate-shutdown-ramfs.service
 unit-getty-.service
 unit-keyd.service
@@ -1800,6 +1820,9 @@ unit-systemd-udev-settle.service
 unit-systemd-update-utmp.service
 unit-systemd-user-sessions.service
 unit-system.slice
+unit-thermald.service
+unit-tlp.service
+unit-tlp-sleep.service
 unit-user-runtime-dir-.service
 unit-user-.service
 unit-user.slice
@@ -1871,6 +1894,7 @@ x264-0-unstable-2025-01-03-lib
 x264-0-unstable-2025-01-03-lib
 x265-4.1
 x265-4.1
+x86_energy_perf_policy-6.12.44
 xapian-1.4.27
 xauth-1.1.4
 xbitmaps-1.1.3
@@ -1918,6 +1942,7 @@ X-Restart-Triggers-systemd-sysctl
 X-Restart-Triggers-systemd-timesyncd
 X-Restart-Triggers-systemd-tmpfiles-resetup
 X-Restart-Triggers-systemd-udevd
+X-Restart-Triggers-tlp
 xsettingsd-1.0.2
 xvidcore-1.3.7
 xvidcore-1.3.7
