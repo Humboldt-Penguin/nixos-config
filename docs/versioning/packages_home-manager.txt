@@ -1,7 +1,7 @@
 bash-interactive-5.2p37
 bash-interactive-5.2p37-man
 cups-2.4.11
-cursor-1.5.5
+cursor-1.5.11
 dbus-1.14.10
 git-2.50.1
 hm-session-vars.sh
@@ -44,7 +44,7 @@ systemd-257.8
 tldr-3.3.0
 tor-browser-14.5.6
 trashy-2.0.0
-ungoogled-chromium-139.0.7258.154
+ungoogled-chromium-140.0.7339.80
 vesktop-1.5.8
 vscodium-1.103.25610
 wget-1.25.0

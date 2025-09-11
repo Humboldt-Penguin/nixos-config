@@ -74,9 +74,9 @@ bash-interactive-5.2p37-man
 bash-interactive-5.2p37-man
 bc-1.08.1
 bcache-tools-1.0.8
-bind-9.20.11-host
-bind-9.20.11-lib
-bind-9.20.11-man
+bind-9.20.12-host
+bind-9.20.12-lib
+bind-9.20.12-man
 binfmt_nixos.conf
 bison-3.8.2
 bluedevil-6.3.6
@@ -281,6 +281,7 @@ exiv2-0.28.5-lib
 expat-2.7.1
 expat-2.7.1
 expat-2.7.1-dev
+extra-utils
 f2fs-tools-1.16.0
 faad2-2.11.2
 fallback-cursor-theme
@@ -505,7 +506,8 @@ ijs-10.05.1
 imath-3.1.12
 inih-58
 iniparser-4.2.6
-initrd-linux-6.12.44
+initrd-fsinfo
+initrd-linux-6.12.46
 input.conf
 inputrc
 install-systemd-boot.sh
@@ -596,6 +598,7 @@ kexec-tools-2.0.29
 kexec-tools-2.0.29
 keyd-2.5.0
 keyd-application-mapper-2.5.0
+keymap
 keyutils-1.6.3-lib
 keyutils-1.6.3-lib
 kfilemetadata-6.14.0
@@ -1095,9 +1098,10 @@ libzip-1.11.3
 lilv-0.24.24
 lilv-0.24.24
 limits.conf
-linux-6.12.44
-linux-6.12.44-modules
-linux-6.12.44-modules-shrunk
+link-units
+linux-6.12.46
+linux-6.12.46-modules
+linux-6.12.46-modules-shrunk
 linux-firmware-20250808-zstd
 linux-headers-6.12.7
 linux-headers-static-6.12.7
@@ -1213,9 +1217,9 @@ nftables-1.1.3
 nghttp2-1.65.0-lib
 nghttp2-1.65.0-lib
 nilfs-utils-2.2.11
-nix-2.28.4
-nix-2.28.4-doc
-nix-2.28.4-man
+nix-2.28.5
+nix-2.28.5-doc
+nix-2.28.5-man
 nix-bash-completions-0.6.8
 nix.conf
 nix-info
@@ -1236,7 +1240,7 @@ nixos-manual-html
 nixos-option
 nixos-option.nix
 nixos-rebuild
-nixos-system-wired-25.05.20250904.fe83bbd
+nixos-system-wired-25.05.20250910.8cd5ce8
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
@@ -1626,6 +1630,7 @@ sratom-0.6.18
 srt-1.5.4
 srt-1.5.4
 sstp-client-unstable-2023-03-25
+stage-1-init.sh
 steam
 steam-bwrap
 steam-fhsenv-profile
@@ -1706,8 +1711,9 @@ tzdata-2025b
 tzdata-2025b
 udev-path
 udev-rules
-udisks-2.10.1
-udisks-2.10.1-man
+udev-rules
+udisks-2.10.2
+udisks-2.10.2-man
 udisks2.conf
 umockdev-0.19.1
 unbound-1.23.1-lib
@@ -1874,7 +1880,7 @@ wavpack-5.8.1
 wayland-1.23.1
 wayland-1.23.1
 wayland-utils-1.2.0
-webkitgtk-2.48.5+abi=4.1
+webkitgtk-2.48.6+abi=4.1
 webrtc-audio-processing-1.3
 webrtc-audio-processing-1.3
 which-2.23
@@ -1894,7 +1900,7 @@ x264-0-unstable-2025-01-03-lib
 x264-0-unstable-2025-01-03-lib
 x265-4.1
 x265-4.1
-x86_energy_perf_policy-6.12.44
+x86_energy_perf_policy-6.12.46
 xapian-1.4.27
 xauth-1.1.4
 xbitmaps-1.1.3
