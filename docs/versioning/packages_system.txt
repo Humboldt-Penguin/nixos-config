@@ -276,8 +276,8 @@ etc-zshrc
 ethtool-6.14
 ethtool-6.14
 exfat-1.4.0
-exiv2-0.28.5
-exiv2-0.28.5-lib
+exiv2-0.28.7
+exiv2-0.28.7-lib
 expat-2.7.1
 expat-2.7.1
 expat-2.7.1-dev
@@ -507,7 +507,7 @@ imath-3.1.12
 inih-58
 iniparser-4.2.6
 initrd-fsinfo
-initrd-linux-6.12.46
+initrd-linux-6.12.47
 input.conf
 inputrc
 install-systemd-boot.sh
@@ -1099,9 +1099,9 @@ lilv-0.24.24
 lilv-0.24.24
 limits.conf
 link-units
-linux-6.12.46
-linux-6.12.46-modules
-linux-6.12.46-modules-shrunk
+linux-6.12.47
+linux-6.12.47-modules
+linux-6.12.47-modules-shrunk
 linux-firmware-20250808-zstd
 linux-headers-6.12.7
 linux-headers-static-6.12.7
@@ -1240,7 +1240,7 @@ nixos-manual-html
 nixos-option
 nixos-option.nix
 nixos-rebuild
-nixos-system-wired-25.05.20250910.8cd5ce8
+nixos-system-wired-25.05.20250914.9a09444
 nixos-tmpfiles.d
 nixos-version
 nix-zsh-completions-0.5.1
@@ -1900,7 +1900,7 @@ x264-0-unstable-2025-01-03-lib
 x264-0-unstable-2025-01-03-lib
 x265-4.1
 x265-4.1
-x86_energy_perf_policy-6.12.46
+x86_energy_perf_policy-6.12.47
 xapian-1.4.27
 xauth-1.1.4
 xbitmaps-1.1.3
