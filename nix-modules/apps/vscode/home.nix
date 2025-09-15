@@ -24,6 +24,7 @@
       profiles.default = {
 
         userSettings = {
+
           /* `keyd` compatibility...
               - This is a workaround for my `keyd` custom hotkeys -- specifically, my hotkeys for navigation involve holding "alt", which has unintended side effects in editors like vscode/vscodium since default behavior is that holding alt highlights stuff in the menu bar. To fix this, I add the four settings above to my 'settings.json'.
               - Also note that there's some room for flexibility here (e.g. you can enable mnemonics, I just don't use it personally).
@@ -53,22 +54,28 @@
           "window.zoomLevel" = -1;  ## Zoom out a bit (default is 0).
           "window.zoomPerWindow" = false;  ## Fix bug where opening a second instance of vscode will "forget" what you used last time and reset zoom to 0.
 
-          /* Jupyter stuff: */
+
+
+          /* Extension: Jupyter */
           "jupyter.askForKernelRestart" = false;
           "notebook.lineNumbers" = "on";
 
+          /* Extension: Copilot (enable copilot for markdown files) */
+          "github.copilot.enable" = {
+            "markdown" = true;
+          };
           # /* Disable copilot: */
           # "github.copilot.enable" = {
           #   "*" = false;
           # };
 
-          /* Enable copilot for markdown files: */
-          "github.copilot.enable" = {
-            "markdown" = true;
-          };
-
-          /* autoDocstring extension */
+          /* Extension: autoDocstring */
           "autoDocstring.docstringFormat" = "numpy";
+
+          /* Extension: Comment Divider */
+          "comment-divider.languagesMap" = {
+                "just" =  ["#"];
+          };
 
 
 
@@ -243,21 +250,21 @@
               ## Link: https://marketplace.visualstudio.com/items?itemName=stackbreak.comment-divider
               name = "comment-divider";
               publisher = "stackbreak";
-              version = "0.4.0";
+              version = "0.4.0";  # 2021-05-17
               sha256 = "sha256-L8htDV8x50cbmRxr4pDlZHSW56QRnJjlYTps9iwVkuE=";
             }
             {
               ## Link: https://marketplace.visualstudio.com/items?itemName=matthewthorning.align-vertically
               name = "align-vertically";
               publisher = "matthewthorning";
-              version = "0.2.0";
+              version = "0.2.0";  # 2019-01-27
               sha256 = "sha256-kf3FpOm2E6Cyi2UFExgrGf03mkEMeIURul4GaRXAglg=";
             }
             {
               ## Link: https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable
               name = "markdowntable";
               publisher = "TakumiI";
-              version = "0.13.0";
+              version = "0.13.0";  # 2025-01-18
               sha256 = "sha256-N1FZbDFiX5S+qKrtWpA+zGUhC81db5JiqcSPxeHmkhE=";
             }
           ];
