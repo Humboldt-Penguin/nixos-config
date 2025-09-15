@@ -6,7 +6,13 @@
 
 {
 
+  /* PREFACE: some info/quotes taken from https://wiki.nixos.org/wiki/Laptop */
+
+
   /* -------------------------- [1. CORE TLP TWEAKS] -------------------------- */
+
+  /* "To enable the stock NixOS power management tool which allows for managing hibernate and suspend states you can write [below]. This tool is compatible with the other tools mentioned, but the other tools may overwrite this setting." */
+  powerManagement.enable = true;
 
   /* PPD ("power profile daemon", KDE default) conflicts with TLP (linux advanced power management for laptops, esp thinkpad); turn off PPD so TLP can manage power/battery. */
   services.power-profiles-daemon.enable = false;
@@ -36,7 +42,7 @@
       RUNTIME_PM_ON_AC = "on";  # keep devices fully awake on AC
       RUNTIME_PM_ON_BAT = "auto";
       PCIE_ASPM_ON_AC = "default";
-      PCIE_ASPM_ON_BAT = "powersave";
+      PCIE_ASPM_ON_BAT = "default";
 
       /* Storage (SATA/NVMe) power */
       NVME_APST_ON_AC = 1;
@@ -47,9 +53,9 @@
       WIFI_PWR_ON_BAT = "off";  # TODO: If you want to squeeze a bit extra battery life, set this to "on"
       WOL_DISABLE = "Y";
 
-      /* Audio -- if you hear weird audio pops, tweak this to 0 or 10. */
-      SOUND_POWER_SAVE_ON_AC = 5;
-      SOUND_POWER_SAVE_ON_BAT = 5;
+      /* Audio -- if you hear weird audio pops, tweak this between 0-10. */
+      SOUND_POWER_SAVE_ON_AC = 1;
+      SOUND_POWER_SAVE_ON_BAT = 1;
       SOUND_POWER_SAVE_CONTROLLER = "Y";
 
     };
@@ -59,13 +65,27 @@
 
 /* -------------------------- [2. SLEEP/HIBERNATE] -------------------------- */
 
-/* When lid is closed -- if plugged in, then suspend; else if unplugged, then suspend for some time (5 mins) before hibernating. */
+/*
+  - When lid is closed...
+    - If plugged in,
+      => Suspend
+    - Else (unplugged),
+      => Suspend for 5 minutes, then hibernate
+
+  - NOTE: For this to work, you MUST also go into KDE settings and configure:
+    - Navigate to "System" > "Power Management" > "When sleeping, enter:", and select "Standby, then hibernate (Switch to hibernation after a period of inactivity)" for all three options (ac power, battery, low battery).
+    - Explanation:
+      - PowerDevil (the KDE power‑management daemon) blocks lid‑switch handling, which means it intercepts lid‑close events and calls its own suspend routine (`systemd-suspend`, I think?) rather than letting `logind` invoke `suspend‑then‑hibernate` (you can verify this by running `systemd-inhibit --list`). To make KDE initiate `suspend‑then‑hibernate`, you have to go into its settings and choose the "Standby, then hibernate" option.
+      - TODO: I've found that KDE power settings occasionally reset themselves, which could lead to my laptop fully dying on accident. If you want to fully disable PowerDevil, look into: https://chatgpt.com/s/t_68c77eaaf2188191a40c5a639f8b5f69 .
+*/
   services.logind = {
     lidSwitch              = "suspend-then-hibernate";
     lidSwitchExternalPower = "suspend";
 
-    # The line below isn't a NixOS option, you'd have to specify it manually/literally via `services.logind.extraConfig`. However, it's not necessary since the default value is already "yes" (run `man logind.conf` -> press `/` to search -> search "lidSwitchIgnoreInhibited" and read corresponding docs).
-    # lidSwitchIgnoreInhibited = true; # always obey lid switch, even if DE inhibitors are active (e.g. media players)
+    /* Unnecessary (default is already "yes") but keeping to remind you that more config is available: https://www.man7.org/linux/man-pages/man5/logind.conf.5.html */
+    # extraConfig = ''
+    #   LidSwitchIgnoreInhibited=yes
+    # ''
   };
 
   /* More docs here: https://www.freedesktop.org/software/systemd/man/latest/systemd-sleep.conf.html */
@@ -121,9 +141,10 @@
 
   /* -------------------------------- [3. MISC] ------------------------------- */
 
-  /* Intel microcode + thermals (stability & performance under load) */
-  hardware.cpu.intel.updateMicrocode = true;
+  /* "Thermald proactively prevents overheating on Intel CPUs and works well with other tools." */
   services.thermald.enable = true;
+  /* "Update the CPU microcode for Intel processors." (recommended for security) */
+  hardware.cpu.intel.updateMicrocode = true;
 
 
   /*
