@@ -9,10 +9,7 @@ help:
 
 
 
-
-
-
-
+# ------------------------------------------------------------------------------
 
 # DEV NOTE: "A recipe can also have subsequent dependencies, which run immediately after the recipe and are introduced with an &&"
 # ^ [source] https://just.systems/man/en/dependencies.html
@@ -132,63 +129,67 @@ _update_system_package_list: _mkpath_versioning
 
 
 
-
-
-
-
-
-# [group('2. Garbage Collection')]
-# [doc('"Deletes all unreachable store objects in the Nix store to clean up your system."')]
-# clean-dangling:
-#     @# For more info, see: https://nix.dev/manual/nix/2.18/command-ref/nix-collect-garbage.html
-#     sudo nix-collect-garbage
-
-# [group('2. Garbage Collection')]
-# [doc('"Deletes old profiles, allowing potentially more store objects to be deleted because profiles are also garbage collection roots."')]
-# clean-nixos:
-#     @# Further reading: https://nix.dev/manual/nix/2.18/command-ref/nix-collect-garbage.html
-#     sudo nix-collect-garbage --delete-old
-#     @# DEV NOTE: I don't think you need `clean-dangling` afterwards, whenever I do it doesn't remove anything
-
-# [group('2. Garbage Collection')]
-# [doc('Delete all old `home-manager` generations (exceupt current).')]
-# clean-hm:
-#     @# Further reading: run `home-manager` and it'll autoprint the help message.
-#     home-manager expire-generations "-1 second"
-
-# [group('2. Garbage Collection')]
-# [doc('`clean-hm` -> `clean-nixos`.')]
-# clean-all: _cache-sudo clean-hm clean-nixos
+# ------------------------------------------------------------------------------
 
 [group('2. Garbage Collection')]
 [doc('Clean root profiles and call a store gc.')]
 clean-all:
+    #!/usr/bin/env bash
+    set -euo pipefail
+
+    KB=$((2**10))
+    MB=$((2**20))
+    GB=$((2**30))
+
+    to_bytes() { echo $(( $(df --output=avail /nix/store | tail -1) * 1024 )); }
+
+    before=$(to_bytes)
     nh clean all
+    after=$(to_bytes)
+    reclaimed=$((after - before))
+
+    hr() {
+        local bytes=$1 unit label
+        if   [ $bytes -ge $GB ]; then unit=$GB; label="GiB"
+        elif [ $bytes -ge $MB ]; then unit=$MB; label="MiB"
+        elif [ $bytes -ge $KB ]; then unit=$KB; label="KiB"
+        else printf "%d bytes\n" "$bytes"; return; fi
+
+        # Scale by 100 for 2 decimals, then format
+        scaled=$(( bytes * 100 / unit ))
+        printf "%.2f %s\n" "$((scaled / 100)).$((scaled % 100))" "$label"
+    }
+
+    printf "\n\n"
+    printf "Before: %s\n" "$(hr $before)"
+    printf "After:  %s\n" "$(hr $after)"
+    printf "Reclaimed: %s\n" "$(hr $reclaimed)"
+    printf "\n\n"
 
 
 
 
 
-
-
-
-
+# ------------------------------------------------------------------------------
 
 [group('Misc Helper Recipes')]
 [doc('Search home manager man page.')]
 search-home:
     man home-configuration.nix
 
+
 [group('Misc Helper Recipes')]
 [doc('Print the path in `/nix/store/` for a given package.')]
 get-path pkg:
     nix eval nixpkgs#{{pkg}}.outPath
+
 
 [group('Misc Helper Recipes')]
 [doc('Clear vscodium cache (its pretty good with allowing GUI/declared settings to coexist, but sometimes it gets confused).')]
 codium-clear-cache:
     -trash ~/.vscode-oss
     -trash ~/.config/VSCodium
+
 
 ## TODO: at some point, consider a script which makes the vscodium `settings.json` editable (see chatgpt convo: https://chatgpt.com/share/68b8556d-f890-800e-bfc5-4e7fe207a7e9 -- script looks good, I just didn't implement it yet bc lazy)
 
@@ -198,14 +199,7 @@ kill-chromium:
     pkill -9 chromium
 
 
-
-
-
-
-
-
-
-
+[group('Misc Helper Recipes')]
 [doc('since when?')]
 nixos-btw: _cache-sudo
     #!/usr/bin/env bash
