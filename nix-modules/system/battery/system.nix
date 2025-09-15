@@ -24,6 +24,7 @@
       /*
         Start/stop charging thresholds for main battery.
           - Note: On my ThinkPad (X1 Yoga4), the main battery is "battery 0"/"BAT0" -- for a list, see `ls /sys/class/power_supply/` (feel free to explore these directories for cool stuff!!)
+          - Note: Configuring these values via the KDE settings is buggy, they often both reset to 100% after rebooting. Hardcoding like this keeps it permanent.
       */
       START_CHARGE_THRESH_BAT0 = 60;  # "Start charging once below..."
       STOP_CHARGE_THRESH_BAT0  = 80;  # "Stop charging at..."
@@ -93,7 +94,8 @@
     HibernateDelaySec=5min
 
     HibernateOnACPower=no
-    # ^ I'm pretty sure this is redundant with `services.logind.lidSwitchExternalPower = "suspend"` above, but I keep it just in case.
+    # ^ "If this option is disabled, the countdown of `HibernateDelaySec=` starts only **after AC power is disconnected**, keeping the system in the suspend state otherwise." (available since systemd 257, verify your own with `systemctl --version`)
+    # ^ This *might* be redundant with `services.logind.lidSwitchExternalPower = "suspend"` above, but no harm in being explicit.
   '';
 
 
@@ -149,7 +151,7 @@
 
   /*
     - archwiki: "fwupd is a simple daemon to allow session software to update device firmware [e.g. BIOS/UEFI, embedded controller, Thunderbolt NVM, some SSDs, docks, Logitech receivers, etc.] on your local machine."
-    - For usage instructions, see: https://wiki.archlinux.org/title/Fwupd?utm_source=chatgpt.com#Usage
+    - For usage instructions, see: https://wiki.archlinux.org/title/Fwupd#Usage
     - TODO: not sure if I can manage device firmware declaratively...? doubt it
   */
   services.fwupd.enable = true;
