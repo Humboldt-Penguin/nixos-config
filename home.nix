@@ -107,6 +107,7 @@ in
       /* gui: office */
       libreoffice
       onlyoffice-bin
+      # pdfsam-basic  ## occasional use (prefer `nix-shell`)
       kdePackages.kolourpaint
 
       /* gui: media */
