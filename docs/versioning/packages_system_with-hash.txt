@@ -223,7 +223,7 @@ vf3hfbbl7h32axb73fa2b0dbqg0gmjgi-elfutils-0.192
 sdnaiy8639s8ys0l1whs494r5p0iylcx-ell-0.76
 xijzcjmvw3gqjhddgpls5yjnsxzwab40-enchant-2.6.9
 svdhkws1bvl89yz5i0j4arp8671yf3p8-espeak-ng-1.51.1
-5v1w557brjpdjvcpmx2ckkml0093d3ik-etc
+00nkx7mrqbg6yjnls63cmh1dypwdnkkk-etc
 y2qcwcrrdniap79drbf137bi6mkk9jyh-etc-alsa-conf.d-49-pipewire-modules.conf
 zx0x8ryc6wn95hyk65avmr23539qgqan-etc-bash_logout
 1qbbj2r5hy32inp6v11vc55nqhi30yjw-etc-bashrc
@@ -260,7 +260,7 @@ dm7vlcyb8k24yrqi5skc2dff36vvl83m-etc-sysctl.d-60-nixos.conf
 m10hiy1jd4qkhqfpj3912mnqy7jiha1v-etc-systemd-journald.conf
 cjc0jf1wc8ppjr9bdbk02pkzck64aphk-etc-systemd-logind.conf
 ipxgp7ps29inpdw58maya3pg01yiniqj-etc-systemd-oomd.conf
-9v55azih3pd5ij6hsps9ga1fanv0sl0n-etc-systemd-sleep.conf
+slp2myh5n47x7jawz1ncab9iy8mggvhw-etc-systemd-sleep.conf
 9vj1w4gcapzlknm3m96syy2vj5gkq2rh-etc-systemd-system.conf
 bynfzxirj1dq7g43pdawpc8anv9f0lsw-etc-systemd-system-preset-00-nixos.preset
 a5i3j8apb70n2liimpp5glmv96jcyx6m-etc-systemd-timesyncd.conf
@@ -1240,7 +1240,7 @@ fl0s26l1y1f977122sgwj81xnrblkll4-nixos-manual-html
 8hqm131pd6wlhikx7f1q4q9yb2q7pg2n-nixos-option
 gj6hz9mj23v01yvq1nn5f655jrcky1qq-nixos-option.nix
 wqxhbl9ac90z8i1ysv2xcb2yx320xhxw-nixos-rebuild
-cfry9s7ddsa3rri8p03jjfmca2z0hc52-nixos-system-wired-25.05.20250914.9a09444
+8b1mbdlbajfga7qjm7lyxbsg0hfbzywz-nixos-system-wired-25.05.20250914.9a09444
 gkx579zh1fydlxz2xy8qmb59k92chynz-nixos-tmpfiles.d
 iylpy2dk1012qaksrkdk4cy1vb0xb5as-nixos-version
 xmnrxwndklnr28wd90821fah49jjvy1p-nix-zsh-completions-0.5.1

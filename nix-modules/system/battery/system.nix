@@ -71,7 +71,7 @@
     - If plugged in,
       => Suspend
     - Else (unplugged),
-      => Suspend for 5 minutes, then hibernate
+      => Suspend for 15 minutes, then hibernate
 
   - NOTE: For this to work, you MUST also go into KDE settings and configure:
     - Navigate to "System" > "Power Management" > "When sleeping, enter:", and select "Standby, then hibernate (Switch to hibernation after a period of inactivity)" for all three options (ac power, battery, low battery).
@@ -91,7 +91,7 @@
 
   /* More docs here: https://www.freedesktop.org/software/systemd/man/latest/systemd-sleep.conf.html */
   systemd.sleep.extraConfig = ''
-    HibernateDelaySec=5min
+    HibernateDelaySec=15min
 
     HibernateOnACPower=no
     # ^ "If this option is disabled, the countdown of `HibernateDelaySec=` starts only **after AC power is disconnected**, keeping the system in the suspend state otherwise." (available since systemd 257, verify your own with `systemctl --version`)
@@ -99,7 +99,7 @@
   '';
 
 
-  /* Prevent mouse USB receiver from waking the laptop while it's suspended (e.g. 5 min window before hibernate). */
+  /* Prevent mouse USB receiver from waking the laptop while it's suspended (e.g. 15 min window before hibernate). */
   services.udev.extraRules = ''
     ACTION=="add|change", \
       SUBSYSTEM=="usb", \
