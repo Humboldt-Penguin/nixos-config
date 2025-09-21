@@ -21,6 +21,13 @@
       keybinds = {        /* this is just the name of the config file, doesn't really matter */
         ids = [ "*" ];    /* apply to all keyboards */
         settings = {
+
+          /* TEMP, REVERT ONCE KEYBOARD IS FIXED */
+          main = {
+            capslock = "leftshift";
+            leftshift = "noop";
+          };
+
           alt = {
             i = "up";
             j = "left";
