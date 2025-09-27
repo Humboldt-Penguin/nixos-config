@@ -24,7 +24,8 @@
 
           /* TEMP, REVERT ONCE KEYBOARD IS FIXED */
           main = {
-            capslock = "leftshift";
+            # capslock = "leftshift";
+            capslock = "overload(shift, capslock)"; # hold for shift, tap for capslock
             leftshift = "noop";
           };
 
