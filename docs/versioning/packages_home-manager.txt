@@ -1,7 +1,7 @@
 bash-interactive-5.2p37
 bash-interactive-5.2p37-man
 cups-2.4.11
-cursor-1.6.45
+cursor-1.7.38
 dbus-1.14.10
 git-2.50.1
 hm-session-vars.sh
@@ -22,7 +22,7 @@ kstatusnotifieritem-6.14.0
 kwallet-6.14.1
 lf-35
 libreoffice-24.8.7.2-wrapped
-librewolf-143.0.3-1
+librewolf-144.0-1
 localsend-1.17.0
 man-db-2.13.0
 micro-2.0.14
@@ -39,14 +39,14 @@ rclone-1.69.1
 rclone-1.69.1-man
 rsync-3.4.1
 shared-mime-info-2.4
-signal-desktop-7.70.0
+signal-desktop-7.73.0
 systemd-257.9
 tldr-3.3.0
 tor-browser-14.5.8
 trashy-2.0.0
-ungoogled-chromium-141.0.7390.65
+ungoogled-chromium-141.0.7390.107
 vesktop-1.5.8
-vscodium-1.104.36664
+vscodium-1.105.16954
 wget-1.25.0
 zed-editor-0.189.5
 zoxide-0.9.7
