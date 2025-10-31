@@ -83,6 +83,7 @@
 
   /* Enable CUPS to print documents. */
   services.printing.enable = true;
+  services.printing.drivers = [ pkgs.hplip ]; # TEMP — for the `2w color` ("HP Color LaserJet Enterprise M554") in Serin Physics Building.
 
   /* Enable sound with pipewire. */
   services.pulseaudio.enable = false;
