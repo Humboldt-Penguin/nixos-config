@@ -18,46 +18,41 @@
   */
 
 
-  programs = {
+  programs.git = {
 
-    git = {
-
-      enable = true;
-      package = pkgs.git;
+    enable = true;
 
 
-
-      userName  = "Zain Eris Kamal";
-      userEmail = "zain.eris.kamal@rutgers.edu";
-
-      /* sign commits with SSH by default */
-      signing = {
-        signByDefault = true;  # "Whether commits and tags should be signed by default."
-        format = "ssh";
-        key = "${config.home.homeDirectory}/.ssh/id_ed25519.pub";
+    settings = {
+      user = {
+        name = "Zain Eris Kamal";
+        email = "zain.eris.kamal@rutgers.edu";
       };
-
-
-
-      extraConfig = {
-        init.defaultBranch = "main";
-
-        # core.editor = "codium --wait --new-window";  ## slow bleh
-        # core.editor = "micro";  ## fast, but minor pasting annoyances, plus you lose access/sight of terminal
-        core.editor = "zeditor --wait --new";
-      };
-
-
+      init.defaultBranch = "main";
+      core.editor = "zeditor --wait --new";
     };
 
-
-
-    /* According to nixos wiki, the above config for signing commits requires home-manager to manage your SSH config. */
-    ssh = {
-      enable = true;
-      addKeysToAgent = "yes";
+    /* sign commits with SSH by default */
+    signing = {
+      signByDefault = true;  # "Whether commits and tags should be signed by default."
+      format = "ssh";
+      key = "${config.home.homeDirectory}/.ssh/id_ed25519.pub";
     };
 
+  };
+
+
+
+  /* According to nixos wiki, the above config for signing commits requires home-manager to manage your SSH config. */
+  programs.ssh = {
+    enable = true;
+    enableDefaultConfig = false;
+    matchBlocks."*".addKeysToAgent = "yes";
+  };
+
+  /* Automatically start SSH agent for my user, so I don't have to type the passphrase every commit. */
+  services.ssh-agent = {
+    enable = true;
   };
 
 }

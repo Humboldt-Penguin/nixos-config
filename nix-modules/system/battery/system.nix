@@ -79,9 +79,9 @@
       - PowerDevil (the KDE power‑management daemon) blocks lid‑switch handling, which means it intercepts lid‑close events and calls its own suspend routine (`systemd-suspend`, I think?) rather than letting `logind` invoke `suspend‑then‑hibernate` (you can verify this by running `systemd-inhibit --list`). To make KDE initiate `suspend‑then‑hibernate`, you have to go into its settings and choose the "Standby, then hibernate" option.
       - TODO: I've found that KDE power settings occasionally reset themselves, which could lead to my laptop fully dying on accident. If you want to fully disable PowerDevil, look into: https://chatgpt.com/s/t_68c77eaaf2188191a40c5a639f8b5f69 .
 */
-  services.logind = {
-    lidSwitch              = "suspend-then-hibernate";
-    lidSwitchExternalPower = "suspend";
+  services.logind.settings.Login = {
+    HandleLidSwitch              = "suspend-then-hibernate";
+    HandleLidSwitchExternalPower = "suspend";
 
     /* Unnecessary (default is already "yes") but keeping to remind you that more config is available: https://www.man7.org/linux/man-pages/man5/logind.conf.5.html */
     # extraConfig = ''
@@ -95,7 +95,7 @@
 
     HibernateOnACPower=no
     # ^ "If this option is disabled, the countdown of `HibernateDelaySec=` starts only **after AC power is disconnected**, keeping the system in the suspend state otherwise." (available since systemd 257, verify your own with `systemctl --version`)
-    # ^ This *might* be redundant with `services.logind.lidSwitchExternalPower = "suspend"` above, but no harm in being explicit.
+    # ^ This *might* be redundant with `services.logind.settings.Login.HandleLidSwitchExternalPower = "suspend"` above, but no harm in being explicit.
   '';
 
 
