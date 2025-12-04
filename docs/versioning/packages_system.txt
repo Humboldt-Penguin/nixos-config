@@ -272,6 +272,7 @@ exiv2-0.28.7-lib
 expat-2.7.3
 expat-2.7.3
 expat-2.7.3-dev
+extra-utils
 f2fs-tools-1.16.0
 faad2-2.11.2
 fallback-cursor-theme
@@ -489,7 +490,8 @@ ijs-10.06.0
 imath-3.2.1
 inih-62
 iniparser-4.2.6
-initrd-linux-6.12.59
+initrd-fsinfo
+initrd-linux-6.12.60
 input.conf
 inputrc
 install-systemd-boot.sh
@@ -578,6 +580,7 @@ kexec-tools-2.0.32
 kexec-tools-2.0.32
 keyd-2.5.0
 keyd-application-mapper-2.5.0
+keymap
 keyutils-1.6.3-lib
 keyutils-1.6.3-lib
 kfilemetadata-6.20.0
@@ -1067,10 +1070,11 @@ libzip-1.11.4
 lilv-0.24.26
 lilv-0.24.26
 limits.conf
-linux-6.12.59
-linux-6.12.59-modules
-linux-6.12.59-modules
-linux-6.12.59-modules-shrunk
+link-units
+linux-6.12.60
+linux-6.12.60-modules
+linux-6.12.60-modules
+linux-6.12.60-modules-shrunk
 linux-firmware-20251125-zstd
 linux-headers-6.16.7
 linux-headers-static-6.16.7
@@ -1213,7 +1217,7 @@ nixos-manual-html
 nixos-option
 nixos-option.nix
 nixos-rebuild-ng-25.11
-nixos-system-wired-25.11.20251130.8bb5646
+nixos-system-wired-25.11.20251202.1aab892
 nixos-tmpfiles.d
 nixos-version
 nix-store-2.31.2
@@ -1594,6 +1598,7 @@ sratom-0.6.20
 sratom-0.6.20
 srt-1.5.4
 srt-1.5.4
+stage-1-init.sh
 steam-1.0.0.85
 steam-1.0.0.85-bwrap
 steam-1.0.0.85-fhsenv-profile
@@ -1670,6 +1675,7 @@ tzdata-2025b
 tzdata-2025b
 udev-check-hook
 udev-path
+udev-rules
 udev-rules
 udisks-2.10.2
 udisks-2.10.2-man
@@ -1857,7 +1863,7 @@ x264-0-unstable-2025-01-03-lib
 x264-0-unstable-2025-01-03-lib
 x265-4.1
 x265-4.1
-x86_energy_perf_policy-6.12.59
+x86_energy_perf_policy-6.12.60
 xapian-1.4.27
 xauth-1.1.4
 xbitmaps-1.1.3
