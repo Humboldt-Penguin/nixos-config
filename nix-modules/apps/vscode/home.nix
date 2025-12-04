@@ -44,8 +44,9 @@
 
           # "workbench.colorTheme" = "Ayu Dark Bordered";
           # "workbench.colorTheme" = "Gruvbox Dark Hard";
-          "workbench.colorTheme" = "Catppuccin Mocha";
-          "workbench.iconTheme" = "catppuccin-mocha";
+          # "workbench.colorTheme" = "Catppuccin Mocha";
+          # "workbench.iconTheme" = "catppuccin-mocha";
+          "workbench.colorTheme" = "Forest Violet";
 
           /* Functional behavior: */
           "files.trimTrailingWhitespace" = true;
@@ -266,6 +267,22 @@
               publisher = "TakumiI";
               version = "0.13.0";  # 2025-01-18
               sha256 = "sha256-N1FZbDFiX5S+qKrtWpA+zGUhC81db5JiqcSPxeHmkhE=";
+            }
+            {
+              /*
+                - theme: "Forest Violet" by InnaSodri
+                  - link: https://marketplace.visualstudio.com/items?itemName=InnaSodri.lilac-grove-bundle
+                  - preview: https://vscodethemes.com/e/InnaSodri.lilac-grove-bundle/forest-violet
+                - other themes, maybe...?
+                  - https://vscodethemes.com/e/rocketseat.theme-omni/omni
+                  - https://vscodethemes.com/e/mvllow.rose-pine/rose-pine
+                  - https://vscodethemes.com/e/jdinhlife.gruvbox/gruvbox-dark-hard
+                  - https://vscodethemes.com/e/daylerees.rainglow/absent-contrast-rainglow
+              */
+              name = "lilac-grove-bundle";
+              publisher = "InnaSodri";
+              version = "0.0.1";  # 2025-09-27
+              sha256 = "sha256-qPf3Qyg9nYBLac0SpO9LMkc1PXeYkFdr4Qcsv+Kobc0=";
             }
           ];
 

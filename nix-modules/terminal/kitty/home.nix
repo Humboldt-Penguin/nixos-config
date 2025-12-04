@@ -21,7 +21,8 @@
         - See <https://github.com/kovidgoyal/kitty-themes/tree/master/themes> for a list of themes.
       */
       # themeFile = "gruvbox-dark-hard";
-      themeFile = "Catppuccin-Mocha";
+      # themeFile = "Catppuccin-Mocha";
+      themeFile = "Adapta_Nokto_Maia";
 
       settings = {
         cursor_shape = "beam";
